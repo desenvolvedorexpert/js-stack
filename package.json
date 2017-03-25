@@ -1,0 +1,20 @@
+{
+  "name": "expert-js-stack",
+  "version": "0.1.0",
+  "description": "EXPERT JS Stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desenvolvedorexpert"
+  },
+  "keywords": [
+    "JavaScript",
+    "NodeJS",
+    "React"
+  ],
+  "author": "@milesibastos",
+  "license": "CC-BY-4.0"
+}
