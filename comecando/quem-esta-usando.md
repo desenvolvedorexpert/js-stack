@@ -1,4 +1,4 @@
-# Quem está usando JavaScript
+# Quem está usando Node.js
 
 Muitos desenvolvedores tem manifestado o seu grande entusiasmo pelo JavaScript moderno. Um _**Full-Stack JavaScript**_ para todas as operações, se torna altamentes atraente para os desenvolvedores que pretendem transitar facilmente por todas as camadasa de um projeto. Com isso, algumas grandes empresas - como Walmart, Yahoo, LinkedIn e PayPal - já estão aproveitando os benefícios de integrar o **Node** em muitas das suas operações.
 

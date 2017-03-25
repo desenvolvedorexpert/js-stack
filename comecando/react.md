@@ -1,4 +1,4 @@
-# Aprendendo React
+# PRIMERS: React
 
 **React** é uma biblioteca **JavaScript**, isso assume que você tenha um conhecimento básico de **JavaScript**. Se você não estiver muito confiante, recomendo que você [refresque sua memória](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para ficar mais confiante e seguir em frente.
 

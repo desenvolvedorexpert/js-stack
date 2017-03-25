@@ -1,4 +1,4 @@
-# O que é um DevStack JavaScript?
+# O que é Full-Stack JavaScript?
 
 Um DevStack é o empilhamento de outras ferramentas de desenvolvimento e nesse livro vamos abordar um **Full-Stack JavaScript**: **Node.js**, **ExpressJS**, **MongoDB** e **React** (e o **Node** é a principal razão desse _Full-Stack_ existir) - então nós vamos chama-los de _**PRIMES**_. Usando essas quatro ferramentas juntas você vai desenvolver aplicações eficientes, bem organizadas e interativas com agilidade.
 
