@@ -1,0 +1,14 @@
+{
+  "variables": {
+    "version": "0.1.0",
+    "description": "EXPERT JS Stack",
+    "author": "@milesibastos"
+  },
+  "plugins": ["theme-api"],
+  "pluginsConfig": {
+    "theme-api": {
+      "theme": "dark",
+      "split": true
+    }
+  }
+}
