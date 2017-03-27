@@ -1,0 +1,436 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>O que é um Stack JavaScript? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="quando-usar.html" />
+    
+    
+    <link rel="prev" href="../introducao/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Introdução</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Sobre esse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introducao/">
+            
+                <a href="../introducao/">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Visão Geral</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    O que é um Stack JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="quando-usar.html">
+            
+                <a href="quando-usar.html#quando-usar-um-devstack-javascript">
+            
+                    
+                    Quando USAR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="quando-usar.html">
+            
+                <a href="quando-usar.html#quando-não-usar-um-devstack-javascript">
+            
+                    
+                    Quando NÃO Usar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="quem-esta-usando.html">
+            
+                <a href="quem-esta-usando.html">
+            
+                    
+                    Quem está usando
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="conhecendo_os_primers.html">
+            
+                <a href="conhecendo_os_primers.html">
+            
+                    
+                    Conhecendo os PRIMERS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="nodejs.html">
+            
+                <a href="nodejs.html">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="expressjs.html">
+            
+                <a href="expressjs.html">
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="mongodb.html">
+            
+                <a href="mongodb.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="mindset.html">
+            
+                <a href="mindset.html">
+            
+                    
+                    MINDSET: A Maneira de Pensar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">backend / server-side</li>
+        
+        
+    
+
+    
+        
+        <li class="header">frontend / client-side</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >O que é um Stack JavaScript?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="o-que-&#xE9;-um-stack-javascript">O que &#xE9; um Stack JavaScript?</h1>
+<p>Um <em>Stack</em> &#xE9; o empilhamento de outras ferramentas de desenvolvimento e nesse livro vamos abordar um <strong>Full-Stack JavaScript</strong> com: <a href="https://nodejs.org" target="_blank"><strong>Node.js</strong></a>, <a href="http://expressjs.com/" target="_blank"><strong>ExpressJS</strong></a>, <a href="https://www.mongodb.com/" target="_blank"><strong>MongoDB</strong></a> e <a href="https://facebook.github.io/react/" target="_blank"><strong>React</strong></a> (o <strong>Node</strong> &#xE9; a principal raz&#xE3;o desse <em>Full-Stack</em> existir) - ent&#xE3;o vamos chama-los de <em><strong>PRIMERS</strong></em>. Usando essas quatro ferramentas juntas voc&#xEA; vai desenvolver aplica&#xE7;&#xF5;es eficientes, bem organizadas e interativas com agilidade.</p>
+<p>Uma vez que todos os <em><strong>PRIMERS</strong></em> (os componentes da pilha) usam <strong>JavaScript</strong>, voc&#xEA; vai conseguir transitar por todas as camadas da sua aplica&#xE7;&#xE3;o sem problemas. Daqui a pouco eu vou te contar mais sobre essas camadas, mas &#xE9; basicamente o seguinte. Com eles, voc&#xEA; vai poder:</p>
+<ul>
+<li>Usar JavaScript no <em>server-side</em> com <strong>Node</strong> e <strong>Experss</strong></li>
+<li>Usar JavaScript no <em>cliente-side</em> com <strong>React</strong></li>
+<li>Persistir seus objetos JSON (JavaScript Object Notation) no <strong>MongoDB</strong></li>
+<li>Usar objetos JSON para enviar dados do banco para o servidor e ent&#xE3;o renderizar no browser.</li>
+</ul>
+<p>Se algum desses nomes for novo para vc, pode ficar tranquilo. Nos pr&#xF3;ximos 20 minutos vc vai aprender tudo sobre eles. O mais importante agora &#xE9; saber que:</p>
+<blockquote>
+<p>Uma &#xFA;nica linguagem em todas as camadas vai potencializar a sua produtividade. Porque quando voc&#xEA; estiver trabalhando com React no <em>client-side</em> voc&#xEA; vai facilmente entender o c&#xF3;digo, tamb&#xE9;m, no <em>server-side</em>. Por que est&#xE1; tudo em JavaScript. Isso n&#xE3;o &#xE9; incr&#xED;vel?</p>
+</blockquote>
+<p>Come&#xE7;ando desde o <strong>MongoDB</strong>, onde voc&#xEA; pode persistir seus objetos JSON. Voc&#xEA; vai poder escrever queries JSON no servidor <strong>Node</strong> e enviar tudo isso direto pro <em>front-end</em> que usa <strong>React</strong>. Isso &#xE9; especialmente &#xFA;til quando voc&#xEA; estiver trabalhando junto com outros desenvolvedores em um projeto &#xE1;gil. O c&#xF3;digo do <em>server-side</em> &#xE9; bem simples de ser entendido pelos desenvolvedores do <em>front-end</em> e vice-versa. Isso torna tudo mais transparente e aumenta bastante a agilidade e produtividade do time. Essa agilidade vai ficar mais vis&#xED;vel, daqui a pouco, quando eu te mostrar alguns exemplos que v&#xE3;o salvar voc&#xEA; de algumas dores de cabe&#xE7;a no futuro.</p>
+<p>... mas antes disso, eu preciso te contar &quot;Quando USAR e quando N&#xC3;O Usar esse DevStack&quot;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"O que é um Stack JavaScript?","level":"2.1","depth":1,"next":{"title":"Quando USAR","level":"2.1.1","depth":2,"anchor":"#quando-usar-um-devstack-javascript","path":"comecando/quando-usar.md","ref":"comecando/quando-usar.md#quando-usar-um-devstack-javascript","articles":[]},"previous":{"title":"Introdução","level":"1.2","depth":1,"path":"introducao/README.md","ref":"introducao/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"version":"0.1.0","description":"EXPERT JS Stack","author":"@milesibastos"},"plugins":["theme-api","disqus","livereload"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"comecando/README.md","mtime":"2017-03-27T14:29:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T18:12:16.045Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+
+    </body>
+</html>
+
