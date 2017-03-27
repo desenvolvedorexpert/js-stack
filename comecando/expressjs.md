@@ -1,4 +1,4 @@
-# PRIMES: Express
+# PRIMERS: Express
 
 O **Express** é uma plataforma leve para desenvolvimento de aplicações web usando **Node.js**. Ele ajuda a organizar o _server-side_ das aplicações web. O site dele o descreve como **"um _framework_ flexível e minimalista para aplicações web"**.
 

@@ -4,11 +4,14 @@
     "description": "EXPERT JS Stack",
     "author": "@milesibastos"
   },
-  "plugins": ["theme-api"],
+  "plugins": ["theme-api", "disqus"],
   "pluginsConfig": {
     "theme-api": {
       "theme": "dark",
       "split": true
+    },
+    "disqus": {
+      "shortName": "devexpert"
     }
   }
 }

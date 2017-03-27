@@ -1,4 +1,4 @@
-# PRIMES: MongoDB
+# PRIMERS: MongoDB
 
 **MongoDB**, que vem da palavra “humongous”, é um banco-de-dados **NoSQL** _open-source_ que armazena documentos no formato **JSON**. Ele é o líder no segmento de bancos **NoSQL** com base na quantidade de pesquisas feitas no Google e vagas postadas em sites como Indeed.com.
 

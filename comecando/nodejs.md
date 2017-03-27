@@ -1,4 +1,4 @@
-# PRIMES: Node.js
+# PRIMERS: Node.js
 
 O [**Node.js**](https://nodejs.org/) é construído sobre o [_**Google Chrome V8 JavaScript runtime**_](https://developers.google.com/v8/) e roda no servidor de aplicação. Então, o que isso significa? Em um **LAMP Stack** você tem um servidor de aplicação (**Apache**, **Ngimx** e etc) rodando com sua linguagem de servidor (**PHP**, **Perl** ou **Python**) para criar um aplicativo dinâmico. O código no servidor é usado para criar o ambiente da aplicação extraindo os dados do banco **MySQL** e gerando as páginas no servidor.
 
