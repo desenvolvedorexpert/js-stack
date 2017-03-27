@@ -1,13 +1,13 @@
-# O que é Full-Stack JavaScript?
+# O que é um Stack JavaScript?
 
-Um DevStack é o empilhamento de outras ferramentas de desenvolvimento e nesse livro vamos abordar um **Full-Stack JavaScript**: **Node.js**, **ExpressJS**, **MongoDB** e **React** (e o **Node** é a principal razão desse _Full-Stack_ existir) - então nós vamos chama-los de _**PRIMES**_. Usando essas quatro ferramentas juntas você vai desenvolver aplicações eficientes, bem organizadas e interativas com agilidade.
+Um _Stack_ é o empilhamento de outras ferramentas de desenvolvimento e nesse livro vamos abordar um **Full-Stack JavaScript** com: [**Node.js**](https://nodejs.org), [**ExpressJS**](http://expressjs.com/), [**MongoDB**](https://www.mongodb.com/) e [**React**](https://facebook.github.io/react/) (o **Node** é a principal razão desse _Full-Stack_ existir) - então vamos chama-los de _**PRIMERS**_. Usando essas quatro ferramentas juntas você vai desenvolver aplicações eficientes, bem organizadas e interativas com agilidade.
 
-Uma vez que todos os _**PRIMES**_ (os componentes da pilha) usam **JavaScript**, você vai conseguir transitar por todas as camadas do seu aplicativo sem problemas. Daqui a pouco eu vou te contar mais sobre essas camadas, mas é basicamente o seguinte. Com eles, você vai poder:
+Uma vez que todos os _**PRIMERS**_ (os componentes da pilha) usam **JavaScript**, você vai conseguir transitar por todas as camadas da sua aplicação sem problemas. Daqui a pouco eu vou te contar mais sobre essas camadas, mas é basicamente o seguinte. Com eles, você vai poder:
 
  - Usar JavaScript no _server-side_ com **Node** e **Experss**
  - Usar JavaScript no _cliente-side_ com **React**
  - Persistir seus objetos JSON (JavaScript Object Notation) no **MongoDB**
- - Usar objetos JSON para enviar dados do banco para servidor e então renderizar no browser.
+ - Usar objetos JSON para enviar dados do banco para o servidor e então renderizar no browser.
 
 Se algum desses nomes for novo para vc, pode ficar tranquilo. Nos próximos 20 minutos vc vai aprender tudo sobre eles. O mais importante agora é saber que:
 

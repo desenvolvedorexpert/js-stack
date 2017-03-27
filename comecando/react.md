@@ -1,9 +1,19 @@
 # PRIMERS: React
 
-**React** é uma biblioteca **JavaScript**, isso assume que você tenha um conhecimento básico de **JavaScript**. Se você não estiver muito confiante, recomendo que você [refresque sua memória](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para ficar mais confiante e seguir em frente.
+**React** é uma biblioteca JavaScript declarativa, eficiente e flexível para o desenvolvimento de interfaces para usuários.
 
-Você deve usar esse guia como um complemento à [documentação oficial do Facebook](https://facebook.github.io/react/docs/hello-world.html). Vamos usar algumas sintaxes do **ES6**, então recomendo que você também se familiarize com [arrow functions](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes), [template literals](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals), [`let`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/let), e [`const`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/const).
+## Declarativa
 
-Nesse livro vou guiar você no desenvolvimento da sua primeira aplicação **React** desde uma pasta vazia até a produção. Vou tentar manter as coisas o mais simples possível e com o mínimo de dependências. Colocar uma aplicação **React** em produção não está nos guias mais poplares da internet e esse é o objetivo desse livro.
+React torna indolor criar interface interativas. Desenvolva algumas simples _views_ para cada estado da sua aplicação, e o React atualizará e renderizará efecientemente apenas os componentes certos quando o dado mudar.
 
-Espero que goste de aprende **React**. Você sempre poderá entrar em contato comigo, [@milesibastos](https://twitter.com/milesibastos), com dúvidas e comentários que você tenha ao longo do caminho.
+_Views_ declarativas tornam o seu código mais previsíveis e fáceis de depurar.
+
+## Componentizada
+
+Construa componentes encapsulaods que gerenciam seu próprio estado, e então, componha uma interface mais complexa.
+
+Como a lógica do componente é escrita em JavaScript em vez de templates, podemos passar dados facilmente pela aplicação e manter o estado fora do DOM.
+
+## Aprenda uma vez, escreva em qualquer lugar
+
+React também pode ser renderizado no servidor usando Node e em aplicativos móveis usando [React Native](https://facebook.github.io/react-native/).
