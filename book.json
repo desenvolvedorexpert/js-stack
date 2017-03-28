@@ -4,7 +4,12 @@
     "description": "EXPERT JS Stack",
     "author": "@milesibastos"
   },
-  "plugins": ["theme-api", "disqus"],
+  "plugins": [
+    "theme-api",
+    "disqus",
+    "github",
+    "ga"
+  ],
   "pluginsConfig": {
     "theme-api": {
       "theme": "dark",
@@ -12,6 +17,12 @@
     },
     "disqus": {
       "shortName": "devexpert"
+    },
+    "github": {
+      "url": "https://github.com/desenvolvedorexpert/js-stack"
+    },
+    "ga": {
+      "token": "UA-51072076-1"
     }
   }
 }
