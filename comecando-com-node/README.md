@@ -16,13 +16,13 @@ Veja como fica um exemplo desse arquivo:
 {% common %}
 ``` json
 {
-  "name": "mean-zero2expert",
+  "name": "expert-js-stack",
   "version": "1.0.0",
-  "description": "Do ZERO ao Expert com MEAN Stack",
+  "description": "EXPERT JS Stack",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/desenvolvedorexpert/mean-zero2expert.git"
+    "url": "https://github.com/desenvolvedorexpert/js-stack"
   },
   "dependencies": {
     "express": "latest",
@@ -30,7 +30,7 @@ Veja como fica um exemplo desse arquivo:
   },
   "author": "Antônio Milesi Bastos",
   "license": "MIT",
-  "homepage": "https://desenvolvedorexpert.github.io/mean-zero2expert"
+  "homepage": "http://stack.desenvolvedor.expert/"
 }
 ```
 {% endmethod %}
@@ -41,7 +41,7 @@ Nós vamos entender melhor cada uma dessas entradas até o final desse livro. Ma
 {% common %}
 ``` json
 {
- "name": "mean-zero2expert",
+ "name": "expert-js-stack",
  "main": "index.js"
 }
 ```
