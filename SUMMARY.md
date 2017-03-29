@@ -3,6 +3,7 @@
 ## Introdução
 
 - [Sobre esse livro](README.md)
+- [Como contribuir](CONTRIBUTING.md)
 - [Introdução](introducao/README.md)
 
 ## Visão Geral
