@@ -7,7 +7,7 @@ Agora vamos criar o nosso arquivo ```index.js``` e tudo que precisamos é do com
 ``` sh
 $ vim index.js
 # Conteúdo do arquivo
-console.log('Falaaa DEV! Essa é nossa primeira Aplicação Node...');
+console.log('Faaala DEV! Essa é nossa primeira Aplicação Node...');
 ```
 {% endmethod %}
 
@@ -16,6 +16,6 @@ Agora podemos iniciar novamente a Aplicação Node e ver algo como a saída a ba
 {% common %}
 ``` sh
 $ node index.js
-Falaaa DEV! Essa é nossa primeira Aplicação Node...
+Faaala DEV! Essa é nossa primeira Aplicação Node...
 ```
 {% endmethod %}

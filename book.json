@@ -8,7 +8,9 @@
     "theme-api",
     "disqus",
     "github",
-    "ga"
+    "ga",
+    "asciitree",
+    "addcssjs"
   ],
   "pluginsConfig": {
     "theme-api": {
@@ -23,6 +25,10 @@
     },
     "ga": {
       "token": "UA-51072076-1"
-    }
+    },
+    "addcssjs": {
+    "js": ["/assets/asciinema-player.js"],
+    "css": ["/assets/asciinema-player.css"]
+  }
   }
 }

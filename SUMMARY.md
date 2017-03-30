@@ -14,7 +14,7 @@
   - [Quando NÃO Usar](comecando/quando-usar.md#quando-não-usar-um-devstack-javascript)
   - [Quem está usando](comecando/quem-esta-usando.md)
 
-- [Conhecendo os PRIMERS](comecando/conhecendo_os_primers.md)
+- [Conhecendo os PRIMERS](comecando/conhecendo-os-primers.md)
 
   - [Node.js](comecando/nodejs.md)
   - [Express](comecando/expressjs.md)
@@ -34,11 +34,11 @@
   - [Gerenciamento de Pacotes](comecando-com-node/gerenciamento-de-pacotes.md)
   - [Recapitulando](comecando-com-node/recapitulando.md)
 
-- [Iniciando um Servidor Node](ServerBackend/StartingNodeServer/README.md)
+- [Criando um Serviço Node](criando-um-servico-node/README.md)
 
-  - [Aplicação de Exemplo](ServerBackend/StartingNodeServer/SampleApplication.md)
-  - [Método #1: Apenas Node, sem Express](ServerBackend/StartingNodeServer/M1PureNode.md)
-  - [Método #2: Usando Express](ServerBackend/StartingNodeServer/M2UsingExpress.md)
+  - [Aplicação de Exemplo](criando-um-servico-node/app-de-exemplo.md)
+  - [Método #1: Apenas Node, sem Express](criando-um-servico-node/node.md)
+  - [Método #2: Usando Express](criando-um-servico-node/express.md)
 
 - [Roteamento de Aplicações](ServerBackend/RoutingNode/README.md)
 

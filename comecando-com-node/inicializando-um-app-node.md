@@ -44,7 +44,7 @@ About to write to ~/devexpert/expert-js-stack/package.json:
 {
   "name": "expert-js-stack",
   "version": "1.0.0",
-  "description": "Do ZERO ao Expert com MEAN Stack",
+  "description": "EXPERT JS Stack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
