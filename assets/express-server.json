@@ -1,0 +1,858 @@
+{
+  "version": 1,
+  "width": 101,
+  "height": 33,
+  "duration": 68.906798,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/usr/local/bin/fish"
+  },
+  "stdout": [
+    [
+      2.0,
+      "\u001b"
+    ],
+    [
+      0.000185,
+      "[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      0.074428,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      0.000139,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.002484,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "# primeiro vamos instalar o express"
+    ],
+    [
+      0.00191,
+      "\u001b[35D\u001b[31m# primeiro vamos instalar o express\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b"
+    ],
+    [
+      3.8e-05,
+      "(B\u001b[m"
+    ],
+    [
+      0.001066,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      0.026687,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      6.9e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.001757,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "npm install express --save"
+    ],
+    [
+      0.002066,
+      "\u001b[26D\u001b[1mnpm\u001b(B\u001b[m \u001b[36minstall\u001b[30m\u001b(B\u001b[m \u001b[36mexpress\u001b[30m\u001b(B\u001b[m \u001b[36m--save\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000448,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;npm  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      1.365457,
+      "\u001b[?25l"
+    ],
+    [
+      0.006128,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠧ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.089587,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠏ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.052946,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠏ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.047435,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠏ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.050303,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠏ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.053582,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠴ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.067547,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠼ loadRequestedDeps: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadAllDepsIntoIdealTree\u001b[K\r"
+    ],
+    [
+      0.051771,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ loadRequestedDeps: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadAllDepsIntoIdealTree\u001b[K\r"
+    ],
+    [
+      0.079325,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.059031,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.076202,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.054284,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.059522,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.058601,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠸ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.068541,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.0587,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠼ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.051051,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.05648,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.050759,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.050605,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/utils-merge\u001b[K\r"
+    ],
+    [
+      0.04973,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mime-types\u001b[K\r"
+    ],
+    [
+      0.050108,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/negotiator/0.6.1\u001b[K\r"
+    ],
+    [
+      0.049633,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠹ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/mime-db/1.27.0/p\u001b[K\r"
+    ],
+    [
+      0.060505,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mcache add\u001b[0m spec debug@2.6.3\u001b[K\r"
+    ],
+    [
+      0.051827,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠼ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/unpipe/1.0.0/pac\u001b[K\r"
+    ],
+    [
+      0.050632,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠏ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/forwarded\u001b[K\r"
+    ],
+    [
+      0.051109,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/http-errors\u001b[K\r"
+    ],
+    [
+      0.04792,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/http-errors\u001b[K\r"
+    ],
+    [
+      0.051663,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/http-errors/1.6.\u001b[K\r"
+    ],
+    [
+      0.075352,
+      "⸨\u001b[7m          \u001b[27m\u001b[90m░░░░░░░░\u001b[0m⸩ ⠹ diffTrees: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m generateActionsToTake\u001b[K\r"
+    ],
+    [
+      0.06358,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠸ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.055189,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠇ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.060885,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠸ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.049997,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠏ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.056316,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠇ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.054681,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠇ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.052759,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠇ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.051726,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠴ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.057008,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠹ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 43\u001b[K\r"
+    ],
+    [
+      0.050319,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠼ extract:inherits: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.049846,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠸ extract:mime: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Data/m\u001b[K\r"
+    ],
+    [
+      0.104528,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠴ preinstall:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m preinstall 43\u001b[K\r"
+    ],
+    [
+      0.05667,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠴ build:encodeurl: \u001b[34;40mverb\u001b[0m \u001b[35mlinkMans\u001b[0m encodeurl@1.0.1\u001b[K\r"
+    ],
+    [
+      0.049147,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ build:cookie: \u001b[34;40mverb\u001b[0m \u001b[35mlinkMans\u001b[0m cookie@0.3.1\u001b[K\r"
+    ],
+    [
+      0.051231,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠹ install:destroy: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m destroy@1.0.4~install: no script for install,\u001b[K\r"
+    ],
+    [
+      0.049683,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠦ install:parseurl: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m parseurl@1.3.1~install: no script for instal\u001b[K\r"
+    ],
+    [
+      0.061596,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠙ postinstall:escape-html: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m escape-html@1.0.3~postinstall: no scr\u001b[K\r"
+    ],
+    [
+      0.050209,
+      "⸨\u001b[7m                \u001b[27m\u001b[90m░░\u001b[0m⸩ ⠸ postinstall:on-finished: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m on-finished@2.3.0~postinstall: no scr\u001b[K\r"
+    ],
+    [
+      0.059648,
+      "⸨\u001b[7m                \u001b[27m\u001b[90m░░\u001b[0m⸩ ⠹ postinstall:cookie-signature: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m cookie-signature@1.0.6~postinsta\u001b[K\r"
+    ],
+    [
+      0.060389,
+      "\r\u001b[K\u001b[?25h"
+    ],
+    [
+      0.001031,
+      "http-server@1.0.0 /Volumes/Data/milesibastos/code/devexpert/http-server\r\n└─┬ \u001b[40m\u001b[33mexpress@4.15.2\u001b[39m\u001b[49m \r\n  ├─┬ \u001b[40m\u001b[33maccepts@1.3.3\u001b[39m\u001b[49m \r\n  │ ├─┬ \u001b[40m\u001b[33mmime-types@2.1.15\u001b[39m\u001b[49m \r\n  │ │ └── \u001b[40m\u001b[33mmime-db@1.27.0\u001b[39m\u001b[49m \r\n  │ └── \u001b[40m\u001b[33mnegotiator@0.6.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33marray-flatten@1.1.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mcontent-disposition@0.5.2\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mcontent-type@1.0.2\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mcookie@0.3.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mcookie-signature@1.0.6\u001b[39m\u001b[49m \r\n  ├─┬ \u001b[40m\u001b[33mdebug@2.6.1\u001b[39m\u001b[49m \r\n  │ └── \u001b[40m\u001b[33mms@0.7.2\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mdepd@1.1.0\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mencodeurl@1.0.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mescape-html@1.0.3\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33metag@1.8.0\u001b[39m\u001b[49m \r\n  ├─┬ \u001b[40m\u001b[33mfinalhandler@1.0.1\u001b[39m\u001b[49m \r\n  │ ├── \u001b[40m\u001b[33mdebug@2.6.3\u001b[39m\u001b[49m \r\n  │ └── \u001b[40m\u001b[33munp"
+    ],
+    [
+      8e-05,
+      "ipe@1.0.0\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mfresh@0.5.0\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mmerge-descriptors@1.0.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mmethods@1.1.2\u001b[39m\u001b[49m \r\n  ├─┬ \u001b[40m\u001b[33mon-finished@2.3.0\u001b[39m\u001b[49m \r\n  │ └── \u001b[40m\u001b[33mee-first@1.1.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mparseurl@1.3.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mpath-to-regexp@0.1.7\u001b[39m\u001b[49m \r\n  ├─┬ \u001b[40m\u001b[33mproxy-addr@1.1.4\u001b[39m\u001b[49m \r\n  │ ├── \u001b[40m\u001b[33mforwarded@0.1.0\u001b[39m\u001b[49m \r\n  │ └── \u001b[40m\u001b[33mipaddr.js@1.3.0\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mqs@6.4.0\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mrange-parser@1.2.0\u001b[39m\u001b[49m \r\n  ├─┬ \u001b[40m\u001b[33msend@0.15.1\u001b[39m\u001b[49m \r\n  │ ├── \u001b[40m\u001b[33mdestroy@1.0.4\u001b[39m\u001b[49m \r\n  │ ├─┬ \u001b[40m\u001b[33mhttp-errors@1.6.1\u001b[39m\u001b[49m \r\n  │ │ └── \u001b[40m\u001b[33minherits@2.0.3\u001b[39m\u001b[49m \r\n  │ └── \u001b[40m\u001b[33mmime@1.3.4\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mserve-static@1.12.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33msetprototypeof@1.0.3\u001b[39m\u001b[49m \r\n  ├── \u001b[40m"
+    ],
+    [
+      0.000399,
+      "\u001b[33mstatuses@1.3.1\u001b[39m\u001b[49m \r\n  ├─┬ \u001b[40m\u001b[33mtype-is@1.6.14\u001b[39m\u001b[49m \r\n  │ └── \u001b[40m\u001b[33mmedia-typer@0.3.0\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mutils-merge@1.0.0\u001b[39m\u001b[49m \r\n  └── \u001b[40m\u001b[33mvary@1.1.1\u001b[39m\u001b[49m \r\n\r\n"
+    ],
+    [
+      0.002665,
+      "\u001b[37;40mnpm\u001b[0m"
+    ],
+    [
+      6.7e-05,
+      " \u001b[0m"
+    ],
+    [
+      0.000132,
+      "\u001b[30;43mWARN\u001b[0m"
+    ],
+    [
+      7.1e-05,
+      "\u001b[35m\u001b[0m"
+    ],
+    [
+      8.3e-05,
+      " http-server@1.0.0 No description\r\n\u001b[0m"
+    ],
+    [
+      0.000286,
+      "\u001b[37;40mnpm\u001b[0m"
+    ],
+    [
+      5.9e-05,
+      " \u001b[0m"
+    ],
+    [
+      5.4e-05,
+      "\u001b[30;43mWARN\u001b[0m"
+    ],
+    [
+      3.7e-05,
+      "\u001b[35m\u001b[0m"
+    ],
+    [
+      7.5e-05,
+      " http-server@1.0.0 No repository field.\r\n\u001b[0m"
+    ],
+    [
+      0.072486,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      0.000228,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.002344,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "c"
+    ],
+    [
+      0.004547,
+      "\b\u001b[91mc\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.00213,
+      "\u001b[38;2;85;85;85mat package.json \u001b[16D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.086557,
+      "\u001b[91ml\u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      0.004464,
+      "\u001b[38;2;85;85;85mear\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.132858,
+      "\u001b[91me\u001b[38;2;85;85;85mar\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.231765,
+      "\u001b[91ma\u001b[38;2;85;85;85mr\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.24828,
+      "\u001b[91mr\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.005144,
+      "\b\b\b\b\b\u001b[1mclear\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n"
+    ],
+    [
+      8.1e-05,
+      "\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001486,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;clear  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      0.009966,
+      "\u001b[H\u001b[2J"
+    ],
+    [
+      0.020281,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      4.8e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.001702,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      1.297114,
+      "# então, criamos o express-server.js"
+    ],
+    [
+      0.002535,
+      "\u001b[36D\u001b[31m# então, criamos o express-server.js\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n"
+    ],
+    [
+      5.5e-05,
+      "\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000434,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      0.015732,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      0.000137,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.001854,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "vim express-server.js"
+    ],
+    [
+      0.002277,
+      "\u001b[21D\u001b[1mvim\u001b(B\u001b[m \u001b[36m\u001b[4mexpress-server.js\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.018674,
+      "\u001b[38;2;85;85;85mon \b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\u001b[K\r\n"
+    ],
+    [
+      6.2e-05,
+      "\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.00149,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;vim  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      0.446122,
+      "\u001b[?1000h\u001b[?1049h\u001b[?1h\u001b=\u001b[?2004h\u001b[2;1H▽\u001b[6n\u001b[2;1H  \u001b[1;1H"
+    ],
+    [
+      0.001695,
+      "\u001b]11;?\u0007"
+    ],
+    [
+      0.004441,
+      "\u001b[1;33r\u001b[?12;25h\u001b[?12l\u001b[?25h\u001b[27m\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[?25l\u001b[33;1H\"express-server.js\" [New File]                                                                       "
+    ],
+    [
+      0.362669,
+      "\u001b[>c"
+    ],
+    [
+      0.008313,
+      "\u001b[1;1H\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  1 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                                \u001b[2;1H\u001b[38;2;88;88;88m~                                                                                                    \u001b[3;1H~                                                                                                    \u001b[4;1H~                                                                                                    \u001b[5;1H~                                                                                                    \u001b[6;1H~                                                                                                    \u001b[7;1H~                                                                                                    \u001b[8;1H~                                                                                                    \u001b[9;1H~                    "
+    ],
+    [
+      9.5e-05,
+      "                                                                                \u001b[10;1H~                                                                                                    \u001b[11;1H~                                                                                                    \u001b[12;1H~                                                                                                    \u001b[13;1H~                                                                                                    \u001b[14;1H~                                                                                                    \u001b[15;1H~                                                                                                    \u001b[16;1H~                                                                                                    \u001b[17;1H~                                                                                                    \u001b[18;1H~                                                                       "
+    ],
+    [
+      0.007678,
+      "                             \u001b[19;1H~                                                                                                    \u001b[20;1H~                                                                                                    \u001b[21;1H~                                                                                                    \u001b[22;1H~                                                                                                    \u001b[23;1H~                                                                                                    \u001b[24;1H~                                                                                                    \u001b[25;1H~                                                                                                    \u001b[26;1H~                                                                                                    \u001b[27;1H~                                                                                                    \u001b[28;1H~               "
+    ],
+    [
+      0.000545,
+      "                                                                                     \u001b[29;1H~                                                                                                    \u001b[30;1H~                                                                                                    \u001b[31;1H~                                                                                                    \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;1H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m NORMAL \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m express-server.js                                   javascript \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;216;216;216m\u001b[48;2;56;56;56m [unix] \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m 100% \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m☰   0/1\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;95H\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m :  1 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;24;24"
+    ],
+    [
+      0.001094,
+      ";24m\u001b[48;2;171;70;66m\u001b]2;express-server.js (~/code/devexpert/http-server) - VIM\u0007"
+    ],
+    [
+      0.00164,
+      "\u001b[1;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[33;91Hi\u001b[1;5H"
+    ],
+    [
+      0.005793,
+      "\u001b[33;91H  \u001b[1;5H"
+    ],
+    [
+      0.016295,
+      "\u001b[32;1H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m INSERT\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[64C\u001b[38;2;161;181;108m\u001b[48;2;24;24;24m [unix] \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 100% \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m☰   0\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m/\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m/1\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;95H\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m :  1 \u001b[1;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[7m\u001b[38;2;88;88;88m// vamos começar, carregando o express e criando a app\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  2 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;171;70;66mconst\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m app = require(\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                            \u001b[32;9H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m\u001b[32;10H PASTE \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m-\b express-server.js[+]\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[53C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m2/2\u001b[2;25H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.005572,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;161;181;108m'express'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m22 \u001b]2;express-server.js + (~/code/devexpert/http-server) - VIM\u0007\u001b[2;24H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.002554,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[11C()\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;99H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m1 \u001b[2;35H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.035492,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  3 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                                \u001b[32;9H\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m express-server.js[+] r\b        \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[52C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m3/3\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 1\u001b[3;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  4 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                                \u001b[32;91H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m4/4\u001b[4;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.908423,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[7m\u001b[38;2;88;88;88m// então, criamos uma rota para '/'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  5 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24mapp.\u001b[38;2;186;139;175mget\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'/'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m, (\u001b[38;2;134;193;185mreq\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m,\u001b[38;2;134;193;185m res\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m) \u001b[38;2;171;70;66m=>\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                      \u001b[5;31H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.027114,
+      "\u001b[?25l \u001b[38;2;216;216;216m{}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;9H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m\u001b[32;10H PASTE \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m-\b express-server.js[+]\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[53C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m5/5\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m28 \u001b[5;32H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.004417,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[2C)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;99H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m9 \u001b[5;12H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.037197,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  6 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                                \u001b[32;9H\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m express-server.js[+] r\b        \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[52C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m6/6\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 1 \u001b[6;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  7 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                                \u001b[32;91H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m7/7\u001b[7;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.849785,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[7m\u001b[38;2;88;88;88m// no fim, iniciamos o serviço na porta 8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  8 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24mapp.listen(\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                     \u001b[8;16H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.035104,
+      "\u001b[?25l\u001b[38;2;220;150;86m8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;9H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m\u001b[32;10H PASTE \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m-\b express-server.js[+]\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[53C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m8/8\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m13 \u001b[8;15H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.043614,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m  9 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;186;139;175mconsole\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m.\u001b[38;2;186;139;175mlog\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'8001 é\u001b[9;24H a porta má\u001b[9;35Hgica!'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                           \u001b[10;1H\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m 10 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                                \u001b[32;9H\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m express-server.js[+] r\b        \u001b[22Cjavascript  \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[38;2;161;181;108m\u001b[48;2;24;24;24m [unix]  \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 100%  \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108"
+    ],
+    [
+      0.000161,
+      "m☰  10/10\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 1 \u001b[10;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5;32H\u001b[38;2;24;24;24m\u001b[48;2;88;88;88m{}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;81H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 50\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 5/\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[6C\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m29 \u001b[5;33H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      1.507478,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;24;24;24m\u001b[48;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m   \u001b[6;5H\u001b[38;2;216;216;216m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[7;5H¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                             \u001b[8;5H\u001b[7m\u001b[38;2;88;88;88m// no fim, iniciamos o serviço na porta 8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[9;5Happ.listen(\u001b[38;2;220;150;86m8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                      \u001b[10;5H\u001b[38;2;186;139;175mconsole\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m.\u001b[38;2;186;139;175mlog\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'8001 é\u001b[10;24H a porta má\u001b[10;35Hgica!'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m 11 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;"
+    ],
+    [
+      5.4e-05,
+      "2;24;24;24m                                                                                                \u001b[5;33H\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[6;5H\u001b[38;2;24;24;24m\u001b[48;2;88;88;88m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;83H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m4%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m6/11\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 1 \u001b[6;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.682519,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;24;24;24m\u001b[48;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m   \u001b[7;5H\u001b[38;2;216;216;216m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[8;5H¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                             \u001b[9;5H\u001b[7m\u001b[38;2;88;88;88m// no fim, iniciamos o serviço na porta 8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[10;5Happ.listen(\u001b[38;2;220;150;86m8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                      \u001b[11;5H\u001b[38;2;186;139;175mconsole\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m.\u001b[38;2;186;139;175mlog\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'8001 é\u001b[11;24H a porta má\u001b[11;35Hgica!'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m 12 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48"
+    ],
+    [
+      4.3e-05,
+      ";2;24;24;24m                                                                                                \u001b[6;5H\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[7;5H\u001b[38;2;24;24;24m\u001b[48;2;88;88;88m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;83H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m8%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m7/12\u001b[7;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.713547,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5;32H\u001b[38;2;216;216;216m{\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[7;5H\u001b[38;2;216;216;216m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;83H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m0%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m6/\u001b[6;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      1.393176,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m  \u001b[7m\u001b[38;2;88;88;88m// aqui precisamos enviar o index.html para o cliente\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\b\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.154107,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[7;5H  res.sendFile(path.\u001b[38;2;186;139;175mjoin\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(__dirname + \u001b[38;2;161;181;108m'/index.html'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[8;5H})\u001b[38;2;88;88;88m¬\u001b[9;5H¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                             \u001b[10;5H\u001b[7m\u001b[38;2;88;88;88m// no fim, iniciamos o serviço na porta 8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[11;5Happ.listen(\u001b[38;2;220;150;86m8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                      \u001b[12;5H\u001b[38;2;186;139;175mconsole\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m.\u001b[38;2;186;139;175mlog\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'8001 é\u001b[12;24H a porta má\u001b[12;35Hgica!'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2"
+    ],
+    [
+      0.000173,
+      ";40;40;40m 13 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                                                                                \u001b[32;9H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m\u001b[32;10H PASTE \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m-\b express-server.js[+]\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[45C\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m3%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m7/13\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m57 \u001b[7;29H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.013174,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[27C)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[8;5H\u001b[38;2;216;216;216m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m26 \u001b[7;19H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.04147,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[8;5H\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m   \u001b[9;5H\u001b[38;2;216;216;216m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[10;5H¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                             \u001b[11;5H\u001b[7m\u001b[38;2;88;88;88m// no fim, iniciamos o serviço na porta 8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[12;5Happ.listen(\u001b[38;2;220;150;86m8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                      \u001b[13;5H\u001b[38;2;186;139;175mconsole\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m.\u001b[38;2;186;139;175mlog\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'8001 é\u001b[13;24H a porta má\u001b[13;35Hgica!'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m 14 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24"
+    ],
+    [
+      5.3e-05,
+      ";24m                                                                                                \u001b[32;9H\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m express-server.js[+] r\b        \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[44C\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m7%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m8/14\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 1 \u001b[8;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u001b[32;83H0%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m7/\u001b[7;5H"
+    ],
+    [
+      0.133783,
+      "\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;82H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m42%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m6/\u001b[6;5H"
+    ],
+    [
+      0.151899,
+      "\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;82H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m35%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m5/\u001b[5;5H"
+    ],
+    [
+      0.16,
+      "\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;82H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m28%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m4/\u001b[4;5H"
+    ],
+    [
+      0.215832,
+      "\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;83H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m1%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m3/\u001b[3;5H"
+    ],
+    [
+      1.053529,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;171;70;66mconst\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m path = require(\u001b[38;2;161;181;108m'path'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;9H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m\u001b[32;10H PASTE \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m-\b express-server.js[+]\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[61C\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m2 \u001b[3;25H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.044558,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;9H\u001b[38;2;216;216;216m\u001b[48;2;40;40;40m express-server.js[+] r\b        \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[59C\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m29 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[3;25H\u001b[38;2;24;24;24m\u001b[48;2;88;88;88m(\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;161;181;108m'path'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;24;24;24m\u001b[48;2;88;88;88m)\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\b\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.489235,
+      "\u001b[?25l\u001b[4;5H¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                    \u001b[5;5H\u001b[7m\u001b[38;2;88;88;88m// então, criamos uma rota para '/'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[6;5Happ.\u001b[38;2;186;139;175mget\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'/'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m, (\u001b[38;2;134;193;185mreq\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m,\u001b[38;2;134;193;185m res\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m) \u001b[38;2;171;70;66m=>\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m \u001b[38;2;216;216;216m{\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                            \u001b[7;7H\u001b[7m\u001b[38;2;88;88;88m// aqui precisamos enviar o index.html para o cliente\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[8;5H  res.sendFile(path.\u001b[38;2;186;139;175mjoin\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(__dirname + \u001b[38;2;161;181;108m'/index.html'\u001b[m\u001b[38;2;216;216"
+    ],
+    [
+      6.3e-05,
+      ";216m\u001b[48;2;24;24;24m))\u001b[38;2;88;88;88m¬\u001b[9;5H¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m   \u001b[10;5H\u001b[38;2;216;216;216m}\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[11;5H¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                                             \u001b[12;5H\u001b[7m\u001b[38;2;88;88;88m// no fim, iniciamos o serviço na porta 8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[13;5Happ.listen(\u001b[38;2;220;150;86m8001\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m                      \u001b[14;5H\u001b[38;2;186;139;175mconsole\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m.\u001b[38;2;186;139;175mlog\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m(\u001b[38;2;161;181;108m'8001 é\u001b[14;24H a porta má\u001b[14;35Hgica!'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\r\n\u001b[38;2;88;88;88m\u001b[48;2;40;40;40m 15 \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m             "
+    ],
+    [
+      0.0049,
+      "                                                                                   \u001b[3;25H(\u001b[38;2;161;181;108m'path'\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m)\u001b[38;2;88;88;88m¬\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;83H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m6%\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[5C\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m4/15\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;98H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m 1 \u001b[4;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[33;91H^[\u001b[4;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.538822,
+      "\u001b[?25l\u001b[33;91H   \u001b[4;5H\u001b[32;1H\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m NORMAL\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[63C\u001b[38;2;216;216;216m\u001b[48;2;56;56;56m [unix] \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m  26% \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m☰   4\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m/\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[1m\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m/15\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[32;95H\u001b[38;2;40;40;40m\u001b[48;2;161;181;108m \u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\b\u001b[38;2;40;40;40m\u001b[48;2;124;175;194m :  1 \u001b[4;5H\u001b[?12l\u001b[?25h"
+    ],
+    [
+      1.074376,
+      "\u001b[?25l\u001b[m\u001b[38;2;216;216;216m\u001b[48;2;24;24;24m\u001b[33;91H:\u001b[4;5H\u001b[33;1H                               \u001b[59C  \r:\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.342339,
+      "w"
+    ],
+    [
+      0.001015,
+      "\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      0.255646,
+      "q"
+    ],
+    [
+      0.000944,
+      "\u001b[?25l\u001b[?12l\u001b[?25h"
+    ],
+    [
+      2.0,
+      "\r"
+    ],
+    [
+      0.005771,
+      "\u001b[?25l"
+    ],
+    [
+      0.000995,
+      "\u001b[?1000l"
+    ],
+    [
+      0.000196,
+      "\"express-server.js\""
+    ],
+    [
+      0.001393,
+      " [New] 15L, 403C written"
+    ],
+    [
+      0.022582,
+      "\r\u001b]2;Thanks for flying Vim\u0007"
+    ],
+    [
+      0.105471,
+      "\r\r\n\u001b[39;49m\u001b[?2004l\u001b[?1l\u001b>\u001b[?12l\u001b[?25h\u001b[?1049l"
+    ],
+    [
+      0.032367,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      5.4e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.001783,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "# vamos executar nosso serviço"
+    ],
+    [
+      0.002334,
+      "\u001b[30D\u001b[31m# vamos executar nosso serviço\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b["
+    ],
+    [
+      5.6e-05,
+      "30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001226,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      0.023748,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      9.7e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.001774,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "node express-server.js"
+    ],
+    [
+      0.002615,
+      "\u001b[22D\u001b[1mnode\u001b(B\u001b[m \u001b[36m\u001b[4mexpress-server.js\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.024996,
+      "\u001b[38;2;85;85;85m \b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\u001b[K\r\n"
+    ],
+    [
+      7.7e-05,
+      "\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000437,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;node  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      0.376065,
+      "8001 é a porta mágica!\r\n"
+    ],
+    [
+      2.0,
+      "^C"
+    ],
+    [
+      0.039454,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007"
+    ],
+    [
+      4.7e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.002335,
+      "\u001b[36m[~/c/d/http-server] \u001b[30m\u001b(B\u001b[m\u001b[31m(130)-> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      1.475259,
+      "e"
+    ],
+    [
+      0.004587,
+      "\u001b[38;2;85;85;85mxit\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001697,
+      "\b\u001b[91me\u001b[38;2;85;85;85mxit\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.232018,
+      "\u001b[91mx\u001b[38;2;85;85;85mit\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.004535,
+      "\b\b\u001b[1mex\u001b(B\u001b[m\u001b[38;2;85;85;85mit\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.131575,
+      "\u001b[1mi\u001b(B\u001b[m\u001b[38;2;85;85;85mt\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.005573,
+      "\b\b\b\u001b[91mexi\u001b[38;2;85;85;85mt\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.146052,
+      "\u001b[91mt\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.005305,
+      "\b\b\b\b\u001b[1mexit\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000284,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;exit  /Volumes/Data/milesibastos/code/devexpert/http-server\u0007\r"
+    ],
+    [
+      0.000371,
+      "\u001b[30m\u001b(B\u001b[m"
+    ]
+  ]
+}
