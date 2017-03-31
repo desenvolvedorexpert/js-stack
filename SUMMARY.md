@@ -40,13 +40,13 @@
   - [Método #1: Apenas Node, sem Express](criando-um-servico-node/node.md)
   - [Método #2: Usando Express](criando-um-servico-node/express.md)
 
-- [Roteamento de Aplicações](ServerBackend/RoutingNode/README.md)
+- [Roteamento de Aplicações](roteamento-de-aplicacoes-node/README.md)
 
-  - [Express Router](ServerBackend/RoutingNode/ExpressRouter.md)
-  - [Roteamento Básico](ServerBackend/RoutingNode/BasicRoutes.md)
-  - [Middleware de Roteamento (router.use())](ServerBackend/RoutingNode/RouteMiddleware.md)
-  - [Estruturando Rotas](ServerBackend/RoutingNode/StructuringRoutes.md)
-  - [Recapitulando](ServerBackend/RoutingNode/Recap.md)
+  - [Express Router](roteamento-de-aplicacoes-node/express-router.md)
+  - [Roteamento Básico](roteamento-de-aplicacoes-node/roteamento-basico.md)
+  - [Middleware de Roteamento](roteamento-de-aplicacoes-node/middleware.md)
+  - [Organizando Rotas](roteamento-de-aplicacoes-node/organizando-rotas.md)
+  - [Recapitulando](roteamento-de-aplicacoes-node/recapitulando.md)
 
 - [Usando o MongoDB](ServerBackend/UsingMongoDB/README.md)
 
