@@ -48,7 +48,7 @@
   - [Organizando Rotas](roteamento-de-aplicacoes-node/organizando-rotas.md)
   - [Recapitulando](roteamento-de-aplicacoes-node/recapitulando.md)
 
-- [Usando o MongoDB](ServerBackend/UsingMongoDB/README.md)
+- [Usando o MongoDB](usando-mongodb/README.md)
 
   - [Instalando o MongoDB Localmente](ServerBackend/UsingMongoDB/InstallingLocally.md)
   - [Instalando no Mac](ServerBackend/UsingMongoDB/MacInstallation.md)
