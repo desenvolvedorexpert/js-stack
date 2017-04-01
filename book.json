@@ -1,8 +1,11 @@
 {
+  "title": "EXPERT JS Stack",
+  "description": "Desenvolvendo Aplicações Full-Stack JavaScript",
+  "author": "@milesibastos",
+  "language": "pt",
+  "root": "./book",
   "variables": {
-    "version": "0.1.0",
-    "description": "EXPERT JS Stack",
-    "author": "@milesibastos"
+    "version": "0.1.0"
   },
   "plugins": [
     "theme-api",
