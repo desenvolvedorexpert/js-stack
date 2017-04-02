@@ -50,7 +50,7 @@
 
 - [Usando o MongoDB](usando-mongodb/README.md)
 
-  - [Instalando o MongoDB Localmente](ServerBackend/UsingMongoDB/InstallingLocally.md)
+  - [Provisionado o MongoDB Localmente](usando-mongodb/provisionado-mongod.md)
   - [Instalando no Mac](ServerBackend/UsingMongoDB/MacInstallation.md)
   - [Instalando no Windows](ServerBackend/UsingMongoDB/WindowsInstallation.md)
   - [Comandos Comuns de Banco de Dados](ServerBackend/UsingMongoDB/CommonDatabaseCommands.md)
