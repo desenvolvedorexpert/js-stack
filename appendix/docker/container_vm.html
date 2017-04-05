@@ -1,0 +1,654 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Container ou máquina virtual? · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="apendice.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Container ou máquina virtual?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="container-ou-m&#xE1;quina-virtual">Container ou m&#xE1;quina virtual?</h2>
+<p>Ap&#xF3;s o sucesso repentino do Docker - virtualiza&#xE7;&#xE3;o com base em cont&#xEA;iners - muitas pessoas t&#xEA;m se questionado sobre poss&#xED;vel migra&#xE7;&#xE3;o do modelo de m&#xE1;quina virtual para cont&#xEA;iners.</p>
+<p><img src="images/contaier_vm.png" alt=""></p>
+<p>Respondemos tranquilamente: <strong>Os dois!</strong></p>
+<p>Ambos s&#xE3;o m&#xE9;todos de virtualiza&#xE7;&#xE3;o, mas atuam em &#x201C;camadas&#x201D; distintas. Vale a pena detalhar cada solu&#xE7;&#xE3;o para deixar claro que, n&#xE3;o s&#xE3;o, necessariamente, concorrentes.</p>
+<h3 id="m&#xE1;quina-virtual">M&#xE1;quina virtual</h3>
+<p>Conceito antigo, oriundo dos Mainframes em meados de 1960. Cada operador tinha a vis&#xE3;o de estar acessando uma m&#xE1;quina dedicada, mas na verdade, todo recurso do Mainframe, era compartilhado para todos os operadores.</p>
+<p>O objetivo do modelo &#xE9; compartilhar recursos f&#xED;sicos entre v&#xE1;rios ambientes isolados, sendo que, cada um deles tem sob tutela uma m&#xE1;quina inteira: com mem&#xF3;ria, disco, processador, rede e outros perif&#xE9;ricos, todos entregues via abstra&#xE7;&#xE3;o de virtualiza&#xE7;&#xE3;o.</p>
+<p>&#xC9; como se dentro da m&#xE1;quina f&#xED;sica, se criasse m&#xE1;quinas menores e independentes entre s&#xED;. Cada m&#xE1;quina tem seu pr&#xF3;prio sistema operacional completo que, por sua vez, interage com os hardwares virtuais que lhe foram entregues pelo modelo de virtualiza&#xE7;&#xE3;o a n&#xED;vel de m&#xE1;quina.</p>
+<p>Vale ressaltar: o sistema operacional instalado dentro da m&#xE1;quina virtual far&#xE1; intera&#xE7;&#xE3;o com os hardwares virtuais e n&#xE3;o com o hardware real.</p>
+<p><img src="images/vm.png" alt=""></p>
+<p>Com a evolu&#xE7;&#xE3;o desse modelo, os softwares que implementam a solu&#xE7;&#xE3;o, puderam oferecer mais funcionalidades, tais como melhor interface para ger&#xEA;ncia de ambientes virtuais e alta disponibilidade utilizando v&#xE1;rios hosts f&#xED;sicos.</p>
+<p>Com as novas funcionalidades de ger&#xEA;ncia de ambientes de m&#xE1;quinas virtuais &#xE9; poss&#xED;vel especificar quanto recurso f&#xED;sico cada ambiente virtual usa e, at&#xE9; mesmo, aumentar gradualmente em caso de necessidade pontual.</p>
+<p>Atualmente, as m&#xE1;quinas virtuais s&#xE3;o realidade para qualquer organiza&#xE7;&#xE3;o que necessite de ambiente de TI, pois facilita a ger&#xEA;ncia das m&#xE1;quinas f&#xED;sicas e o compartilhamento entre os diversos ambientes necess&#xE1;rios para a infraestrutura b&#xE1;sica.</p>
+<h3 id="cont&#xEA;iner">Cont&#xEA;iner</h3>
+<p>Esse modelo de virtualiza&#xE7;&#xE3;o est&#xE1; no n&#xED;vel de sistema operacional, ou seja, ao contr&#xE1;rio da m&#xE1;quina virtual, um cont&#xEA;iner n&#xE3;o tem vis&#xE3;o da m&#xE1;quina inteira, &#xE9; apenas processo em execu&#xE7;&#xE3;o em um kernel compartilhado entre todos os outros cont&#xEA;iners.</p>
+<p>Utiliza o namespace para prover o devido isolamento de mem&#xF3;ria RAM, processamento, disco e acesso &#xE0; rede. Mesmo compartilhando o mesmo kernel, esse processo em execu&#xE7;&#xE3;o tem a vis&#xE3;o de estar usando um sistema operacional dedicado.</p>
+<p>&#xC9; um modelo de virtualiza&#xE7;&#xE3;o relativamente antigo. Em meados de 1982, o chroot j&#xE1; fazia algo que podemos considerar virtualiza&#xE7;&#xE3;o a n&#xED;vel de sistema operacional e, em 2008, o LXC j&#xE1; fazia algo relativamente parecido ao Docker, hoje. Inclusive, no in&#xED;cio, o Docker usava o LXC, mas hoje tem interface pr&#xF3;pria para acessar o namespace, cgroup e afins.</p>
+<p><img src="images/container_vm2.png" alt=""></p>
+<p>Como solu&#xE7;&#xE3;o inovadora o Docker traz diversos servi&#xE7;os e novas facilidades que deixam o modelo muito mais atrativo.</p>
+<p>A configura&#xE7;&#xE3;o de ambiente LXC n&#xE3;o era tarefa simples; era necess&#xE1;rio algum conhecimento t&#xE9;cnico m&#xE9;dio para criar e manter um ambiente com ele. Com o advento do Docker, esse processo ficou bem mais simples. Basta instalar o bin&#xE1;rio, baixar as imagens e execut&#xE1;-las.</p>
+<p>Outra novidade do Docker foi a cria&#xE7;&#xE3;o do conceito de &#x201C;imagens&#x201D;. Grosseiramente podemos descrever as imagens como defini&#xE7;&#xF5;es est&#xE1;ticas daquilo que os cont&#xEA;iners devem ser na inicializa&#xE7;&#xE3;o. S&#xE3;o como fotografias do ambiente. Uma vez instanciadas e, colocadas em execu&#xE7;&#xE3;o, assumem a fun&#xE7;&#xE3;o de cont&#xEA;iners; saem da abstra&#xE7;&#xE3;o de defini&#xE7;&#xE3;o e se transformam em processos em execu&#xE7;&#xE3;o, dentro de um contexto isolado. Enxergam um sistema operacional dedicado para s&#xED;, mas na verdade compartilham o mesmo kernel.</p>
+<p>Junto &#xE0; facilidade de uso dos cont&#xEA;iners, o Docker agregou o conceito de nuvem, que disp&#xF5;e de servi&#xE7;o para carregar e &#x201C;baixar&#x201D; imagens Docker. Trata-se de aplica&#xE7;&#xE3;o web que disponibiliza reposit&#xF3;rio de ambientes prontos, onde viabilizou um n&#xED;vel absurdo de compartilhamento de ambientes.</p>
+<p>Com o uso do servi&#xE7;o de nuvem do Docker, podemos perceber que a ado&#xE7;&#xE3;o do modelo de cont&#xEA;iners ultrapassa a quest&#xE3;o t&#xE9;cnica e adentra assuntos de processo, ger&#xEA;ncia e atualiza&#xE7;&#xE3;o do ambiente; onde, agora &#xE9; poss&#xED;vel compartilhar facilmente as mudan&#xE7;as e viabilizar uma gest&#xE3;o centralizada das defini&#xE7;&#xF5;es de ambiente.</p>
+<p>Utilizando a nuvem Docker agora, &#xE9; poss&#xED;vel disponibilizar ambientes de teste mais leves, permitindo que, em plena reuni&#xE3;o com o chefe, voc&#xEA; pode baixar a solu&#xE7;&#xE3;o para um problema que ele descreve e mostrar antes que ele saia da sala. Permite tamb&#xE9;m que voc&#xEA; consiga disponibilizar padr&#xE3;o de melhores pr&#xE1;ticas para determinado servi&#xE7;o e compartilhar com todos da sua empresa e al&#xE9;m, onde pode receber cr&#xED;ticas e executar modifica&#xE7;&#xF5;es com o passar do tempo.</p>
+<h3 id="conclus&#xE3;o">Conclus&#xE3;o</h3>
+<p>Com os dados apresentados, percebemos que o ponto de conflito entre as solu&#xE7;&#xF5;es &#xE9; baixo. Podem e, normalmente, s&#xE3;o adotadas em conjunto. Voc&#xEA; pode provisionar uma m&#xE1;quina f&#xED;sica com um servidor de m&#xE1;quinas virtuais, onde ser&#xE3;o criadas m&#xE1;quinas virtuais hospedes, que por sua vez ter&#xE3;o o docker instalado em cada m&#xE1;quina. Nesse docker ser&#xE3;o disponibilizados os ambientes com seus respectivos servi&#xE7;os segregados, cada um em um cont&#xEA;iner.</p>
+<p>Percebam que teremos v&#xE1;rios n&#xED;veis de isolamento. No primeiro, a m&#xE1;quina f&#xED;sica, que foi repartida em v&#xE1;rias m&#xE1;quinas virtuais, ou seja, j&#xE1; temos nossa camada de sistemas operacionais interagindo com hardwares virtuais distintos, como placas de rede virtuais, discos, processo e mem&#xF3;ria. Nesse ambiente, ter&#xED;amos apenas o sistema operacional b&#xE1;sico instalado e o Docker.</p>
+<p>No segundo n&#xED;vel de isolamento, temos o Docker baixando as imagens prontas e provisionamento cont&#xEA;iners em execu&#xE7;&#xE3;o que, por sua vez, criam novos ambientes isolados, a n&#xED;vel de processamento, mem&#xF3;ria, disco e rede. Nesse caso, podemos ter na mesma m&#xE1;quina virtual um ambiente de aplica&#xE7;&#xE3;o web e banco de dados. Mas em cont&#xEA;iners diferentes e, isso n&#xE3;o seria nenhum problema de boas pr&#xE1;ticas de ger&#xEA;ncia de servi&#xE7;os, muito menos de seguran&#xE7;a.</p>
+<p><img src="images/maquinavirtual_e_containers.png" alt=""></p>
+<p>Caso esses cont&#xEA;iners sejam replicados entre as m&#xE1;quinas virtuais, seria poss&#xED;vel prover alta disponibilidade sem grandes custos, ou seja, usando um balanceador externo e viabilizando o cluster dos dados persistidos pelos bancos de dados.</p>
+<p>Toda essa facilidade com poucos comandos, recursos e conhecimento, basta um pouco de tempo para mudar o paradigma de ger&#xEA;ncia dos ativos e paci&#xEA;ncia para lidar com os novos problemas inerentes do modelo.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="apendice.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Apêndice">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Container ou máquina virtual?","level":"1.30","depth":1,"previous":{"title":"Apêndice","level":"1.29","depth":1,"path":"apendice.md","ref":"apendice.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"container_vm.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

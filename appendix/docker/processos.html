@@ -1,0 +1,653 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Processos · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vinculos.html" />
+    
+    
+    <link rel="prev" href="construa-lance-execute.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Processos</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="processos">Processos</h1>
+<p>Seguindo a lista do modelo <a href="http://12factor.net/pt_br" target="_blank">12factor</a>, temos <strong>&#x201C;Processos&#x201D;</strong> como sexta boa pr&#xE1;tica.</p>
+<p>Com o advento da automatiza&#xE7;&#xE3;o e devida intelig&#xEA;ncia na manuten&#xE7;&#xE3;o das aplica&#xE7;&#xF5;es, hoje, &#xE9; esperado que a aplica&#xE7;&#xE3;o possa atender a picos de demandas com inicializa&#xE7;&#xE3;o autom&#xE1;tica de novos processos, sem afetar seu comportamento.</p>
+<p><img src="images/processos.png" alt=""></p>
+<p>A boa pr&#xE1;tica indica que processos de aplica&#xE7;&#xF5;es 12factor s&#xE3;o stateless (n&#xE3;o armazenam estado) e share-nothing. Quaisquer dados que precisem persistir devem ser armazenados em servi&#xE7;o de apoio stateful (armazena o estado), normalmente &#xE9; usado uma base de dados.</p>
+<p>O objetivo final dessa pr&#xE1;tica n&#xE3;o faz distin&#xE7;&#xE3;o se a aplica&#xE7;&#xE3;o &#xE9; executada na m&#xE1;quina do desenvolvedor ou em produ&#xE7;&#xE3;o, pois, nesse caso, o que muda &#xE9; a quantidade de processos iniciados para atender as respectivas demandas. Na m&#xE1;quina do desenvolvedor pode ser apenas um e, em produ&#xE7;&#xE3;o, um n&#xFA;mero maior.</p>
+<p>O <strong>12factor</strong> indica que o espa&#xE7;o de mem&#xF3;ria ou sistema de arquivos do servidor pode ser usado brevemente como cache de transa&#xE7;&#xE3;o &#xFA;nica. Por exemplo, o download de um arquivo grande, operando sobre ele e armazenando os resultados no banco de dados.</p>
+<p>Vale salientar que, um estado nunca deve ser armazenado entre requisi&#xE7;&#xF5;es, n&#xE3;o importando o estado do processamento da pr&#xF3;xima requisi&#xE7;&#xE3;o.</p>
+<p>&#xC9; importante salientar: ao seguir a pr&#xE1;tica, uma aplica&#xE7;&#xE3;o n&#xE3;o assume que, qualquer item armazenado em cache de mem&#xF3;ria ou no disco, estar&#xE1; dispon&#xED;vel em futura solicita&#xE7;&#xE3;o ou job &#x2013; com muitos processos de cada tipo rodando, s&#xE3;o altas as chances de futura solicita&#xE7;&#xE3;o ser servida por processo diferente, at&#xE9; mesmo em servidor diferente. Mesmo quando, rodando em apenas um processo, um restart (desencadeado pelo deploy de um c&#xF3;digo, mudan&#xE7;a de configura&#xE7;&#xE3;o, ou o ambiente de execu&#xE7;&#xE3;o realocando o processo para localiza&#xE7;&#xE3;o f&#xED;sica diferente) geralmente vai acabar com o estado local (mem&#xF3;ria e sistema de arquivos, por exemplo).</p>
+<p>Algumas aplica&#xE7;&#xF5;es demandam de sess&#xF5;es persistentes para armazenar informa&#xE7;&#xF5;es da sess&#xE3;o de usu&#xE1;rios e afins. Tais sess&#xF5;es s&#xE3;o usadas em futuras requisi&#xE7;&#xF5;es do mesmo visitante. Ou seja, se armazenado junto ao processo, &#xE9; clara viola&#xE7;&#xE3;o da boa pr&#xE1;tica. Nesse caso, &#xE9; aconselh&#xE1;vel usar servi&#xE7;o de apoio, tal como redis, memcached ou afins para esse tipo de trabalho externo ao processo. Com isso, &#xE9; poss&#xED;vel que o pr&#xF3;ximo processo, independente de onde esteja, consegue obter as informa&#xE7;&#xF5;es atualizadas.</p>
+<p>A aplica&#xE7;&#xE3;o que estamos trabalhando n&#xE3;o guarda dado local e tudo o que precisa &#xE9; armazenado no Redis. N&#xE3;o precisamos fazer adequa&#xE7;&#xE3;o alguma nesse c&#xF3;digo para seguir a boa pr&#xE1;tica, como vemos abaixo:</p>
+<pre><code>from flask import Flask
+from redis import Redis
+import os
+host_redis=os.environ.get(&apos;HOST_REDIS&apos;, &apos;redis&apos;)
+port_redis=os.environ.get(&apos;PORT_REDIS&apos;, &apos;6379&apos;)
+app = Flask(__name__)
+ redis = Redis(host=host_redis, port=port_redis)
+@app.route(&apos;/&apos;)
+def hello():
+ redis.incr(&apos;hits&apos;)
+ return &apos;Hello World! %s times.&apos; % redis.get(&apos;hits&apos;)
+if __name__ == &quot;__main__&quot;:
+ app.run(host=&quot;0.0.0.0&quot;, debug=True)
+</code></pre><p>Para acessar o c&#xF3;digo da pr&#xE1;tica, acesse o <a href="https://github.com/gomex/exemplo-12factor-docker" target="_blank">reposit&#xF3;rio</a> e a pasta <strong>&#x201C;factor6&#x201C;</strong>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="construa-lance-execute.html" class="navigation navigation-prev " aria-label="Previous page: Construa, lance, execute">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vinculos.html" class="navigation navigation-next " aria-label="Next page: Vínculo de portas">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Processos","level":"1.21","depth":1,"next":{"title":"Vínculo de portas","level":"1.22","depth":1,"path":"vinculos.md","ref":"vinculos.md","articles":[]},"previous":{"title":"Construa, lance, execute","level":"1.20","depth":1,"path":"construa-lance-execute.md","ref":"construa-lance-execute.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"processos.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

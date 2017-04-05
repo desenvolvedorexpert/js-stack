@@ -1,0 +1,947 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Provisionado o MongoDB Localmente · EXPERT JS Stack</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="@milesibastos">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="../assets/asciinema-player.css" />
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="comandos.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Introdução</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Sobre esse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTING.html">
+            
+                <a href="../CONTRIBUTING.html">
+            
+                    
+                    Como contribuir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../introducao/">
+            
+                <a href="../introducao/">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Visão Geral</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../comecando/">
+            
+                <a href="../comecando/">
+            
+                    
+                    O que é um Stack JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../comecando/quando-usar.html">
+            
+                <a href="../comecando/quando-usar.html#quando-usar-um-devstack-javascript">
+            
+                    
+                    Quando USAR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../comecando/quando-usar.html">
+            
+                <a href="../comecando/quando-usar.html#quando-não-usar-um-devstack-javascript">
+            
+                    
+                    Quando NÃO Usar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../comecando/quem-esta-usando.html">
+            
+                <a href="../comecando/quem-esta-usando.html">
+            
+                    
+                    Quem está usando
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../comecando/conhecendo-os-primers.html">
+            
+                <a href="../comecando/conhecendo-os-primers.html">
+            
+                    
+                    Conhecendo os PRIMERS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../comecando/nodejs.html">
+            
+                <a href="../comecando/nodejs.html">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../comecando/expressjs.html">
+            
+                <a href="../comecando/expressjs.html">
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../comecando/mongodb.html">
+            
+                <a href="../comecando/mongodb.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../comecando/react.html">
+            
+                <a href="../comecando/react.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../comecando/mindset.html">
+            
+                <a href="../comecando/mindset.html">
+            
+                    
+                    MINDSET: A Maneira de Pensar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">backend / server-side</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../comecando-com-node/">
+            
+                <a href="../comecando-com-node/">
+            
+                    
+                    Começando com Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../comecando-com-node/">
+            
+                <a href="../comecando-com-node/#configuração-packagejson">
+            
+                    
+                    Configuração (package.json)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../comecando-com-node/inicializando-um-app-node.html">
+            
+                <a href="../comecando-com-node/inicializando-um-app-node.html">
+            
+                    
+                    Inicializando uma Aplicação Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../comecando-com-node/criando-um-app-node.html">
+            
+                <a href="../comecando-com-node/criando-um-app-node.html">
+            
+                    
+                    Criando um App Node Bem Simples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../comecando-com-node/executando-uma-app-node.html">
+            
+                <a href="../comecando-com-node/executando-uma-app-node.html">
+            
+                    
+                    Executando uma Aplicação Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../comecando-com-node/gerenciamento-de-pacotes.html">
+            
+                <a href="../comecando-com-node/gerenciamento-de-pacotes.html">
+            
+                    
+                    Gerenciamento de Pacotes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../comecando-com-node/recapitulando.html">
+            
+                <a href="../comecando-com-node/recapitulando.html">
+            
+                    
+                    Recapitulando
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../criando-um-servico-node/">
+            
+                <a href="../criando-um-servico-node/">
+            
+                    
+                    Criando um Serviço Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../criando-um-servico-node/app-de-exemplo.html">
+            
+                <a href="../criando-um-servico-node/app-de-exemplo.html">
+            
+                    
+                    Aplicação de Exemplo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../criando-um-servico-node/node.html">
+            
+                <a href="../criando-um-servico-node/node.html">
+            
+                    
+                    Método #1: Apenas Node, sem Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../criando-um-servico-node/express.html">
+            
+                <a href="../criando-um-servico-node/express.html">
+            
+                    
+                    Método #2: Usando Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../roteamento-de-aplicacoes-node/">
+            
+                <a href="../roteamento-de-aplicacoes-node/">
+            
+                    
+                    Roteamento de Aplicações
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../roteamento-de-aplicacoes-node/express-router.html">
+            
+                <a href="../roteamento-de-aplicacoes-node/express-router.html">
+            
+                    
+                    Express Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../roteamento-de-aplicacoes-node/roteamento-basico.html">
+            
+                <a href="../roteamento-de-aplicacoes-node/roteamento-basico.html">
+            
+                    
+                    Roteamento Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../roteamento-de-aplicacoes-node/middleware.html">
+            
+                <a href="../roteamento-de-aplicacoes-node/middleware.html">
+            
+                    
+                    Middleware de Roteamento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../roteamento-de-aplicacoes-node/organizando-rotas.html">
+            
+                <a href="../roteamento-de-aplicacoes-node/organizando-rotas.html">
+            
+                    
+                    Organizando Rotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../roteamento-de-aplicacoes-node/recapitulando.html">
+            
+                <a href="../roteamento-de-aplicacoes-node/recapitulando.html">
+            
+                    
+                    Recapitulando
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Usando o MongoDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.4.1" data-path="provisionado-mongod.html">
+            
+                <a href="provisionado-mongod.html">
+            
+                    
+                    Provisionado o MongoDB Localmente
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos Comuns de Banco de Dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="crud.html">
+            
+                <a href="crud.html">
+            
+                    
+                    Comandos CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="usando-com-node.html">
+            
+                <a href="usando-com-node.html">
+            
+                    
+                    Usando o MongoDB em uma Aplicação NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../ServerBackend/BuildRESTfulNodeAPI/README.md">
+            
+                <span>
+            
+                    
+                    Criando uma API RESTful com Node.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../ServerBackend/BuildRESTfulNodeAPI/WhatIsREST.md">
+            
+                <span>
+            
+                    
+                    O que é REST?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../ServerBackend/BuildRESTfulNodeAPI/BackendForAngular.md">
+            
+                <span>
+            
+                    
+                    Serviços de back-end para nosso front-end em Angular
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../ServerBackend/BuildRESTfulNodeAPI/SampleApplication.md">
+            
+                <span>
+            
+                    
+                    Aplicação de Exemplo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="../ServerBackend/BuildRESTfulNodeAPI/GettingStarted.md">
+            
+                <span>
+            
+                    
+                    Como começar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="../ServerBackend/BuildRESTfulNodeAPI/StartingServerAndTesting.md">
+            
+                <span>
+            
+                    
+                    Inicializando o Servidor e os Testes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="../ServerBackend/BuildRESTfulNodeAPI/DatabaseUserModel.md">
+            
+                <span>
+            
+                    
+                    Banco de Dados e o Modelo de Usuário
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.7" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+            
+                <span>
+            
+                    
+                    Express Router e Rotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.8" data-path="../ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md">
+            
+                <span>
+            
+                    
+                    Middleware de Roteamento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/CreatingBasicRoutes.md">
+            
+                <span>
+            
+                    
+                    Criando as rotas básicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.10" data-path="../ServerBackend/BuildRESTfulNodeAPI/RoutesForSingleItem.md">
+            
+                <span>
+            
+                    
+                    Criando rotas para um item
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.11" data-path="../ServerBackend/BuildRESTfulNodeAPI/Conclusion.md">
+            
+                <span>
+            
+                    
+                    Conclusão
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">APÊNDICE</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="http://stack.desenvolvedor.expert/appendix/docker/">
+            
+                    
+                    Docker para Desenvolvedores
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Provisionado o MongoDB Localmente</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="provisionado-o-mongodb-localmente">Provisionado o MongoDB Localmente</h1>
+<p>Existem alguns passos que vamos precisar conhecer para usar o MongoDB localmente. Para tornar o processo mais simples e uniforme em todos os sistemas operacionais vamos usar um <em>docker</em> para provisionar o nosso banco MongoDB.</p>
+<p>Para instalar e configura o Docker corretamente de uma olhada no ap&#xEA;ndice Docker que traz o livro &quot;Docker para desenvolvedores&quot; escrito pelo grande Rafael Gomes tamb&#xE9;m conhecido como &quot;gomex&quot;. O Gomex &#xE9; mais uma das incr&#xED;veis pessoas que conheci quando trabalhava na Thoughtworks e ele &#xE9; uma das maiores autoridades que conhe&#xE7;o no assunto.</p>
+<p>Com o Docker funcionando em nosso ambiente de desenvolvimento, o processo se resume a basicamente dois comando:</p>
+<p>Executar o <em>container</em> do MongoDB.</p>
+<pre><code class="lang-bash">&gt; docker run --name mongodb <span class="hljs-_">-d</span> mongo
+</code></pre>
+<p>Ent&#xE3;o, executar o <em>container</em> do Docker Express que prov&#xEA; uma interface http para acessarmos o MongoDB.</p>
+<pre><code class="lang-bash">&gt; docker run -it --rm --link mongodb:mongo -p 8081:8081 mongo-express
+</code></pre>
+<p>Para conectar via terminal nessa inst&#xE2;ncia execute o comando:</p>
+<pre><code class="lang-bash">&gt; docker run -it --link mongodb:mongo --rm mongo sh -c <span class="hljs-string">&apos;exec mongo &quot;$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test&quot;&apos;</span>
+</code></pre>
+<p>Ent&#xE3;o vamos dar uma olhada em alguns comandos b&#xE1;sicos para lidar com MongoDB.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Provisionado o MongoDB Localmente","level":"3.4.1","depth":2,"next":{"title":"Comandos Comuns de Banco de Dados","level":"3.4.2","depth":2,"path":"usando-mongodb/comandos.md","ref":"usando-mongodb/comandos.md","articles":[]},"previous":{"title":"Usando o MongoDB","level":"3.4","depth":1,"path":"usando-mongodb/README.md","ref":"usando-mongodb/README.md","articles":[{"title":"Provisionado o MongoDB Localmente","level":"3.4.1","depth":2,"path":"usando-mongodb/provisionado-mongod.md","ref":"usando-mongodb/provisionado-mongod.md","articles":[]},{"title":"Comandos Comuns de Banco de Dados","level":"3.4.2","depth":2,"path":"usando-mongodb/comandos.md","ref":"usando-mongodb/comandos.md","articles":[]},{"title":"Comandos CRUD","level":"3.4.3","depth":2,"path":"usando-mongodb/crud.md","ref":"usando-mongodb/crud.md","articles":[]},{"title":"Usando o MongoDB em uma Aplicação NodeJS","level":"3.4.4","depth":2,"path":"usando-mongodb/usando-com-node.md","ref":"usando-mongodb/usando-com-node.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"usando-mongodb/provisionado-mongod.md","mtime":"2017-04-05T17:49:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:38:48.229Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+
+    
+    <script type="text/javascript" src="../assets/asciinema-player.js"></script>
+    
+
+    </body>
+</html>
+

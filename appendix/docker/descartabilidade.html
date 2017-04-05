@@ -1,0 +1,681 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Descartabilidade · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="paridade.html" />
+    
+    
+    <link rel="prev" href="concorrencia.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Descartabilidade</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="descartabilidade">Descartabilidade</h1>
+<p>Na nona posi&#xE7;&#xE3;o da lista do modelo <a href="http://12factor.net/pt_br" target="_blank">12factor</a>, a <strong>&#x201C;Descartabilidade&#x201D;</strong>.</p>
+<p>Quando falamos de aplica&#xE7;&#xF5;es web, espera-se que mais de um processo atenda a todo tr&#xE1;fego requisitado para o servi&#xE7;o. Por&#xE9;m, t&#xE3;o importante quanto a habilidade de iniciar novos processos, a capacidade de um processo defeituoso terminar na mesma velocidade que iniciou, pois um processo que demora para finalizar pode comprometer toda solu&#xE7;&#xE3;o, uma vez que ela pode ainda estar atendemos requisi&#xE7;&#xF5;es de forma defeituosa.</p>
+<p><img src="images/descartabilidade1.png" alt=""></p>
+<p>Em resumo, podemos dizer que aplica&#xE7;&#xF5;es web deveriam ser capazes de remover rapidamente processos defeituosos.</p>
+<p>Com objetivo de evitar que o servi&#xE7;o prestado seja dependente das inst&#xE2;ncias que o servem, a boa pr&#xE1;tica indica que as aplica&#xE7;&#xF5;es devem ser descart&#xE1;veis, ou seja, desligar uma de suas inst&#xE2;ncias n&#xE3;o deve afetar a solu&#xE7;&#xE3;o como um todo.</p>
+<p>O Docker tem a op&#xE7;&#xE3;o de descartar automaticamente um cont&#xEA;iner ap&#xF3;s o uso - no <strong>docker container run</strong> utilize a op&#xE7;&#xE3;o <strong>&#x2013;rm</strong>. Vale salientar que essa op&#xE7;&#xE3;o n&#xE3;o funciona em modo <strong>daemon (-d)</strong>, portanto, s&#xF3; faz sentido utilizar no modo <strong>interativo (-i)</strong>.</p>
+<p>Outro detalhe importante na boa pr&#xE1;tica &#xE9; viabilizar que o c&#xF3;digo desligue &#x201C;graciosamente&#x201D; e reinicie sem erros. Assim, ao escutar um <strong>SIGTERM</strong>, o c&#xF3;digo deve terminar qualquer requisi&#xE7;&#xE3;o em andamento e ent&#xE3;o desligar o processo sem problemas e de forma r&#xE1;pida, permitindo, tamb&#xE9;m, que seja rapidamente atendido por outro processo.</p>
+<p>Entendemos como desligamento &#x201C;gracioso&#x201D; uma aplica&#xE7;&#xE3;o capaz de auto finalizar sem danos &#xE0; solu&#xE7;&#xE3;o; ao receber sinal para desligar, imediatamente recusa novas requisi&#xE7;&#xF5;es e apenas finaliza as tarefas pendentes em execu&#xE7;&#xE3;o naquele momento. Impl&#xED;cito nesse modelo: as requisi&#xE7;&#xF5;es HTTP s&#xE3;o curtas (n&#xE3;o mais que poucos segundos) e, nos casos de conex&#xF5;es longas, o cliente pode se reconectar automaticamente caso a conex&#xE3;o seja perdida.</p>
+<p>A aplica&#xE7;&#xE3;o sofreu a seguinte mudan&#xE7;a para atender a especifica&#xE7;&#xE3;o:</p>
+<pre><code>from flask import Flask
+from redis import Redis
+from multiprocessing import Process
+import signal, os
+
+host_redis=os.environ.get(&apos;HOST_REDIS&apos;, &apos;redis&apos;)
+port_redis=os.environ.get(&apos;PORT_REDIS&apos;, &apos;6379&apos;)
+
+app = Flask(__name__)
+redis = Redis(host=host_redis, port=port_redis)
+
+@app.route(&apos;/&apos;)
+def hello():
+    redis.incr(&apos;hits&apos;)
+    return &apos;Hello World! %s times.&apos; % redis.get(&apos;hits&apos;)
+
+if __name__ == &quot;__main__&quot;:
+    def server_handler(signum, frame):
+        print &apos;Signal handler called with signal&apos;, signum
+        server.terminate()
+        server.join()
+
+    signal.signal(signal.SIGTERM, server_handler)
+
+    def run_server():
+        app.run(host=&quot;0.0.0.0&quot;, debug=True)
+
+    server = Process(target=run_server)
+    server.start()
+</code></pre><p>No c&#xF3;digo acima, adicionamos tratamento para quando receber um sinal de SIGTERM, finalizar rapidamente o processo. Sem o tratamento, o c&#xF3;digo demora mais para ser desligado. Dessa forma, conclu&#xED;mos que a solu&#xE7;&#xE3;o &#xE9; descart&#xE1;vel o suficiente. Podemos desligar e reiniciar os containers em outro Docker Host e a mudan&#xE7;a n&#xE3;o causar&#xE1; impacto na integridade dos dados.</p>
+<p>Para fins de entendimento sobre o que trabalhamos aqui, cabe esclarecimento, de acordo com o Wikipedia, sinal &#xE9;: &#x201C;(...) notifica&#xE7;&#xE3;o ass&#xED;ncrona enviada a processos com o objetivo de notificar a ocorr&#xEA;ncia de um evento.&#x201D; E, o SIGTERM: &#x201C;(...) nome de um sinal conhecido por um processo inform&#xE1;tico em sistemas operativos POSIX. Este &#xE9; o sinal padr&#xE3;o enviado pelos comandos kill e killall. Ele causa o t&#xE9;rmino do processo, como em SIGKILL, por&#xE9;m pode ser interpretado ou ignorado pelo processo. Com isso, SIGTERM realiza um encerramento mais amig&#xE1;vel, permitindo a libera&#xE7;&#xE3;o de mem&#xF3;ria e o fechamento dos arquivos.&#x201D;</p>
+<p>Para realizar o teste do que foi apresentado at&#xE9; ent&#xE3;o, realize o clone do reposit&#xF3;rio (<a href="https://github.com/gomex/exemplo-12factor-docker" target="_blank">https://github.com/gomex/exemplo-12factor-docker</a>) e acesse a pasta factor8 (isso mesmo, a n&#xFA;mero 8, vamos demonstrar a diferen&#xE7;a pra o factor9), executando o comando abaixo para iniciar os cont&#xEA;ineres:</p>
+<pre><code>docker-compose up -d
+</code></pre><p>Depois, execute o comando abaixo para finalizar os cont&#xEA;ineres:</p>
+<pre><code>time docker-compose stop
+</code></pre><p>Voc&#xEA; ver&#xE1; que a finaliza&#xE7;&#xE3;o do worker demora cerca de 11 segundos, isso porque o comportamento do Docker-Compose, para finalizar, primeiro faz um <strong>SIGTERM</strong> e espera por 10 segundos que a aplica&#xE7;&#xE3;o finalize sozinha, caso contr&#xE1;rio, envia um <strong>SIGKILL</strong> que finaliza o processo bruscamente. Esse timeout &#xE9; configur&#xE1;vel. Caso deseje modificar, basta usar o par&#xE2;metro <strong>&#x201C;-t&#x201D;</strong> ou <strong>&#x201C;&#x2013;timeout&#x201C;</strong>. Veja um exemplo:</p>
+<pre><code>docker-compose stop -t 5
+</code></pre><p>Obs: O valor informado, ap&#xF3;s o par&#xE2;metro, &#xE9; considerado em segundos.</p>
+<p>Agora, para testar o c&#xF3;digo modificado, mude para a pasta <strong>factor9</strong> e execute o seguinte comando:</p>
+<pre><code>docker-compose up -d
+</code></pre><p>Depois, solicite o t&#xE9;rmino:</p>
+<pre><code>time docker-compose stop
+</code></pre><p>Veja que o processo worker finalizou mais r&#xE1;pido, pois recebeu o sinal SIGTERM. A aplica&#xE7;&#xE3;o fez o servi&#xE7;o de auto finaliza&#xE7;&#xE3;o e n&#xE3;o precisou receber um sinal SIGKILL para ser, de fato, finalizado.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="concorrencia.html" class="navigation navigation-prev " aria-label="Previous page: Concorrência">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="paridade.html" class="navigation navigation-next " aria-label="Next page: Paridade entre desenvolvimento/produção">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Descartabilidade","level":"1.24","depth":1,"next":{"title":"Paridade entre desenvolvimento/produção","level":"1.25","depth":1,"path":"paridade.md","ref":"paridade.md","articles":[]},"previous":{"title":"Concorrência","level":"1.23","depth":1,"path":"concorrencia.md","ref":"concorrencia.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"descartabilidade.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

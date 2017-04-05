@@ -1,0 +1,667 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Entendendo armazenamento no Docker · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rede.html" />
+    
+    
+    <link rel="prev" href="criandoimagem.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Entendendo armazenamento no Docker</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="entendendo-armazenamento-no-docker">Entendendo armazenamento no Docker</h1>
+<p>Para entender como o docker gerencia seus volumes, primeiro precisamos explicar como funciona ao menos um <a href="http://searchdatacenter.techtarget.com/definition/back-end" target="_blank">backend</a> de armazenamento do Docker. Faremos aqui com o AUFS, que foi o primeiro e ainda &#xE9; padr&#xE3;o em boa parte das instala&#xE7;&#xF5;es do Docker.</p>
+<p><img src="images/aufs_layers.jpg" alt=""></p>
+<h3 id="como-funciona-um-backend-do-docker-ex-aufs">Como funciona um backend do Docker (Ex.: AUFS)</h3>
+<p>Backend de armazenamento &#xE9; a parte da solu&#xE7;&#xE3;o do Docker que cuida do gerenciamento dos dados. No Docker temos v&#xE1;rias possibilidades de backend de armazenamento, mas nesse texto falaremos apenas do que implementa o AUFS.</p>
+<p><a href="https://en.wikipedia.org/wiki/Aufs" target="_blank">AUFS</a> &#xE9; um unification filesystem. &#xC9; respons&#xE1;vel por gerenciar m&#xFA;ltiplos diret&#xF3;rios, empilh&#xE1;-los uns sobre os outros e fornecer uma &#xFA;nica e unificada vis&#xE3;o, como se todos juntos fossem apenas um diret&#xF3;rio.</p>
+<p>Esse &#xFA;nico diret&#xF3;rio &#xE9; utilizado para apresentar o container e funciona como se fosse um &#xFA;nico sistema de arquivos comum. Cada diret&#xF3;rio usado na pilha corresponde a uma camada. E, &#xE9; dessa forma que o Docker as unifica e proporciona a reutiliza&#xE7;&#xE3;o entre containeres. Pois, o mesmo diret&#xF3;rio correspondente &#xE0; imagem pode ser montado em v&#xE1;rias pilhas de v&#xE1;rios containeres.</p>
+<p>Com exce&#xE7;&#xE3;o da pasta (camada) correspondente ao container, todas as outras s&#xE3;o montadas com permiss&#xE3;o de somente leitura, caso contr&#xE1;rio as mudan&#xE7;as de um container poderiam interferir em outro. O que, de fato, &#xE9; totalmente contra os princ&#xED;pios do Linux Container.</p>
+<p>Caso seja necess&#xE1;rio modificar um arquivo nas camadas (pastas) referentes &#xE0;s imagens, se utiliza a tecnologia <a href="https://en.wikipedia.org/wiki/Copy-on-write" target="_blank">Copy-on-write</a> (CoW), respons&#xE1;vel por copiar o arquivo para a pasta (camada) do container e fazer todas as modifica&#xE7;&#xF5;es nesse n&#xED;vel. Dessa forma, o arquivo original da camada inferior &#xE9; sobreposto nessa pilha, ou seja, o container em quest&#xE3;o sempre ver&#xE1; apenas os arquivos das camadas mais altas.</p>
+<p><img src="images/aufs_delete.jpg" alt="Removendo um arquivo"></p>
+<p>No caso da remo&#xE7;&#xE3;o, o arquivo da camada superior &#xE9; marcado como whiteout file, viabilizando a visualiza&#xE7;&#xE3;o do arquivo de camadas inferiores.</p>
+<h3 id="problema-com-performance">Problema com performance</h3>
+<p>O Docker tira proveito da tecnologia Copy-on-write (CoW) do AUFS para permitir o compartilhamento de imagem e minimizar o uso de espa&#xE7;o em disco. AUFS funciona no n&#xED;vel de arquivo. Isto significa que todas as opera&#xE7;&#xF5;es AUFS CoW copiar&#xE3;o arquivos inteiros, mesmo que, apenas pequena parte do arquivo esteja sendo modificada. Esse comportamento pode ter impacto not&#xE1;vel no desempenho do container, especialmente se os arquivos copiados s&#xE3;o grandes e est&#xE3;o localizados abaixo de v&#xE1;rias camadas de imagens. Nesse caso o procedimento copy-on-write dedicar&#xE1; muito tempo para uma c&#xF3;pia interna.</p>
+<h3 id="volume-como-solu&#xE7;&#xE3;o-para-performance">Volume como solu&#xE7;&#xE3;o para performance</h3>
+<p>Ao utilizar volumes, o Docker monta essa pasta (camada) no n&#xED;vel imediatamente inferior ao do container, o que permite o acesso r&#xE1;pido de todo dado armazenado nessa camada (pasta), resolvendo o problema de performance.</p>
+<p>O volume tamb&#xE9;m resolve quest&#xF5;es de persist&#xEA;ncia de dados, pois as informa&#xE7;&#xF5;es armazenadas na camada (pasta) do container s&#xE3;o perdidas ao remover o container, ou seja, ao utilizar volumes temos maior garantia no armazenamento desses dados.</p>
+<h3 id="usando-volumes">Usando volumes</h3>
+<h4 id="mapeamento-de-pasta-espec&#xED;fica-do-host">Mapeamento de pasta espec&#xED;fica do host</h4>
+<p>Nesse modelo o usu&#xE1;rio escolhe uma pasta espec&#xED;fica do host (Ex.: /var/lib/container1) e a mapeia em uma pasta interna do container (Ex.: /var). O que &#xE9; escrito na pasta /var do container &#xE9; escrito tamb&#xE9;m na pasta /var/lib/container1 do host.</p>
+<p>Segue o exemplo de comando usado para esse modelo de mapeamento:</p>
+<pre><code>docker container run -v /var/lib/container1:/var ubuntu
+</code></pre><p>Esse modelo n&#xE3;o &#xE9; port&#xE1;vel. Necessita que o host tenha uma pasta espec&#xED;fica para que o container funcione adequadamente.</p>
+<h4 id="mapeamento-via-container-de-dados">Mapeamento via container de dados</h4>
+<p>Nesse modelo &#xE9; criado um container e, dentro desse, &#xE9; nomeado um volume a ser consumido por outros containeres. Dessa forma n&#xE3;o &#xE9; preciso criar uma pasta espec&#xED;fica no host para persistir dados. Essa pasta &#xE9; criada automaticamente dentro da pasta raiz do Docker daemon. Por&#xE9;m, voc&#xEA; n&#xE3;o precisa se preocupar com essa pasta, pois toda a refer&#xEA;ncia ser&#xE1; feita para o container detentor do volume e n&#xE3;o para a pasta.</p>
+<p>Segue um exemplo de uso do modelo de mapeamento:</p>
+<pre><code>docker create -v /dbdata --name dbdata postgres /bin/true
+</code></pre><p>No comando acima, criamos um container de dados, onde a pasta /dbdata pode ser consumida por outros containeres, ou seja, o conte&#xFA;do da pasta /dbtada poder&#xE1; ser visualizado e/ou editado por outros containeres.</p>
+<p>Para consumir esse volume do container basta utilizar o comando:</p>
+<pre><code>docker container run -d --volumes-from dbdata --name db2 postgres
+</code></pre><p>Agora o container db2 tem uma pasta /dbdata que &#xE9; a mesma do container dbdata, tornando esse modelo completamente port&#xE1;vel.</p>
+<p>Uma desvantagem &#xE9; a necessidade de manter um container apenas para isso, pois em alguns ambientes os containeres s&#xE3;o removidos com certa regularidade e, dessa forma, &#xE9; necess&#xE1;rio ter cuidado com containeres especiais. O que, de certa forma, &#xE9; um problema adicional de gerenciamento.</p>
+<h4 id="mapeamento-de-volumes">Mapeamento de volumes</h4>
+<p>Na vers&#xE3;o 1.9 do Docker foi acrescentada a possibilidade de criar volumes isolados de containeres. Agora &#xE9; poss&#xED;vel criar um volume port&#xE1;vel, sem a necessidade de associ&#xE1;-lo a um container especial.</p>
+<p>Segue um exemplo de uso do modelo de mapeamento:</p>
+<pre><code>docker volume create --name dbdata
+</code></pre><p>No comando acima, o docker criou um volume que pode ser consumido por qualquer container.</p>
+<p>A associa&#xE7;&#xE3;o do volume ao container acontece de forma parecida &#xE0; praticada no mapeamento de pasta do host, pois nesse caso voc&#xEA; precisa associar o volume a uma pasta dentro do container, como podemos ver abaixo:</p>
+<pre><code>docker container run -d -v dbdata:/var/lib/data postgres
+</code></pre><p>Esse modelo &#xE9; o mais indicado desde o lan&#xE7;amento, pois proporciona portabilidade. N&#xE3;o &#xE9; removido facilmente quando o container &#xE9; deletado e ainda &#xE9; bastante f&#xE1;cil de gerenciar.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="criandoimagem.html" class="navigation navigation-prev " aria-label="Previous page: Criando sua própria imagem no Docker">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rede.html" class="navigation navigation-next " aria-label="Next page: Entendendo a rede no Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Entendendo armazenamento no Docker","level":"1.10","depth":1,"next":{"title":"Entendendo a rede no Docker","level":"1.11","depth":1,"path":"rede.md","ref":"rede.md","articles":[]},"previous":{"title":"Criando sua própria imagem no Docker","level":"1.9","depth":1,"path":"criandoimagem.md","ref":"criandoimagem.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"armazenamento.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

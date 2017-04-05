@@ -1,0 +1,706 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Como usar Docker sem GNU/Linux · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dockerizarando_app_todo.html" />
+    
+    
+    <link rel="prev" href="compose.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Como usar Docker sem GNU/Linux</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="como-usar-docker-sem-gnulinux">Como usar Docker sem GNU/Linux</h1>
+<p>Esse artigo tem como objetivo explicar de forma detalhada, e com exemplos, o uso de Docker em esta&#xE7;&#xF5;es MacOS e Windows.</p>
+<p><img src="images/docker_toolbox.png" alt="Docker Toolbox"></p>
+<p>Esse texto &#xE9; para pessoas que j&#xE1; sabem sobre Docker, mas ainda n&#xE3;o sabem como o Docker pode ser utilizado a partir de uma esta&#xE7;&#xE3;o &#x201C;n&#xE3;o linux&#x201D;.</p>
+<p>Como j&#xE1; dissemos, o Docker utiliza recursos espec&#xED;ficos do sistema operacional hospedeiro. Hoje temos suporte para os sistemas operacionais Windows e GNU/Linux. Significa que n&#xE3;o &#xE9; poss&#xED;vel iniciar containers Docker em esta&#xE7;&#xE3;o MacOS, por exemplo.</p>
+<p>Mas n&#xE3;o se preocupe, caso voc&#xEA; n&#xE3;o utilize GNU/Linux, ou Windows, como sistema operacional, ainda &#xE9; poss&#xED;vel fazer uso dessa tecnologia, sem, necessariamente, execut&#xE1;-la em seu computador.</p>
+<p>Vale salientar que containers e imagens Docker criados no Windows, n&#xE3;o funcionar&#xE3;o em um GNU/Linux, por conta da depend&#xEA;ncia do sistema operacional mencionado anteriormente.</p>
+<p>&#xC9; poss&#xED;vel utilizar o Docker no MacOS e Windows a partir de duas maneiras:</p>
+<ul>
+<li>Toolbox</li>
+<li>Docker For Mac/Windows</li>
+</ul>
+<p>Por ser mais complexa, e assim demandar de um contexto maior, trataremos nesse cap&#xED;tulo apenas sobre a instala&#xE7;&#xE3;o e configura&#xE7;&#xE3;o do <a href="https://www.docker.com/products/docker-toolbox" target="_blank">Docker Toolbox</a>. Essa solu&#xE7;&#xE3;o, &#xE9; na verdade, uma abstra&#xE7;&#xE3;o para instala&#xE7;&#xE3;o de todo ambiente necess&#xE1;rio para uso do Docker a partir de uma esta&#xE7;&#xE3;o MacOS ou Windows.</p>
+<p>A instala&#xE7;&#xE3;o &#xE9; simples: tanto no Windows, como no MacOS, basta baixar o instalador correspondente nesse <a href="https://www.docker.com/products/docker-toolbox" target="_blank">site</a> e execut&#xE1;-lo seguindo os passos descritos nas telas.</p>
+<p>Os softwares instalados na esta&#xE7;&#xE3;o - MacOS ou Windows - a partir do pacote Docker Toolbox s&#xE3;o:</p>
+<ul>
+<li><a href="https://www.virtualbox.org/" target="_blank">Virtualbox</a></li>
+<li><a href="https://docs.docker.com/machine/overview/" target="_blank">Docker machine</a></li>
+<li><a href="https://docs.docker.com/" target="_blank">Docker client</a></li>
+<li><a href="https://docs.docker.com/compose/overview/" target="_blank">Docker compose</a></li>
+<li><a href="https://docs.docker.com/kitematic/userguide/" target="_blank">Kitematic</a></li>
+</ul>
+<p>Docker Machine &#xE9; a ferramenta que possibilita criar e manter ambientes Docker em m&#xE1;quinas virtuais, ambientes de nuvem e, at&#xE9; mesmo, em m&#xE1;quina f&#xED;sica. Mas nesse t&#xF3;pico, abordaremos apenas m&#xE1;quina virtual com virtualbox.</p>
+<p>Ap&#xF3;s instalar o Docker Toolbox &#xE9; muito simples criar um ambiente Docker com m&#xE1;quina virtual usando o Docker Machine.</p>
+<p>Primeiro verificamos se n&#xE3;o existem m&#xE1;quinas virtuais com Docker instaladas em seu ambiente:</p>
+<pre><code>docker-machine ls
+</code></pre><p>O comando acima mostra apenas ambientes criados e mantidos por seu Docker Machine. &#xC9; poss&#xED;vel que, ap&#xF3;s instalar o Docker Toolbox, voc&#xEA; n&#xE3;o encontre m&#xE1;quina alguma criada. Nesses casos, utilizamos o comando abaixo para criar a m&#xE1;quina:</p>
+<pre><code>docker-machine create --driver virtualbox default
+</code></pre><p><img src="images/docker_toolbox1.jpg" alt="Arquitetura do Docker Toolbox"></p>
+<p>O comando cria um ambiente denominado &#x201C;default&#x201D;. Na verdade &#xE9; uma m&#xE1;quina virtual (&#x201C;Linux VM&#x201D; que aparece na imagem) criada no virtualbox. Com o comando abaixo &#xE9; poss&#xED;vel visualizar a m&#xE1;quina criada:</p>
+<pre><code>docker-machine ls
+</code></pre><p>O retorno deve ser algo parecido com isto:</p>
+<p><img src="images/resultado_macos_windows.png" alt=""></p>
+<p>Uma m&#xE1;quina virtual foi criada, dentro dela temos um sistema operacional GNU/Linux com Docker Host instalado. Esse servi&#xE7;o Docker est&#xE1; escutando na porta TCP 2376 do endere&#xE7;o 192.168.99.100. Essa interface utiliza uma rede espec&#xED;fica entre seu computador e as m&#xE1;quinas do virtualbox.</p>
+<p>Para desligar a m&#xE1;quina virtual, basta executar o comando abaixo:</p>
+<pre><code>docker-machine stop default
+</code></pre><p>Para iniciar, novamente, a m&#xE1;quina, basta executar o comando:</p>
+<pre><code>docker-machine start default
+</code></pre><p>O comando &#x201C;start&#x201D; &#xE9; respons&#xE1;vel apenas por iniciar a m&#xE1;quina. &#xC9; necess&#xE1;rio fazer com que os aplicativos de controle do Docker, instalados na esta&#xE7;&#xE3;o, possam se conectar &#xE0; m&#xE1;quina virtual criada no virtualbox com o comando &#x201C;docker-machine create&#x201D;.</p>
+<p>Os aplicativos de controle (Docker e Docker-compose) fazem uso de vari&#xE1;veis de ambiente para configurar qual Docker Host ser&#xE1; utilizado. O comando abaixo facilita o trabalho de aplicar todas as vari&#xE1;veis corretamente:</p>
+<pre><code>docker-machine env default
+</code></pre><p>O resultado desse comando no MacOS &#xE9;:</p>
+<p><img src="images/resultado_macos_windows2.png" alt=""></p>
+<p>Como vemos, informa o que pode ser feito para configurar todas as vari&#xE1;veis. Voc&#xEA; pode copiar as quatros primeiras linhas, que come&#xE7;am com &#x201C;export&#x201D;, e colar no terminal ou, pegar apenas a &#xFA;ltima linha sem o &#x201C;#&#x201D; do in&#xED;cio e executar na linha de comando:</p>
+<pre><code>eval $(docker-machine env default)
+</code></pre><p>Agora os aplicativos de controle (Docker e Docker-Compose) est&#xE3;o aptos a utilizar o Docker Host a partir da conex&#xE3;o feita no servi&#xE7;o do IP 192.168.99.100 - m&#xE1;quina criada com o comando &#x201C;docker-machine create&#x201D; mencionados anteriormente.</p>
+<p>Para testar, listamos os containers em execu&#xE7;&#xE3;o nesse Docker Host com o comando:</p>
+<pre><code>docker ps
+</code></pre><p>Executado na linha de comando do MacOS ou Windows, esse cliente do Docker se conecta &#xE0; m&#xE1;quina virtual que, aqui chamamos de &#x201C;Linux VM&#x201D;, e solicita a lista de containers em execu&#xE7;&#xE3;o no Docker Host remoto.</p>
+<p>Iniciamos um container com o comando abaixo:</p>
+<pre><code>docker container run -itd alpine sh
+</code></pre><p>Agora, verificamos novamente, a lista de containers em execu&#xE7;&#xE3;o:</p>
+<pre><code>docker ps
+</code></pre><p>Podemos ver que o container criado a partir da imagem &#x201C;alpine&#x201D; est&#xE1; em execu&#xE7;&#xE3;o. Vale salientar que esse processo &#xE9; executado no Docker Host, na m&#xE1;quina criada dentro do virtualbox que, nesse exemplo, tem o ip 192.168.99.100.</p>
+<p>Para verificar o endere&#xE7;o IP da m&#xE1;quina, basta executar o comando abaixo:</p>
+<pre><code>docker-machine ip
+</code></pre><p>Caso o container exponha alguma porta para o Docker Host, seja via par&#xE2;metro &#x201C;-p&#x201D; do comando &#x201C;docker container run -p porta_host:porta_container&#x201D; ou via par&#xE2;metro &#x201C;ports&#x201D; do docker-compose.yml, vale lembrar que o IP para acessar o servi&#xE7;o exposto &#xE9; o endere&#xE7;o IP do Docker Host que, no exemplo, &#xE9; &#x201C;192.168.99.100&#x201D;.</p>
+<p>Nesse momento, voc&#xEA; deve estar se perguntando: como &#xE9; poss&#xED;vel mapear uma pasta da esta&#xE7;&#xE3;o &#x201C;n&#xE3;o-linux&#x201D; para dentro de um container? Aqui entra um novo art&#xED;ficio do Docker para contornar esse problema.</p>
+<p>Toda m&#xE1;quina criada com o driver &#x201C;virtualbox&#x201D;, automaticamente, cria um mapeamento do tipo  &#x201C;pastas compartilhadas do virtualbox&#x201D; da pasta de usu&#xE1;rios para a raiz do Docker Host.</p>
+<p>Para visualizar esse mapeamento, acessamos a m&#xE1;quina virtual que acabamos de criar nos passos anteriores:</p>
+<pre><code>docker-machine ssh default
+</code></pre><p>No console da m&#xE1;quina GNU/Linux digite os seguintes comandos:</p>
+<pre><code>sudo su
+mount | grep vboxsf
+</code></pre><p>O <a href="https://help.ubuntu.com/community/VirtualBox/SharedFolders" target="_blank">vboxsf</a> &#xE9; um sistema de arquivo usado pelo virtualbox para montar volumes compartilhados da esta&#xE7;&#xE3;o usada para instalar o virtualbox. Ou seja, utilizando o recurso de pasta compartilhada, &#xE9; poss&#xED;vel montar a pasta /Users do MacOS na pasta /Users da m&#xE1;quina virtual do Docker Host.</p>
+<p>Todo conte&#xFA;do existente na pasta /Users/SeuUsuario do MacOS, ser&#xE1; acess&#xED;vel na pasta /Users/SeuUsuario da m&#xE1;quina GNU/Linux que atua como Docker Host no exemplo apresentado. Caso efetue a montagem da pasta /Users/SeuUsuario/MeuCodigo para dentro do container, o dado a ser montado &#xE9; o mesmo da esta&#xE7;&#xE3;o e nada precisa ser feito para replicar esse c&#xF3;digo para dentro do Docker Host.</p>
+<p>Vamos testar. Crie um arquivo dentro da pasta de usu&#xE1;rio:</p>
+<pre><code>touch teste
+</code></pre><p>Iniciamos um container e mapeamos a pasta atual dentro dele:</p>
+<pre><code>docker container run -itd -v &quot;$PWD:/tmp&quot; --name teste alpine sh
+</code></pre><p>No comando acima, iniciamos um container que ser&#xE1; nomeado como &#x201C;teste&#x201D; e ter&#xE1; mapeado a pasta atual (a vari&#xE1;vel PWD indica o endere&#xE7;o atual no MacOS) na pasta /tmp, dentro do container.</p>
+<p>Verificamos se o arquivo que acabamos de criar est&#xE1; dentro do container:</p>
+<pre><code>docker container exec teste ls /tmp/teste
+</code></pre><p>A linha acima executou o comando &#x201C;ls /tmp/teste&#x201D; dentro do container nomeado &#x201C;teste&#x201D;, criado no passo anterior.</p>
+<p>Agora acesse o Docker Host com o comando abaixo, e verifique se o arquivo teste se encontra na pasta de usu&#xE1;rio:</p>
+<pre><code>docker-machine ssh default
+</code></pre><p><strong>Tudo pode ser feito automaticamente? Claro que sim!</strong></p>
+<p>Agora que j&#xE1; sabe como fazer manualmente, se precisar instalar o Docker Toolbox em uma m&#xE1;quina nova e n&#xE3;o lembrar os comandos para criar a nova m&#xE1;quina ou, simplesmente como aprontar o ambiente para uso, basta executar o programa &#x201C;Docker Quickstart Terminal&#x201D;. Ele far&#xE1; o trabalho automaticamente. Caso n&#xE3;o exista m&#xE1;quina criada, ele cria uma chamada &#x201C;default&#x201D;. Caso a m&#xE1;quina j&#xE1; tenha sido criada, automaticamente configura suas vari&#xE1;veis de ambiente e deixa apto para utilizar o Docker Host remoto a partir dos aplicativos de controle (Docker e Docker-Compose).</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="compose.html" class="navigation navigation-prev " aria-label="Previous page: Gerenciando múltiplos containers docker com Docker Compose">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dockerizarando_app_todo.html" class="navigation navigation-next " aria-label="Next page: Transformando sua aplicação em container">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Como usar Docker sem GNU/Linux","level":"1.14","depth":1,"next":{"title":"Transformando sua aplicação em container","level":"1.15","depth":1,"path":"dockerizarando_app_todo.md","ref":"dockerizarando_app_todo.md","articles":[]},"previous":{"title":"Gerenciando múltiplos containers docker com Docker Compose","level":"1.13","depth":1,"path":"compose.md","ref":"compose.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"macos_e_windows.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

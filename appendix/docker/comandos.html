@@ -1,0 +1,760 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Comandos básicos · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="criandoimagem.html" />
+    
+    
+    <link rel="prev" href="instalacao.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Comandos básicos</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="comandos-b&#xE1;sicos">Comandos b&#xE1;sicos</h1>
+<p>Para utiliza&#xE7;&#xE3;o do Docker &#xE9; necess&#xE1;rio conhecer alguns comandos e entender de forma clara e direta para que servem, assim como alguns exemplos de uso.</p>
+<p>N&#xE3;o abordaremos os comandos de cria&#xE7;&#xE3;o de imagem e tratamento de problemas (troubleshooting) no Docker, pois t&#xEA;m cap&#xED;tulos espec&#xED;ficos para o detalhamento.</p>
+<h2 id="executando-um-container">Executando um container</h2>
+<p>Para iniciar um container &#xE9; necess&#xE1;rio saber a partir de qual imagem ser&#xE1; executado. Para listar as imagens que seu <strong>Docker host</strong> tem localmente, execute o comando abaixo:</p>
+<pre><code>docker image list
+</code></pre><p>As imagens retornadas est&#xE3;o presentes no seu <strong>Docker host</strong> e n&#xE3;o demandam qualquer download da <a href="hub.docker.com">nuvem p&#xFA;blica do Docker</a>, a menos que deseje atualiz&#xE1;-la. Para atualizar a imagem basta executar o comando abaixo:</p>
+<pre><code>docker image pull python
+</code></pre><p>Usamos a imagem chamada <strong>python</strong> como exemplo, mas caso deseje atualizar qualquer outra imagem, basta colocar seu nome no lugar de <strong>python</strong>.</p>
+<p>Caso deseje inspecionar a imagem que acabou de atualizar, basta usar o comando abaixo:</p>
+<pre><code>docker image inspect python
+</code></pre><p>O comando <a href="https://docs.docker.com/engine/reference/commandline/inspect/" target="_blank">inspect</a> &#xE9; respons&#xE1;vel por informar todos os dados referentes &#xE0; imagem.</p>
+<p>Agora que temos a imagem atualizada e inspecionada, podemos iniciar o container. Mas antes de simplesmente copiar e colar o comando, vamos entender como ele realmente funciona.</p>
+<pre><code>docker container run &lt;par&#xE2;metros&gt; &lt;imagem&gt; &lt;CMD&gt; &lt;argumentos&gt;
+</code></pre><p>Os par&#xE2;metros mais utilizados na execu&#xE7;&#xE3;o do container s&#xE3;o:</p>
+<table>
+<thead>
+<tr>
+<th>Par&#xE2;metro</th>
+<th>Explica&#xE7;&#xE3;o</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-d</td>
+<td>Execu&#xE7;&#xE3;o do container em background</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>Modo interativo. Mant&#xE9;m o STDIN aberto mesmo sem console anexado</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>Aloca uma pseudo TTY</td>
+</tr>
+<tr>
+<td>--rm</td>
+<td>Automaticamente remove o container ap&#xF3;s finaliza&#xE7;&#xE3;o (<strong>N&#xE3;o funciona com -d</strong>)</td>
+</tr>
+<tr>
+<td>--name</td>
+<td>Nomear o container</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>Mapeamento de volume</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>Mapeamento de porta</td>
+</tr>
+<tr>
+<td>-m</td>
+<td>Limitar o uso de mem&#xF3;ria RAM</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>Balancear o uso de CPU</td>
+</tr>
+</tbody>
+</table>
+<p>Segue um exemplo simples no seguinte comando:</p>
+<pre><code>docker container run -it --rm --name meu_python python bash
+</code></pre><p>De acordo com o comando acima, ser&#xE1; iniciado um container com o nome <strong>meu_python</strong>, criado a partir da imagem <strong>python</strong> e o processo executado nesse container ser&#xE1; o <strong>bash</strong>.</p>
+<p>Vale lembrar que, caso o <strong>CMD</strong> n&#xE3;o seja especificado no comando <strong>docker container run</strong>, &#xE9; utilizado o valor padr&#xE3;o definido no <strong>Dockerfile</strong> da imagem utilizada. No nosso caso &#xE9; <strong>python</strong> e seu comando padr&#xE3;o executa o bin&#xE1;rio <strong>python</strong>, ou seja, se n&#xE3;o fosse especificado o <strong>bash</strong>, no final do comando de exemplo acima, ao inv&#xE9;s de um shell bash do GNU/Linux, seria exibido um shell do <strong>python</strong>.</p>
+<h3 id="mapeamento-de-volumes">Mapeamento de volumes</h3>
+<p>Para realizar mapeamento de volume basta especificar qual origem do dado no host e onde deve ser montado dentro do container.</p>
+<pre><code>docker container run -it --rm -v &quot;&lt;host&gt;:&lt;container&gt;&quot; python
+</code></pre><p>O uso de armazenamento &#xE9; melhor explicado em cap&#xED;tulos futuros, por isso n&#xE3;o detalharemos o uso desse par&#xE2;metro.</p>
+<h3 id="mapeamento-de-portas">Mapeamento de portas</h3>
+<p>Para realizar o mapeamento de portas basta saber qual porta ser&#xE1; mapeada no host e qual deve receber essa conex&#xE3;o dentro do container.</p>
+<pre><code>docker container run -it --rm -p &quot;&lt;host&gt;:&lt;container&gt;&quot; python
+</code></pre><p>Um exemplo com a porta 80 do host para uma porta 8080 dentro do container tem o seguinte comando:</p>
+<pre><code>docker container run -it --rm -p 80:8080 python
+</code></pre><p>Com o comando acima temos a porta <strong>80</strong> acess&#xED;vel no <strong>Docker host</strong> que repassa todas as conex&#xF5;es para a porta <strong>8080</strong> dentro do <strong>container</strong>. Ou seja, n&#xE3;o &#xE9; poss&#xED;vel acessar a porta <strong>8080</strong> no endere&#xE7;o IP do <strong>Docker host</strong>, pois essa porta est&#xE1; acess&#xED;vel apenas dentro do <strong>container</strong> que &#xE9; isolada a n&#xED;vel de rede, como j&#xE1; dito anteriormente.</p>
+<h3 id="gerenciamento-dos-recursos">Gerenciamento dos recursos</h3>
+<p>Na inicializa&#xE7;&#xE3;o dos containers &#xE9; poss&#xED;vel especificar alguns limites de utiliza&#xE7;&#xE3;o dos recursos. Trataremos aqui apenas de mem&#xF3;ria RAM e CPU, os mais utilizados.</p>
+<p>Para limitar o uso de mem&#xF3;ria RAM que pode ser utilizada por esse container, basta executar o comando abaixo:</p>
+<pre><code>docker container run -it --rm -m 512M python
+</code></pre><p>Com o comando acima estamos limitando esse container a utilizar somente 512 MB de RAM.</p>
+<p>Para balancear o uso da CPU pelos containers, utilizamos especifica&#xE7;&#xE3;o de pesos para cada container, quanto menor o peso, menor sua prioridade no uso. Os pesos podem oscilar de <strong>1</strong> a <strong>1024</strong>.</p>
+<p>Caso n&#xE3;o seja especificado o peso do container, ele usar&#xE1; o maior peso poss&#xED;vel, nesse caso <strong>1024</strong>.</p>
+<p>Usaremos como exemplo o peso <strong>512</strong>:</p>
+<pre><code>docker container run -it --rm -c 512 python
+</code></pre><p>Para entendimento, vamos imaginar que tr&#xEA;s containers foram colocados em execu&#xE7;&#xE3;o. Um deles tem o peso padr&#xE3;o <strong>1024</strong> e dois t&#xEA;m o peso <strong>512</strong>. Caso os tr&#xEA;s processos demandem toda CPU o tempo de uso deles ser&#xE1; dividido da seguinte maneira:</p>
+<ul>
+<li>O processo com peso <strong>1024</strong> usar&#xE1; 50% do tempo de processamento</li>
+<li>Os dois processos com peso <strong>512</strong> usar&#xE3;o 25% do tempo de processamento, cada.</li>
+</ul>
+<h2 id="verificando-a-lista-de-containers">Verificando a lista de containers</h2>
+<p>Para visualizar a lista de containers de um determinado <strong>Docker host</strong> utilizamos o comando <a href="https://docs.docker.com/engine/reference/commandline/ps/" target="_blank">docker ps</a>.</p>
+<p>Esse comando &#xE9; respons&#xE1;vel por mostrar todos os containers, mesmo aqueles n&#xE3;o mais em execu&#xE7;&#xE3;o.</p>
+<pre><code>docker container list &lt;par&#xE2;metros&gt;
+</code></pre><p>Os par&#xE2;metros mais utilizados na execu&#xE7;&#xE3;o do container s&#xE3;o:</p>
+<table>
+<thead>
+<tr>
+<th>Par&#xE2;metro</th>
+<th>Explica&#xE7;&#xE3;o</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-a</td>
+<td>Lista todos os containers, inclusive os desligados</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>Lista os &#xFA;ltimos containers, inclusive os desligados</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>Lista os &#xFA;ltimos N containers,  inclusive os desligados</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>Lista apenas os ids dos containers, &#xF3;timo para utiliza&#xE7;&#xE3;o em scripts</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gerenciamento-de-containers">Gerenciamento de containers</h2>
+<p>Uma vez iniciado o container a partir de uma imagem &#xE9; poss&#xED;vel gerenciar a utiliza&#xE7;&#xE3;o com novos comandos.</p>
+<p>Caso deseje desligar o container basta utilizar o comando <a href="https://docs.docker.com/engine/reference/commandline/stop/" target="_blank">docker stop</a>. Ele recebe como argumento o <strong>ID</strong> ou <strong>nome</strong> do container. Ambos os dados podem ser obtidos com o <strong>docker ps</strong>, explicado no t&#xF3;pico anterior.</p>
+<p>Um exemplo de uso:</p>
+<pre><code>docker container stop meu_python
+</code></pre><p>No comando acima, caso houvesse um container chamado <strong>meu_python</strong> em execu&#xE7;&#xE3;o, ele receberia um sinal <strong>SIGTERM</strong> e, caso n&#xE3;o fosse desligado, receberia um <strong>SIGKILL</strong> depois de 10 segundos.</p>
+<p>Caso deseje reiniciar o container que foi desligado e n&#xE3;o iniciar um novo, basta executar o comando <a href="https://docs.docker.com/engine/reference/commandline/start/" target="_blank">docker start</a>:</p>
+<pre><code>docker container start meu_python
+</code></pre><blockquote>
+<p>Vale ressaltar que a ideia dos containers &#xE9; a de serem descart&#xE1;veis. Caso voc&#xEA; use o <strong>mesmo</strong> container por muito tempo sem descart&#xE1;-lo, provavelmente est&#xE1; usando o Docker incorretamente.
+O Docker <strong>n&#xE3;o</strong> &#xE9; uma m&#xE1;quina, &#xE9; um processo em execu&#xE7;&#xE3;o. E, como todo processo, deve ser descartado para que outro possa tomar seu lugar na reinicializa&#xE7;&#xE3;o do mesmo.</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="instalacao.html" class="navigation navigation-prev " aria-label="Previous page: Instalação">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="criandoimagem.html" class="navigation navigation-next " aria-label="Next page: Criando sua própria imagem no Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Comandos básicos","level":"1.8","depth":1,"next":{"title":"Criando sua própria imagem no Docker","level":"1.9","depth":1,"path":"criandoimagem.md","ref":"criandoimagem.md","articles":[]},"previous":{"title":"Instalação","level":"1.7","depth":1,"path":"instalacao.md","ref":"instalacao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"comandos.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

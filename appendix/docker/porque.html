@@ -1,0 +1,669 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Por que usar Docker? · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="oquee.html" />
+    
+    
+    <link rel="prev" href="introducao.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Por que usar Docker?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="por-que-usar-docker">Por que usar Docker?</h1>
+<p>Docker tem sido um assunto bem comentado ultimamente, muitos artigos foram escritos, geralmente tratando sobre como us&#xE1;-lo, ferramentas auxiliares, integra&#xE7;&#xF5;es e afins, mas muitas pessoas ainda fazem a pergunta mais b&#xE1;sica quando se trata da possibilidade de utilizar qualquer nova tecnologia: &#x201C;Por que devo usar isso?&#x201D; Ou seria: &#x201C;O que isso tem a me oferecer diferente do que j&#xE1; tenho hoje?&#x201D;</p>
+<p><img src="images/docker_porque.jpg" alt=""></p>
+<p>&#xC9; normal que ainda duvidem do potencial do Docker, alguns at&#xE9; acham que se trata de um <a href="http://techfree.com.br/2015/06/sera-que-esse-modelo-de-containers-e-um-hype/" target="_blank">hype</a>. Mas nesse cap&#xED;tulo pretendemos demonstrar alguns bons motivos para se utilizar Docker.</p>
+<p>Vale frisar que o Docker n&#xE3;o &#xE9; uma &#x201C;bala de prata&#x201D; - ele n&#xE3;o se prop&#xF5;e a resolver todos problemas, muito menos ser a solu&#xE7;&#xE3;o &#xFA;nica para as mais variadas situa&#xE7;&#xF5;es.</p>
+<p>Abaixo alguns bons motivos para se utilizar Docker:</p>
+<h3 id="1-&#x2013;-ambientes-semelhantes">1 &#x2013; Ambientes semelhantes</h3>
+<p>Uma vez que sua aplica&#xE7;&#xE3;o seja transformada em uma imagem Docker, ela pode ser instanciada como container em qualquer ambiente que desejar. Isso significa que poder&#xE1; utilizar sua aplica&#xE7;&#xE3;o no notebook do desenvolvedor da mesma forma que seria executada no servidor de produ&#xE7;&#xE3;o.</p>
+<p>A imagem Docker aceita par&#xE2;metros durante o in&#xED;cio do container, isso indica que a mesma imagem pode se comportar de formas diferentes entre distintos ambientes. Esse container pode conectar-se a seu banco de dados local para testes, usando as credenciais e base de dados de teste. Mas quando o container, criado a partir da mesma imagem, receber par&#xE2;metros do ambiente de produ&#xE7;&#xE3;o, acessar&#xE1; a base de dados em uma infraestrutura mais robusta, com suas respectivas credenciais e base de dados de produ&#xE7;&#xE3;o, por exemplo.</p>
+<p>As imagens Docker podem ser consideradas como implanta&#xE7;&#xF5;es at&#xF4;micas - o que proporciona maior previsibilidade comparado a outras ferramentas como Puppet, Chef, Ansible, etc - impactando positivamente na an&#xE1;lise de erros, assim como na confiabilidade do processo de <a href="https://www.thoughtworks.com/continuous-delivery" target="_blank">entrega cont&#xED;nua</a>, que se baseia fortemente na cria&#xE7;&#xE3;o de um &#xFA;nico artefato que migra entre ambientes. No caso do Docker, o artefato seria a pr&#xF3;pria imagem com todas as depend&#xEA;ncias requeridas para executar seu c&#xF3;digo, seja ele compilado ou din&#xE2;mico.</p>
+<h3 id="2-&#x2013;-aplica&#xE7;&#xE3;o-como-pacote-completo">2 &#x2013; Aplica&#xE7;&#xE3;o como pacote completo</h3>
+<p>Utilizando as imagens Docker &#xE9; poss&#xED;vel empacotar toda sua aplica&#xE7;&#xE3;o e depend&#xEA;ncias, facilitando a distribui&#xE7;&#xE3;o, pois n&#xE3;o ser&#xE1; mais necess&#xE1;rio enviar uma extensa documenta&#xE7;&#xE3;o explicando como configurar a infraestrutura necess&#xE1;ria para permitir a execu&#xE7;&#xE3;o, basta disponibilizar a imagem em reposit&#xF3;rio e liberar o acesso para o usu&#xE1;rio e, ele mesmo pode baixar o pacote, que ser&#xE1; executado sem problemas.</p>
+<p>A atualiza&#xE7;&#xE3;o tamb&#xE9;m &#xE9; positivamente afetada, pois a <a href="http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/" target="_blank">estrutura de camadas</a> do Docker viabiliza que, em caso de mudan&#xE7;a, apenas a parte modificada seja transferida e assim o ambiente pode ser alterado de forma mais r&#xE1;pida e simples. O usu&#xE1;rio precisa executar apenas um comando para atualizar a imagem da aplica&#xE7;&#xE3;o, que ser&#xE1; refletida no container em execu&#xE7;&#xE3;o apenas no momento desejado. As imagens Docker podem utilizar tags e, assim, viabilizar o armazenamento de m&#xFA;ltiplas vers&#xF5;es da mesma aplica&#xE7;&#xE3;o. Isso significa que em caso de problema na atualiza&#xE7;&#xE3;o, o plano de retorno ser&#xE1; basicamente utilizar a imagem com a tag anterior.</p>
+<h3 id="3-&#x2013;-padroniza&#xE7;&#xE3;o-e-replica&#xE7;&#xE3;o">3 &#x2013; Padroniza&#xE7;&#xE3;o e replica&#xE7;&#xE3;o</h3>
+<p>Como as imagens Docker s&#xE3;o constru&#xED;das atrav&#xE9;s de <a href="https://docs.docker.com/engine/reference/builder/" target="_blank">arquivos de defini&#xE7;&#xE3;o</a>, &#xE9; poss&#xED;vel garantir que determinado padr&#xE3;o seja seguido, aumentando a confian&#xE7;a na replica&#xE7;&#xE3;o. Basta que as imagens sigam as <a href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/" target="_blank">melhores pr&#xE1;ticas</a> de constru&#xE7;&#xE3;o para que seja vi&#xE1;vel <a href="https://pt.wikipedia.org/wiki/Escalabilidade" target="_blank">escalarmos</a> a estrutura rapidamente.</p>
+<p>Caso a equipe receba uma nova pessoa para trabalhar no desenvolvimento, essa poder&#xE1; receber o ambiente de trabalho com alguns comandos. Esse processo durar&#xE1; o tempo do download das imagens a serem utilizadas, assim como os arquivos de defini&#xE7;&#xF5;es da orquestra&#xE7;&#xE3;o das mesmas. Isso facilita a introdu&#xE7;&#xE3;o de um novo membro no processo de desenvolvimento da aplica&#xE7;&#xE3;o, que poder&#xE1; reproduzir rapidamente o ambiente em sua esta&#xE7;&#xE3;o e assim desenvolver c&#xF3;digos seguindo o padr&#xE3;o da equipe.</p>
+<p>Na necessidade de se testar nova vers&#xE3;o de determinada parte da solu&#xE7;&#xE3;o, usando imagens Docker, normalmente basta a mudan&#xE7;a de um ou mais par&#xE2;metros do arquivo de defini&#xE7;&#xE3;o para iniciar um ambiente modificado com a vers&#xE3;o requerida para avalia&#xE7;&#xE3;o. Ou seja: criar e modificar a infraestrutura ficou bem mais f&#xE1;cil e r&#xE1;pido.</p>
+<h3 id="4-&#x2013;-idioma-comum-entre-infraestrutura-e-desenvolvimento">4 &#x2013; Idioma comum entre Infraestrutura e desenvolvimento</h3>
+<p>A sintaxe usada para parametrizar as imagens e ambientes Docker pode ser considerada um idioma comum entre &#xE1;reas que costumeiramente n&#xE3;o dialogavam bem. Agora &#xE9; poss&#xED;vel ambos os setores apresentarem propostas e contra propostas com base em um documento comum.</p>
+<p>A infraestrutura requerida estar&#xE1; presente no c&#xF3;digo do desenvolvedor e a &#xE1;rea de infraestrutura poder&#xE1; analisar o documento, sugerindo mudan&#xE7;as para adequa&#xE7;&#xE3;o de padr&#xF5;es do seu setor ou n&#xE3;o. Tudo isso em coment&#xE1;rios e aceita&#xE7;&#xE3;o de <em>merge</em> ou <em>pull request</em> do sistema de controle de vers&#xE3;o de c&#xF3;digos.</p>
+<h3 id="5-&#x2013;-comunidade">5 &#x2013; Comunidade</h3>
+<p>Assim como &#xE9; poss&#xED;vel acessar o <a href="http://github.com/" target="_blank">github</a> ou <a href="https://about.gitlab.com/" target="_blank">gitlab</a> &#xE0; procura de exemplos de c&#xF3;digo, usando o <a href="http://hub.docker.com/" target="_blank">reposit&#xF3;rio de imagens do Docker</a> &#xE9; poss&#xED;vel conseguir bons modelos de infraestrutura de aplica&#xE7;&#xF5;es ou servi&#xE7;os prontos para integra&#xE7;&#xF5;es complexas.</p>
+<p>Um exemplo &#xE9; o <a href="https://hub.docker.com/_/nginx/" target="_blank">nginx</a> como proxy reverso e <a href="https://hub.docker.com/_/mysql/" target="_blank">mysql</a> como banco de dados. Caso a aplica&#xE7;&#xE3;o necessite desses dois recursos, voc&#xEA; n&#xE3;o precisa perder tempo instalando e configurando totalmente esses servi&#xE7;os. Basta utilizar as imagens do reposit&#xF3;rio, configurando par&#xE2;metros m&#xED;nimos para adequa&#xE7;&#xE3;o com o ambiente. Normalmente as imagens oficiais seguem as boas pr&#xE1;ticas de uso dos servi&#xE7;os oferecidos.</p>
+<p>Utilizar essas imagens n&#xE3;o significa ficar &#x201C;ref&#xE9;m&#x201D; da configura&#xE7;&#xE3;o trazida com elas, pois &#xE9; poss&#xED;vel enviar sua pr&#xF3;pria configura&#xE7;&#xE3;o para os ambientes e evitar apenas o trabalho da instala&#xE7;&#xE3;o b&#xE1;sica.</p>
+<h3 id="d&#xFA;vidas">D&#xFA;vidas</h3>
+<p>Algumas pessoas enviaram d&#xFA;vidas relacionadas &#xE0;s vantagens que explicitamos nesse texto. Assim, ao inv&#xE9;s de respond&#xEA;-las pontualmente, resolvemos publicar as perguntas e as respectivas respostas aqui.</p>
+<h4 id="qual-a-diferen&#xE7;a-entre-imagem-docker-e-defini&#xE7;&#xF5;es-criadas-por-ferramenta-de-automa&#xE7;&#xE3;o-de-infraestrutura">Qual a diferen&#xE7;a entre imagem Docker e defini&#xE7;&#xF5;es criadas por ferramenta de <a href="http://www.ibm.com/developerworks/br/library/a-devops2/" target="_blank">automa&#xE7;&#xE3;o de infraestrutura</a>?</h4>
+<p>Como exemplo de ferramentas de automa&#xE7;&#xE3;o de infraestrutura temos o <a href="https://puppetlabs.com/" target="_blank">Puppet</a>, <a href="https://www.ansible.com/" target="_blank">Ansible</a> e <a href="https://www.chef.io/chef/" target="_blank">Chef</a>. Elas podem garantir ambientes parecidos, uma vez que faz parte do seu papel manter determinada configura&#xE7;&#xE3;o no ativo desejado.</p>
+<p>A diferen&#xE7;a entre a solu&#xE7;&#xE3;o Docker e ger&#xEA;ncia de configura&#xE7;&#xE3;o pode parecer bem t&#xEA;nue, pois ambas podem suportar a configura&#xE7;&#xE3;o necess&#xE1;ria de toda infraestrutura que uma aplica&#xE7;&#xE3;o demanda para ser implantada, mas achamos que uma das distin&#xE7;&#xF5;es mais relevante est&#xE1; no seguinte fato: a imagem &#xE9; uma abstra&#xE7;&#xE3;o completa e n&#xE3;o requer qualquer tratamento para lidar com as mais variadas distribui&#xE7;&#xF5;es GNU/Linux existentes, j&#xE1; que a imagem Docker carrega em si uma c&#xF3;pia completa dos arquivos de uma distribui&#xE7;&#xE3;o enxuta.</p>
+<p>Carregar em si a c&#xF3;pia de uma distribui&#xE7;&#xE3;o GNU/Linux n&#xE3;o costuma ser problema para o Docker, pois utilizando o modelo de camadas, economiza bastante recurso, reutilizando as camadas de base. Leia <a href="http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/" target="_blank">esse artigo</a> para entender mais sobre armazenamento do Docker.</p>
+<p>Outra vantagem da imagem em rela&#xE7;&#xE3;o a ger&#xEA;ncia de configura&#xE7;&#xE3;o &#xE9; que, utilizando a imagem, &#xE9; poss&#xED;vel disponibilizar o pacote completo da aplica&#xE7;&#xE3;o em um reposit&#xF3;rio e, esse &#x201C;produto final&#x201D;, ser utilizado facilmente sem necessidade de configura&#xE7;&#xE3;o completa. Apenas um arquivo de configura&#xE7;&#xE3;o e um comando custumam ser suficientes para iniciar uma aplica&#xE7;&#xE3;o criada como imagem Docker.</p>
+<p>Ainda sobre o processo de imagem Docker como produto no reposit&#xF3;rio: pode ser usado tamb&#xE9;m no processo de atualiza&#xE7;&#xE3;o da aplica&#xE7;&#xE3;o, como j&#xE1; explicamos nesse cap&#xED;tulo.</p>
+<h4 id="o-uso-da-imagem-base-no-docker-de-determinada-distribui&#xE7;&#xE3;o-n&#xE3;o-&#xE9;-o-mesmo-que-criar-uma-defini&#xE7;&#xE3;o-de-ger&#xEA;ncia-de-configura&#xE7;&#xE3;o-para-uma-distribui&#xE7;&#xE3;o">O uso da imagem base no Docker de determinada distribui&#xE7;&#xE3;o n&#xE3;o &#xE9; o mesmo que criar uma defini&#xE7;&#xE3;o de ger&#xEA;ncia de configura&#xE7;&#xE3;o para uma distribui&#xE7;&#xE3;o?</h4>
+<p>N&#xE3;o! A diferen&#xE7;a est&#xE1; na perspectiva do hospedeiro. No caso do Docker n&#xE3;o importa qual distribui&#xE7;&#xE3;o GNU/Linux &#xE9; utilizada no host, pois h&#xE1; uma parte da imagem que carrega todos os arquivos de uma mini distribui&#xE7;&#xE3;o que ser&#xE1; suficiente para suportar tudo que a aplica&#xE7;&#xE3;o precisa. Caso seu Docker host seja Fedora e a aplica&#xE7;&#xE3;o precisar de arquivos do Debian, n&#xE3;o se preocupe, pois a imagem em quest&#xE3;o trar&#xE1; arquivos Debian para suportar o ambiente. E, como j&#xE1; foi dito anteriormente, isso normalmente n&#xE3;o chega a impactar negativamente no consumo de espa&#xE7;o em disco.</p>
+<h4 id="quer-dizer-ent&#xE3;o-que-agora-eu-desenvolvedor-preciso-me-preocupar-com-tudo-da-infraestrutura">Quer dizer ent&#xE3;o que agora eu, desenvolvedor, preciso me preocupar com tudo da Infraestrutura?</h4>
+<p>N&#xE3;o! Quando citamos que &#xE9; poss&#xED;vel o desenvolvedor especificar a infraestrutura, estamos falando da camada mais pr&#xF3;xima da aplica&#xE7;&#xE3;o e n&#xE3;o de toda a arquitetura necess&#xE1;ria (Sistema operacional b&#xE1;sico, regras de firewall, rotas de rede e etc).</p>
+<p>A ideia do Docker &#xE9; que os assuntos relevantes e diretamente ligados a aplica&#xE7;&#xE3;o possam ser configurados pelo desenvolvedor. Isso n&#xE3;o o obriga a realizar essa atividade. &#xC9; uma possibilidade que agrada muitos desenvolvedores, mas caso n&#xE3;o seja a situa&#xE7;&#xE3;o, pode ficar tranquilo, outra equipe tratar&#xE1; dessa parte. Apenas o processo de implanta&#xE7;&#xE3;o ser&#xE1; pouco mais lento.</p>
+<h4 id="muitas-pessoas-falam-de-docker-para-micro-servi&#xE7;os-&#xE9;-poss&#xED;vel-usar-o-docker-para-aplica&#xE7;&#xF5;es-monol&#xED;ticas">Muitas pessoas falam de Docker para <a href="https://www.thoughtworks.com/pt/insights/blog/microservices-nutshell" target="_blank">micro servi&#xE7;os</a>. &#xC9; poss&#xED;vel usar o Docker para aplica&#xE7;&#xF5;es monol&#xED;ticas?</h4>
+<p>Sim! Por&#xE9;m, em alguns casos, &#xE9; necess&#xE1;rio pequenas modifica&#xE7;&#xF5;es na aplica&#xE7;&#xE3;o, para que ela possa usufruir das facilidades do Docker. Um exemplo comum &#xE9; o log que, normalmente, a aplica&#xE7;&#xE3;o envia para determinado arquivo, ou seja, no modelo Docker as aplica&#xE7;&#xF5;es que est&#xE3;o nos containers n&#xE3;o devem tentar escrever ou gerir arquivos de logs. Ao inv&#xE9;s disso, cada processo em execu&#xE7;&#xE3;o escreve seu pr&#xF3;prio fluxo de evento, sem buffer, para o <a href="https://pt.wikipedia.org/wiki/Fluxos_padr%C3%A3o" target="_blank">stdout</a>, pois o Docker tem drivers espec&#xED;ficos para tratar o log enviado dessa forma. Essa parte de melhores pr&#xE1;ticas de gerenciador de logs ser&#xE1; detalhada em cap&#xED;tulos posteriores.</p>
+<p>Em alguns momentos voc&#xEA; perceber&#xE1; que o uso do Docker para sua aplica&#xE7;&#xE3;o demanda muito esfor&#xE7;o. Nesses casos, normalmente, o problema est&#xE1; mais em como a aplica&#xE7;&#xE3;o trabalha do que na configura&#xE7;&#xE3;o do Docker. Esteja atento.</p>
+<p>Tem mais d&#xFA;vidas e/ou bons motivos para utilizar Docker? Comente <a href="http://techfree.com.br/2016/03/porque-usar-docker/" target="_blank">aqui</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="introducao.html" class="navigation navigation-prev " aria-label="Previous page: Introdução">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="oquee.html" class="navigation navigation-next " aria-label="Next page: O que é Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Por que usar Docker?","level":"1.5","depth":1,"next":{"title":"O que é Docker","level":"1.6","depth":1,"path":"oquee.md","ref":"oquee.md","articles":[]},"previous":{"title":"Introdução","level":"1.4","depth":1,"path":"introducao.md","ref":"introducao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"porque.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

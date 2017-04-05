@@ -1,0 +1,739 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Concorrência · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="descartabilidade.html" />
+    
+    
+    <link rel="prev" href="vinculos.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Concorrência</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="concorr&#xEA;ncia">Concorr&#xEA;ncia</h1>
+<p>A oitava boa pr&#xE1;tica da lista do modelo <a href="http://12factor.net/pt_br" target="_blank">12factor</a>, &#xE9; <strong>&#x201C;Concorr&#xEA;ncia&#x201D;</strong>.</p>
+<p>Durante o processo de desenvolvimento de uma aplica&#xE7;&#xE3;o &#xE9; dif&#xED;cil imaginar o volume de requisi&#xE7;&#xE3;o que ela ter&#xE1; no momento que for colocada em produ&#xE7;&#xE3;o. Por outro lado, um servi&#xE7;o que suporte grandes volumes de uso &#xE9; esperado nas solu&#xE7;&#xF5;es modernas. Nada &#xE9; mais frustante que solicitar acesso a uma aplica&#xE7;&#xE3;o e ela n&#xE3;o estar dispon&#xED;vel. Sugere falta de cuidado e profissionalismo, na maioria dos casos.</p>
+<p>Quando a aplica&#xE7;&#xE3;o &#xE9; colocada em produ&#xE7;&#xE3;o, normalmente &#xE9; dimensionada para determinada carga esperada, por&#xE9;m &#xE9; importante que o servi&#xE7;o esteja pronto para escalar. A solu&#xE7;&#xE3;o deve ser capaz de iniciar novos processo da mesma aplica&#xE7;&#xE3;o, caso necess&#xE1;rio, sem afetar o produto. A figura abaixo, apresenta gr&#xE1;fico de escalabilidade de servi&#xE7;os.</p>
+<p><img src="images/concorrencia1.png" alt=""></p>
+<p>Com objetivo de evitar qualquer problema na escalabilidade do servi&#xE7;o, a boa pr&#xE1;tica indica que as aplica&#xE7;&#xF5;es devem suportar execu&#xE7;&#xF5;es concorrentes e, quando um processo est&#xE1; em execu&#xE7;&#xE3;o, instanciar outro em paralelo e o servi&#xE7;o atendido, sem perda alguma.</p>
+<p>Para tal, &#xE9; importante dividir as tarefas corretamente. &#xC9; interessante o processo se ater aos objetivos, caso seja necess&#xE1;rio executar alguma atividade em backend e, depois retornar uma p&#xE1;gina para o navegador, &#xE9; salutar que haja dois servi&#xE7;os tratando as duas atividades, de forma separada. O Docker torna essa tarefa mais simples, pois, nesse modelo, basta especificar um container para cada fun&#xE7;&#xE3;o e configurar corretamente a rede entre eles.</p>
+<p>Para exemplificar a boa pr&#xE1;tica, usaremos a arquitetura demonstrada na figura abaixo:</p>
+<p><img src="images/concorrencia2.png" alt=""></p>
+<p>O servi&#xE7;o web &#xE9; respons&#xE1;vel por receber a requisi&#xE7;&#xE3;o e balancear entre os workers, os quais s&#xE3;o respons&#xE1;veis por processar a requisi&#xE7;&#xE3;o, conectar ao redis e retornar a tela de &#x201C;Hello World&#x201D; informando quantas vezes foi obtida e qual nome de worker est&#xE1; respondendo a requisi&#xE7;&#xE3;o (para ter certeza que est&#xE1; balanceando a carga), como podemos ver na figura abaixo:</p>
+<p><img src="images/concorrencia3.png" alt=""></p>
+<p>O arquivo <strong>docker-compose.yml</strong> exemplifica a boa pr&#xE1;tica:</p>
+<pre><code>version: &quot;2&quot;
+services:
+  web:
+    container_name: web
+    build: web
+    networks:
+      - backend
+    ports:
+      - &quot;80:80&quot;
+
+  worker:
+    build: worker
+    networks:
+      backend:
+        aliases:
+          - apps
+    expose:
+      - 80
+    depends_on:
+      - web
+
+  redis:
+    image: redis
+    networks:
+      - backend
+
+networks:
+  backend:
+      driver: bridge
+</code></pre><p>Para efetuar a constru&#xE7;&#xE3;o do balanceador de carga, temos o diret&#xF3;rio web contendo arquivos Dockerfile (respons&#xE1;vel por criar a imagem utilizada) e nginx.conf (arquivo de configura&#xE7;&#xE3;o do balanceador de carga utilizado).</p>
+<p>Segue o conte&#xFA;do DockerFile do web:</p>
+<pre><code>FROM nginx:1.9
+
+COPY nginx.conf /etc/nginx/nginx.conf
+EXPOSE 80
+CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]
+</code></pre><p>E, o conte&#xFA;do do arquivo nginx.conf:</p>
+<pre><code>user nginx;
+worker_processes 2;
+
+events {
+  worker_connections 1024;
+}
+
+http {
+  access_log /var/log/nginx/access.log;
+  error_log /var/log/nginx/error.log;
+
+  resolver 127.0.0.11 valid=1s;
+
+  server {
+    listen 80;
+    set $alias &quot;apps&quot;;
+
+    location / {
+      proxy_pass http://$alias;
+    }
+  }
+}
+</code></pre><p>No arquivo de configura&#xE7;&#xE3;o acima, foram introduzidas algumas novidades. A primeira, <strong>&#x201C;resolver 127.0.0.11&#x201C;</strong>, &#xE9; o servi&#xE7;o DNS interno do Docker. Usando essa abordagem &#xE9; poss&#xED;vel efetuar o balanceamento de carga via nome, usando recurso interno do Docker. Para mais detalhes sobre o funcionamento do DNS interno do Docker, veja esse documento (<a href="https://docs.docker.com/engine/userguide/networking/configure-dns/" target="_blank">https://docs.docker.com/engine/userguide/networking/configure-dns/</a>) (apenas em ingl&#xEA;s).</p>
+<p>A segunda novidade, fun&#xE7;&#xE3;o set <strong>$alias &#x201C;apps&#x201D;;</strong>, respons&#xE1;vel por especificar o nome <strong>&#x201C;apps&#x201D;</strong> usado na configura&#xE7;&#xE3;o do proxy reverso, em seguida <strong>&#x201C;proxy_pass <a href="http://$alias;&#x201C;" target="_blank">http://$alias;&#x201C;</a></strong>. Vale salientar, o <strong>&#x201C;apps&#x201D;</strong> &#xE9; o nome da rede especificada dentro do arquivo <strong>docker-compose.yml</strong>. Nesse caso, o balanceamento &#xE9; feito para a rede, todo novo cont&#xEA;iner que entra nessa rede &#xE9; automaticamente adicionado ao balanceamento de carga.</p>
+<p>Para efetuar a constru&#xE7;&#xE3;o do <strong>worker</strong> temos o diret&#xF3;rio <strong>worker</strong>  contendo os arquivos <strong>Dockerfile</strong> (respons&#xE1;vel por criar a imagem utilizada), <strong>app.py</strong> (aplica&#xE7;&#xE3;o usada em todos os cap&#xED;tulos) e <strong>requirements.txt</strong> (descreve as depend&#xEA;ncias do app.py).</p>
+<p>Segue abaixo o conte&#xFA;do do arquivo <strong>app.py</strong> modificado para a pr&#xE1;tica:</p>
+<pre><code>from flask import Flask
+from redis import Redis
+import os
+import socket
+print(socket.gethostname())
+host_redis=os.environ.get(&apos;HOST_REDIS&apos;, &apos;redis&apos;)
+port_redis=os.environ.get(&apos;PORT_REDIS&apos;, &apos;6379&apos;)
+
+app = Flask(__name__)
+redis = Redis(host=host_redis, port=port_redis)
+
+@app.route(&apos;/&apos;)
+def hello():
+   redis.incr(&apos;hits&apos;)
+   return &apos;Hello World I am %s! %s times.&apos; % (socket.gethostname(), redis.get(&apos;hits&apos;))
+if __name__ == &quot;__main__&quot;:
+   app.run(host=&quot;0.0.0.0&quot;, debug=True)
+</code></pre><p>Segue o conte&#xFA;do do <strong>requirements.txt</strong>:</p>
+<pre><code>flask==0.11.1
+redis==2.10.5
+</code></pre><p>E por fim, o <strong>Dockerfile</strong> do <strong>worker</strong> tem o seguinte conte&#xFA;do:</p>
+<pre><code>FROM python:2.7
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+COPY . /code
+WORKDIR /code
+CMD python app.py
+</code></pre><p>No servi&#xE7;o <strong>redis</strong> n&#xE3;o h&#xE1; constru&#xE7;&#xE3;o da imagem, usaremos a imagem oficial para efeitos de exemplifica&#xE7;&#xE3;o.</p>
+<p>Para testar o que foi apresentado at&#xE9; ent&#xE3;o, realize o clone do reposit&#xF3;rio (<a href="https://github.com/gomex/exemplo-12factor-docker" target="_blank">https://github.com/gomex/exemplo-12factor-docker</a>) e acesse a pasta <strong>factor8</strong>, executando o comando, abaixo, para iniciar os cont&#xEA;ineres:</p>
+<pre><code>docker-compose up -d
+</code></pre><p>Acesse os cont&#xEA;ineres atrav&#xE9;s do navegador na porta 80 do endere&#xE7;o localhost. Atualize a p&#xE1;gina e veja que apenas um nome aparece.</p>
+<p>Por padr&#xE3;o, o Docker-Compose executa apenas uma inst&#xE2;ncia de cada servi&#xE7;o explicitado no <strong>docker-compose.yml</strong>. Para aumentar a quantidade de cont&#xEA;ineres <strong>&#x201C;worker&#x201D;</strong>, de um para dois, execute o comando abaixo:</p>
+<pre><code>docker-compose scale worker=2
+</code></pre><p>Atualize a p&#xE1;gina no navegador e veja que o nome do host alterna entre duas possibilidades, ou seja, as requisi&#xE7;&#xF5;es est&#xE3;o sendo balanceadas para ambos cont&#xEA;ineres.</p>
+<p>Nessa nova proposta de ambiente, o servi&#xE7;o <strong>web</strong> se encarrega de receber as requisi&#xE7;&#xF5;es HTTP e fazer o balanceamento de carga. Ent&#xE3;o, o <strong>worker</strong> &#xE9; respons&#xE1;vel por processar as requisi&#xE7;&#xF5;es, basicamente obter o nome de host, acessar o <strong>redis</strong> e a contagem de quantas vezes o servi&#xE7;o foi requisitado e, ent&#xE3;o, gerar o retorno para devolv&#xEA;-lo ao servi&#xE7;o <strong>web</strong> que, por sua vez, responde ao usu&#xE1;rio. Como podemos perceber, cada inst&#xE2;ncia do ambiente tem fun&#xE7;&#xE3;o definida e, com isso, &#xE9; mais f&#xE1;cil escal&#xE1;-lo.</p>
+<p>Aproveitamos para dar os cr&#xE9;ditos ao capit&#xE3;o <a href="https://twitter.com/marcosnils" target="_blank">Marcosnils</a>, que nos mostrou como &#xE9; poss&#xED;vel balancear carga pelo nome da rede docker.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vinculos.html" class="navigation navigation-prev " aria-label="Previous page: Vínculo de portas">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="descartabilidade.html" class="navigation navigation-next " aria-label="Next page: Descartabilidade">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Concorrência","level":"1.23","depth":1,"next":{"title":"Descartabilidade","level":"1.24","depth":1,"path":"descartabilidade.md","ref":"descartabilidade.md","articles":[]},"previous":{"title":"Vínculo de portas","level":"1.22","depth":1,"path":"vinculos.md","ref":"vinculos.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"concorrencia.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

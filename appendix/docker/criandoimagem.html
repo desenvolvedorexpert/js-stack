@@ -1,0 +1,705 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Criando sua própria imagem no Docker · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="armazenamento.html" />
+    
+    
+    <link rel="prev" href="comandos.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Criando sua própria imagem no Docker</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="criando-sua-pr&#xF3;pria-imagem-no-docker">Criando sua pr&#xF3;pria imagem no Docker</h1>
+<p>Antes de explicarmos como criar sua imagem, vale a pena tocarmos em uma quest&#xE3;o que normalmente confunde iniciantes do docker: &#x201C;Imagem ou container?&#x201D;</p>
+<h3 id="qual-a-diferen&#xE7;a-entre-imagem-e-container">Qual a diferen&#xE7;a entre Imagem e Container?</h3>
+<p>Tra&#xE7;ando um paralelo com o conceito de <a href="https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos" target="_blank">orienta&#xE7;&#xE3;o a objeto</a>, a <strong>imagem</strong> &#xE9; a classe e o <strong>container</strong> o objeto. A imagem &#xE9; a abstra&#xE7;&#xE3;o da infraestrutura em estado somente leitura, de onde ser&#xE1; instanciado o container.</p>
+<p>Todo container &#xE9; iniciado a partir de uma imagem, dessa forma podemos concluir que nunca teremos uma imagem em execu&#xE7;&#xE3;o.</p>
+<p>Um container s&#xF3; pode ser iniciado a partir de uma &#xFA;nica imagem. Caso deseje um comportamento diferente, ser&#xE1; necess&#xE1;rio customizar a imagem.</p>
+<h3 id="anatomia-da-imagem">Anatomia da imagem</h3>
+<p>As imagens podem ser oficiais ou n&#xE3;o oficiais.</p>
+<h4 id="imagens-oficiais-e-n&#xE3;o-oficiais">Imagens oficiais e n&#xE3;o oficiais</h4>
+<p>As imagens oficiais do docker s&#xE3;o aquelas sem usu&#xE1;rios em seus nomes. A imagem <strong>&#x201C;ubuntu:16.04&#x2033;</strong> &#xE9; oficial, por outro lado, a imagem <a href="https://hub.docker.com/r/nuagebec/ubuntu/" target="_blank">&#x201C;nuagebec/ubuntu&#x201D;</a> n&#xE3;o &#xE9; oficial. Essa segunda imagem &#xE9; mantida pelo usu&#xE1;rio <a href="https://hub.docker.com/u/nuagebec/" target="_blank">nuagebec</a>, que mant&#xE9;m outras imagens n&#xE3;o oficiais.</p>
+<p>As imagens oficiais s&#xE3;o mantidas pela empresa docker e <a href="https://hub.docker.com/explore/" target="_blank">disponibilizadas</a> na nuvem docker.</p>
+<p>O objetivo das imagens oficiais &#xE9; prover um ambiente b&#xE1;sico (ex. debian, alpine, ruby, python), um ponto de partida para cria&#xE7;&#xE3;o de imagens pelos usu&#xE1;rios, como explicaremos mais adiante, ainda nesse cap&#xED;tulo.</p>
+<p>As imagens n&#xE3;o oficiais s&#xE3;o mantidas pelos usu&#xE1;rios que as criaram. Falaremos sobre envio de imagens para nuvem docker em outro t&#xF3;pico.</p>
+<p><strong>Nome da imagem</strong></p>
+<p>O nome de uma imagem oficial &#xE9; composto por duas partes. A primeira, a <a href="https://docs.docker.com/engine/userguide/containers/dockerimages/" target="_blank">documenta&#xE7;&#xE3;o</a> chama de <strong>&#x201C;reposit&#xF3;rio&#x201D;</strong> e, a segunda, &#xE9; chamada de <strong>&#x201C;tag&#x201D;</strong>. No caso da imagem <strong>&#x201C;ubuntu:14.04&#x201D;</strong>, <strong>ubuntu</strong> &#xE9; o reposit&#xF3;rio e <strong>14.04</strong> &#xE9; a tag.</p>
+<p>Para o docker, o <strong>&#x201C;reposit&#xF3;rio&#x201D;</strong> &#xE9; uma abstra&#xE7;&#xE3;o do conjunto de imagens. N&#xE3;o confunda com o local de armazenamento das imagens, que detalharemos mais adiante. J&#xE1; a <strong>&#x201C;tag&#x201D;</strong>, &#xE9; uma abstra&#xE7;&#xE3;o para criar unidade dentro do conjunto de imagens definidas no <strong>&#x201C;reposit&#xF3;rio&#x201D;</strong>.</p>
+<p>Um <strong>&#x201C;reposit&#xF3;rio&#x201D;</strong> pode conter mais de uma <strong>&#x201C;tag&#x201D;</strong> e cada conjunto reposit&#xF3;rio:tag representa uma imagem diferente.</p>
+<p>Execute <a href="https://docs.docker.com/engine/reference/commandline/images/" target="_blank">o comando</a> abaixo para visualizar todas as imagens que se encontram localmente na sua esta&#xE7;&#xE3;o, nesse momento:</p>
+<pre><code>docker image list
+</code></pre><h3 id="como-criar-imagens">Como criar imagens</h3>
+<p>H&#xE1; duas formas de criar imagens customizadas: com <strong>commit</strong> e com <strong>Dockerfile</strong>.</p>
+<h4 id="criando-imagens-com-commit">Criando imagens com commit</h4>
+<p>&#xC9; poss&#xED;vel criar imagens executando o comando <a href="https://docs.docker.com/engine/reference/commandline/commit/" target="_blank">commit</a>, relacionado a um container. Esse comando usa o status atual do container escolhido e cria a imagem com base nele.</p>
+<p>Vamos ao exemplo. Primeiro criamos um container qualquer:</p>
+<pre><code>docker container run -it --name containercriado ubuntu:16.04 bash
+</code></pre><p>Agora que estamos no bash do container, instalamos o nginx:</p>
+<pre><code>apt-get update
+apt-get install nginx -y
+exit
+</code></pre><p>Paramos o container com o comando abaixo:</p>
+<pre><code>docker container stop containercriado
+</code></pre><p>Agora, efetuamos o <strong>commit</strong> desse <strong>container</strong> em uma <strong>imagem</strong>:</p>
+<pre><code>docker container commit containercriado meuubuntu:nginx
+</code></pre><p>No exemplo do comando acima, <strong>containercriado</strong> &#xE9; o nome do container criado e modificado nos passos anteriores; o nome <strong>meuubuntu:nginx</strong> &#xE9; a imagem resultante do <strong>commit</strong>; o estado do <strong>containercriado</strong> &#xE9; armazenado em uma imagem chamada <strong>meuubuntu:nginx</strong> que, nesse caso, a &#xFA;nica modifica&#xE7;&#xE3;o que temos da imagem oficial do ubuntu na vers&#xE3;o 16.04 &#xE9; o pacote <strong>nginx</strong> instalado.</p>
+<p>Para visualizar a lista de imagens e encontrar a que acabou de criar, execute novamente o comando abaixo:</p>
+<pre><code>docker image list
+</code></pre><p>Para testar sua nova imagem, vamos criar um container a partir dela e verificar se o nginx est&#xE1; instalado:</p>
+<pre><code>docker container run -it --rm meuubuntu:nginx dpkg -l nginx
+</code></pre><p>Se quiser validar, pode executar o mesmo comando na imagem oficial do ubuntu:</p>
+<pre><code>docker container run -it --rm ubuntu:16.04 dpkg -l nginx
+</code></pre><blockquote>
+<p>Vale salientar que o m&#xE9;todo <strong>commit</strong> n&#xE3;o &#xE9; a melhor op&#xE7;&#xE3;o para criar imagens, pois, como verificamos, o processo de modifica&#xE7;&#xE3;o da imagem &#xE9; completamente manual e apresenta certa dificuldade para rastrear as mudan&#xE7;as efetuadas, uma vez que, o que foi modificado manualmente n&#xE3;o &#xE9; registrado, automaticamente, na estrutura do docker.</p>
+</blockquote>
+<h4 id="criando-imagens-com-dockerfile">Criando imagens com Dockerfile</h4>
+<p>Quando se utiliza Dockerfile para gerar uma imagem, basicamente, &#xE9; apresentada uma lista de instru&#xE7;&#xF5;es que ser&#xE3;o aplicadas em determinada imagem para que outra imagem seja gerada com base nas modifica&#xE7;&#xF5;es.</p>
+<p><img src="images/dockerfile.png" alt="Dockerfile"></p>
+<p>Podemos resumir que o arquivo Dockerfile, na verdade, representa a exata diferen&#xE7;a entre uma determinada imagem, que aqui chamamos de <strong>base</strong>, e a imagem que se deseja criar. Nesse modelo temos total rastreabilidade sobre o que ser&#xE1; modificado na nova imagem.</p>
+<p>Voltemos ao exemplo da instala&#xE7;&#xE3;o do nginx no ubuntu 16.04.</p>
+<p>Primeiro crie um arquivo qualquer para um teste futuro:</p>
+<pre><code>touch arquivo_teste
+</code></pre><p>Crie um arquivo chamado <strong>Dockerfile</strong> e dentro dele o seguinte conte&#xFA;do:</p>
+<pre><code>FROM ubuntu:16.04
+RUN apt-get update &amp;&amp; apt-get install nginx -y
+COPY arquivo_teste /tmp/arquivo_teste
+CMD bash
+</code></pre><p>No arquivo acima, utilizamos quatro <a href="https://docs.docker.com/engine/reference/builder/" target="_blank">instru&#xE7;&#xF5;es</a>:</p>
+<p><strong>FROM</strong> para informar qual imagem usaremos como base, nesse caso foi <strong>ubuntu:16.04</strong>.</p>
+<p><strong>RUN</strong> para informar quais comandos ser&#xE3;o executados nesse ambiente para efetuar as mudan&#xE7;as necess&#xE1;rias na infraestrutura do sistema. S&#xE3;o como comandos executados no shell do ambiente, igual ao modelo por commit, mas nesse caso foi efetuado automaticamente e, &#xE9; completamente rastre&#xE1;vel, j&#xE1; que esse Dockerfile ser&#xE1; armazenado no sistema de controle de vers&#xE3;o.</p>
+<p><strong>COPY</strong> &#xE9; usado para copiar arquivos da esta&#xE7;&#xE3;o onde est&#xE1; executando a constru&#xE7;&#xE3;o para dentro da imagem. Usamos um arquivo de teste apenas para exemplificar essa possibilidade, mas essa instru&#xE7;&#xE3;o &#xE9; muito utilizada para enviar arquivos de configura&#xE7;&#xE3;o de ambiente e c&#xF3;digos para serem executados em servi&#xE7;os de aplica&#xE7;&#xE3;o.</p>
+<p><strong>CMD</strong> para informar qual comando ser&#xE1; executado por padr&#xE3;o, caso nenhum seja informado na inicializa&#xE7;&#xE3;o de um container a partir dessa imagem. No exemplo, colocamos o comando bash, se essa imagem for usada para iniciar um container e n&#xE3;o informamos o comando, ele executar&#xE1; o bash.</p>
+<p>Ap&#xF3;s construir seu Dockerfile basta executar o <a href="https://docs.docker.com/engine/reference/commandline/build/" target="_blank">comando</a> abaixo:</p>
+<pre><code>docker image build -t meuubuntu:nginx_auto .
+</code></pre><p>Tal comando tem a op&#xE7;&#xE3;o <strong>&#x201C;-t&#x201D;</strong>, serve para informar o nome da imagem a ser criada. No caso, ser&#xE1; <strong>meuubuntu:nginx_auto</strong> e o <strong>&#x201C;.&#x201D;</strong> ao final, informa qual contexto deve ser usado nessa constru&#xE7;&#xE3;o de imagem. Todos os arquivos da pasta atual ser&#xE3;o enviados para o servi&#xE7;o do docker e apenas eles podem ser usados para manipula&#xE7;&#xF5;es do Dockerfile (exemplo do uso do COPY).</p>
+<h4 id="a-ordem-importa">A ordem importa</h4>
+<p>&#xC9; importante atentar que o arquivo <strong>Dockerfile</strong> &#xE9; uma sequ&#xEA;ncia de instru&#xE7;&#xF5;es lidas do topo &#xE0; base e cada linha &#xE9; executada por vez. Se alguma instru&#xE7;&#xE3;o depender de outra instru&#xE7;&#xE3;o, essa depend&#xEA;ncia deve ser descrita mais acima no documento.</p>
+<p>O resultado de  cada instru&#xE7;&#xE3;o do arquivo &#xE9; armazenado em cache local. Caso o <strong>Dockerfile</strong> n&#xE3;o seja modificado na pr&#xF3;xima cria&#xE7;&#xE3;o da imagem (<strong>build</strong>), o processo n&#xE3;o demorar&#xE1;, pois tudo estar&#xE1; no cache. Se houver altera&#xE7;&#xF5;es, apenas a instru&#xE7;&#xE3;o modificada e as posteriores ser&#xE3;o executadas novamente.</p>
+<p>A sugest&#xE3;o para melhor aproveitar o cache do <strong>Dockerfile</strong> &#xE9; sempre manter as instru&#xE7;&#xF5;es frequentemente alteradas mais pr&#xF3;ximas da base do documento. Vale lembrar de atender tamb&#xE9;m as depend&#xEA;ncias entre instru&#xE7;&#xF5;es.</p>
+<p>Um exemplo para deixar mais claro:</p>
+<pre><code>FROM ubuntu:16.04
+RUN apt-get update
+RUN apt-get install nginx
+RUN apt-get install php5
+COPY arquivo_teste /tmp/arquivo_teste
+CMD bash
+</code></pre><p>Caso modifiquemos a terceira linha do arquivo e, ao inv&#xE9;s de instalar o nginx, mudarmos para apache2, a instru&#xE7;&#xE3;o que faz o update no apt n&#xE3;o ser&#xE1; executada novamente, e sim a instala&#xE7;&#xE3;o do apache2, pois acabou de entrar no arquivo, assim como o php5 e a c&#xF3;pia do arquivo, pois todos eles s&#xE3;o subsequentes a linha modificada.</p>
+<p>Como podemos perceber, de posse do arquivo <strong>Dockerfile</strong>, &#xE9; poss&#xED;vel ter a exata no&#xE7;&#xE3;o de quais mudan&#xE7;as foram efetuadas na imagem e, assim, registrar as modifica&#xE7;&#xF5;es no sistema de controle de vers&#xE3;o.</p>
+<h3 id="enviando-sua-imagem-para-nuvem">Enviando sua imagem para nuvem</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="comandos.html" class="navigation navigation-prev " aria-label="Previous page: Comandos básicos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="armazenamento.html" class="navigation navigation-next " aria-label="Next page: Entendendo armazenamento no Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Criando sua própria imagem no Docker","level":"1.9","depth":1,"next":{"title":"Entendendo armazenamento no Docker","level":"1.10","depth":1,"path":"armazenamento.md","ref":"armazenamento.md","articles":[]},"previous":{"title":"Comandos básicos","level":"1.8","depth":1,"path":"comandos.md","ref":"comandos.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"criandoimagem.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

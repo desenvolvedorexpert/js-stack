@@ -1,0 +1,700 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Entendendo a rede no Docker · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="machine.html" />
+    
+    
+    <link rel="prev" href="armazenamento.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Entendendo a rede no Docker</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="entendendo-a-rede-no-docker">Entendendo a rede no Docker</h1>
+<p>O que o docker chama de rede, na verdade &#xE9; uma abstra&#xE7;&#xE3;o criada para facilitar o gerenciamento da comunica&#xE7;&#xE3;o de dados entre containers e os n&#xF3;s externos ao ambiente docker.</p>
+<p>N&#xE3;o confunda a rede do docker com a j&#xE1; conhecida rede utilizada para agrupar os endere&#xE7;os IP (ex: 192.168.10.0/24). Sendo assim, sempre que mencionarmos esse segundo tipo de rede, usaremos &#x201C;rede IP&#x201C;.</p>
+<h3 id="redes-padr&#xF5;es-do-docker">Redes padr&#xF5;es do Docker</h3>
+<p>O docker &#xE9; disponibilizado com tr&#xEA;s redes por padr&#xE3;o. Essas redes oferecem configura&#xE7;&#xF5;es espec&#xED;ficas para gerenciamento do tr&#xE1;fego de dados. Para visualizar essas interfaces, basta utilizar o comando abaixo:</p>
+<p>docker network ls</p>
+<p>O retorno ser&#xE1;:</p>
+<p><img src="images/resultado_rede.png" alt=""></p>
+<h4 id="bridge">Bridge</h4>
+<p>Cada container iniciado no docker &#xE9; associado a uma rede espec&#xED;fica. Essa &#xE9; a rede padr&#xE3;o para qualquer container, a menos que associemos, explicitamente, outra rede a ele. A rede confere ao container uma interface que faz bridge com a interface docker0 do docker host. Essa interface recebe, automaticamente, o pr&#xF3;ximo endere&#xE7;o dispon&#xED;vel na rede IP 172.17.0.0/16.</p>
+<p>Todos os containers que est&#xE3;o nessa rede poder&#xE3;o se comunicar via protocolo TCP/IP. Se voc&#xEA; souber qual endere&#xE7;o IP do container deseja conectar, &#xE9; poss&#xED;vel enviar tr&#xE1;fego para ele. Afinal, est&#xE3;o todos na mesma rede IP (172.17.0.0/16).</p>
+<p>Um detalhe a se observar: como os IPs s&#xE3;o cedidos automaticamente, n&#xE3;o &#xE9; tarefa trivial descobrir qual IP do container de destino. Para ajudar nessa localiza&#xE7;&#xE3;o, o docker disponibiliza, na inicializa&#xE7;&#xE3;o de um container, a op&#xE7;&#xE3;o &#x201C;&#x2013;link&#x201C;.</p>
+<blockquote>
+<p>Vale ressaltar que &#x201C;&#x2013;link&#x201D; &#xE9; uma op&#xE7;&#xE3;o defasada e seu uso desaconselhado. Explicaremos esta funcionalidade apenas para efeito de entendimento do legado. Essa fun&#xE7;&#xE3;o foi substitu&#xED;da por um DNS embutido no docker e, n&#xE3;o funciona para redes padr&#xF5;es do docker, apenas dispon&#xED;vel para redes criadas pelo usu&#xE1;rio.</p>
+</blockquote>
+<p>A op&#xE7;&#xE3;o &#x201C;&#x2013;link&#x201D; &#xE9; respons&#xE1;vel por associar o IP do container de destino ao seu nome. Caso voc&#xEA; inicie um container a partir da imagem docker do mysql com nome &#x201C;bd&#x201D;, em seguida inicie outro com nome &#x201C;app&#x201D; a partir da imagem tutum/apache-php, voc&#xEA; deseja que esse &#xFA;ltimo container possa conectar no mysql usando o nome do container &#x201C;bd&#x201D;, basta iniciar da seguinte forma ambos os containers:</p>
+<pre><code>docker container run -d --name bd -e MYSQL_ROOT_PASSWORD=minhasenha mysql
+
+docker container run -d -p 80:80 --name app --link db tutum/apache-php
+</code></pre><p>Ap&#xF3;s executar os comandos, o container com o nome &#x201C;app&#x201D; poder&#xE1; conectar no container do mysql usando o nome &#x201C;bd&#x201D;, ou seja, toda vez que ele tentar acessar o nome &#x201C;bd&#x201D; ele ser&#xE1; automaticamente resolvido para o IP da rede IP 172.17.0.0/16 que o container do mysql obteve na sua inicializa&#xE7;&#xE3;o.</p>
+<p>Pra testar, utilizaremos a funcionalidade exec para rodar o comando dentro de um container j&#xE1; existente. Para tal, usaremos o nome do container como par&#xE2;metro do comando abaixo:</p>
+<pre><code>docker container exec -it app ping db
+</code></pre><p>A a&#xE7;&#xE3;o ser&#xE1; respons&#xE1;vel por executar o comando &#x201C;ping db&#x201D; dentro do container &#x201C;app&#x201D;, ou seja, o container &#x201C;app&#x201D; enviar&#xE1; pacotes icmp, normalmente usado para testar conectividade entre dois hosts, para o endere&#xE7;o &#x201C;db&#x201D;. O nome &#x201C;db&#x201D; &#xE9; traduzido para o IP que o container, iniciado a partir da imagem do mysql, obteve ao iniciar.</p>
+<p><strong>Exemplo:</strong> O container &#x201C;db&#x201D; iniciou primeiro e obteve o IP 172.17.0.2. O container &#x201C;app&#x201D; iniciou em seguida e recebeu o IP 172.17.0.3. Quando o container &#x201C;app&#x201D; executar o comando &#x201C;ping db&#x201D;, na verdade, ele enviar&#xE1; pacotes icmp para o endere&#xE7;o 172.17.0.2.</p>
+<blockquote>
+<p>Aten&#xE7;&#xE3;o: O nome da op&#xE7;&#xE3;o &#x201C;&#x2013;link&#x201D; causa certa confus&#xE3;o, pois n&#xE3;o cria link de rede IP entre os containers, uma vez que a comunica&#xE7;&#xE3;o entre eles j&#xE1; &#xE9; poss&#xED;vel, mesmo sem a op&#xE7;&#xE3;o link ser configurada. Como esclarecido no par&#xE1;grafo anterior, apenas facilita a tradu&#xE7;&#xE3;o de nomes para o IP din&#xE2;mico obtido na inicializa&#xE7;&#xE3;o.</p>
+</blockquote>
+<p>Os containers configurados para essa rede ter&#xE3;o a possibilidade de tr&#xE1;fego externo utilizando as rotas das redes IP definidas no docker host. Caso o docker host tenha acesso a internet, automaticamente, os containers em quest&#xE3;o tamb&#xE9;m ter&#xE3;o.</p>
+<p>Nessa rede &#xE9; poss&#xED;vel expor portas dos containers para todos os ativos com acesso ao docker host.</p>
+<h4 id="none">None</h4>
+<p>Essa rede tem como objetivo isolar o container para comunica&#xE7;&#xF5;es externas. A rede n&#xE3;o recebe qualquer interface para comunica&#xE7;&#xE3;o externa. A &#xFA;nica interface de rede IP ser&#xE1; a localhost.</p>
+<p>Essa rede, normalmente, &#xE9; utilizada para containers que manipulam apenas arquivos, sem necessidade de envi&#xE1;-los via rede para outro local. (Ex.: container de backup utiliza os volumes de container de banco de dados para realizar o dump e, ser&#xE1; usado no processo de reten&#xE7;&#xE3;o dos dados).</p>
+<p><img src="images/rede_none.png" alt="Exemplo de uso da rede none"></p>
+<p>Em caso de d&#xFA;vida sobre utiliza&#xE7;&#xE3;o de volumes no docker visite <a href="http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/" target="_blank">esse artigo</a> e entenda mais sobre armazenamento do docker.</p>
+<h4 id="host">Host</h4>
+<p>Essa rede tem como objetivo entregar para o container todas as interfaces existentes no docker host. De certa forma, pode agilizar a entrega dos pacotes, uma vez que n&#xE3;o h&#xE1; bridge no caminho das mensagens. Mas normalmente esse overhead &#xE9; m&#xED;nimo e o uso de uma brigde pode ser importante para seguran&#xE7;a e gerencia do seu tr&#xE1;fego.</p>
+<h3 id="redes-definidas-pelo-usu&#xE1;rio">Redes definidas pelo usu&#xE1;rio</h3>
+<p>O docker possibilita que o usu&#xE1;rio crie redes. Essas redes s&#xE3;o associadas ao elemento que o docker chama de driver de rede.</p>
+<p>Cada rede criada por usu&#xE1;rio deve estar associada a um determinado driver. E, caso voc&#xEA; n&#xE3;o crie seu pr&#xF3;prio driver, deve escolher entre os drivers disponibilizados pelo docker:</p>
+<h4 id="bridge">Bridge</h4>
+<p>Essa &#xE9; o driver de rede mais simples de utilizar, pois demanda pouca configura&#xE7;&#xE3;o. A rede criada por usu&#xE1;rio utilizando o driver bridge assemelha-se bastante &#xE0; rede padr&#xE3;o do docker denominada &#x201C;bridge&#x201D;.</p>
+<blockquote>
+<p>Mais um ponto que merece aten&#xE7;&#xE3;o: o docker tem uma rede padr&#xE3;o chamada &#x201C;bridge&#x201D; que utiliza um driver tamb&#xE9;m chamado de &#x201C;bridge&#x201C;. Talvez, por conta disso, a confus&#xE3;o s&#xF3; aumente. Mas &#xE9; importante deixar claro que s&#xE3;o distintas.</p>
+</blockquote>
+<p>As redes criadas pelo usu&#xE1;rio com o driver bridge tem todas as funcionalidades descritas na rede padr&#xE3;o, chamada bridge. Por&#xE9;m, com funcionalidades adicionais.</p>
+<p>Dentre uma das funcionalidades: a rede criada pelo usu&#xE1;rio n&#xE3;o precisa mais utilizar a op&#xE7;&#xE3;o antiga &#x201C;&#x2013;link&#x201D;. Pois, toda rede criada pelo usu&#xE1;rio com o driver bridge poder&#xE1; utilizar o DNS interno do Docker que, associa, automaticamente, todos os nomes de containers dessa rede para seus respectivos IPs da rede IP correspondente.</p>
+<p>Para deixar mais claro: todos os containers que estiverem utilizando a rede padr&#xE3;o bridge n&#xE3;o poder&#xE3;o usufruir da funcionalidade de DNS interno do Docker. Caso utilize essa rede, &#xE9; preciso especificar a op&#xE7;&#xE3;o legada &#x201C;&#x2013;link&#x201D; para tradu&#xE7;&#xE3;o dos nomes em endere&#xE7;os IPs dinamicamente alocados no docker.</p>
+<p>Para exemplificar a utiliza&#xE7;&#xE3;o de rede criada por usu&#xE1;rio vamos criar a rede chamada isolated_nw com o driver bridge:</p>
+<pre><code>docker network create --driver bridge isolated_nw
+</code></pre><p>Agora verificamos a rede:</p>
+<pre><code>docker network list
+</code></pre><p>O resultado deve ser:</p>
+<p><img src="images/resultado_rede2.png" alt=""></p>
+<p>Agora iniciamos um container na rede isolated_nw:</p>
+<pre><code>docker container run -itd --net isolated_nw alpine sh
+</code></pre><p><img src="images/bridge_network.png" alt="Rede isolada"></p>
+<p>Vale salientar: um container que est&#xE1; em determinada rede n&#xE3;o acessa outro container que est&#xE1; em outra rede. Mesmo que voc&#xEA; conhe&#xE7;a o IP de destino. Para que um container acesse outro container de outra rede, &#xE9; necess&#xE1;rio que a origem esteja presente nas duas redes que deseja alcan&#xE7;ar.</p>
+<p>Os containers que est&#xE3;o na rede isolated_nw podem expor suas portas no docker host e essas portas podem ser acessadas tanto por containers externos a rede, chamada isolated_nw, como m&#xE1;quinas externas com acesso ao docker host.</p>
+<p><img src="images/network_access.png" alt="Rede isolada publicando portas"></p>
+<p>Para descobrir quais containers est&#xE3;o associados a uma determinada rede, execute o comando abaixo:</p>
+<pre><code>docker network inspect isolated_nw
+</code></pre><p>O resultado deve ser:</p>
+<p><img src="images/resultado_rede3.png" alt=""></p>
+<p>Dentro da sess&#xE3;o &#x201C;Containers&#x201D; &#xE9; poss&#xED;vel verificar quais containers fazem parte dessa rede. Todos os containers que estiverem na mesma rede poder&#xE3;o se comunicar utilizando apenas seus respectivos nomes. Como podemos ver no exemplo acima, caso um container novo acesse a rede isolated_nw, ele poder&#xE1; acessar o container amazing_noyce utilizando apenas seu nome.</p>
+<h4 id="overlay">Overlay</h4>
+<p>O driver overlay permite comunica&#xE7;&#xE3;o entre hosts docker, utilizando-o os containers de um determinado host docker poder&#xE3;o acessar, nativamente, containers de um outro ambiente docker.</p>
+<p>Esse driver demanda configura&#xE7;&#xE3;o mais complexa, sendo assim, trataremos do detalhamento em outra oportunidade.</p>
+<h3 id="utilizando-redes-no-docker-compose">Utilizando redes no docker compose</h3>
+<p>O assunto merece um artigo exclusivo. Ent&#xE3;o, apenas informaremos <a href="https://docs.docker.com/compose/networking/" target="_blank">um link interessante</a> para refer&#xEA;ncia sobre o assunto.</p>
+<h3 id="conclus&#xE3;o">Conclus&#xE3;o</h3>
+<p>Percebemos que a utiliza&#xE7;&#xE3;o de redes definidas por usu&#xE1;rio torna obsoleta a utiliza&#xE7;&#xE3;o da op&#xE7;&#xE3;o &#x201C;&#x2013;link&#x201D;, bem como viabiliza novo servi&#xE7;o de DNS interno do docker, o que facilita para quem se prop&#xF5;e a manter uma infraestrutura docker grande e complexa, assim como viabilizar o isolamento de rede dos seus servi&#xE7;os.</p>
+<p>Conhecer e utilizar bem as tecnologias novas &#xE9; uma boa pr&#xE1;tica que evita problemas futuros e facilita a constru&#xE7;&#xE3;o e manuten&#xE7;&#xE3;o de projetos grandes e complexos.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="armazenamento.html" class="navigation navigation-prev " aria-label="Previous page: Entendendo armazenamento no Docker">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="machine.html" class="navigation navigation-next " aria-label="Next page: Utilizando docker em múltiplos ambientes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Entendendo a rede no Docker","level":"1.11","depth":1,"next":{"title":"Utilizando docker em múltiplos ambientes","level":"1.12","depth":1,"path":"machine.md","ref":"machine.md","articles":[]},"previous":{"title":"Entendendo armazenamento no Docker","level":"1.10","depth":1,"path":"armazenamento.md","ref":"armazenamento.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"rede.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,698 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Gerenciando múltiplos containers docker com Docker Compose · Docker para Desenvolvedores</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Rafael Gomes">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="macos_e_windows.html" />
+    
+    
+    <link rel="prev" href="machine.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sumário</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="proposito.html">
+            
+                <a href="proposito.html">
+            
+                    
+                    Propósito desse livro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="agradecimentos.html">
+            
+                <a href="agradecimentos.html">
+            
+                    
+                    Agradecimentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="porque.html">
+            
+                <a href="porque.html">
+            
+                    
+                    Por que usar Docker?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="oquee.html">
+            
+                <a href="oquee.html">
+            
+                    
+                    O que é Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="comandos.html">
+            
+                <a href="comandos.html">
+            
+                    
+                    Comandos básicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="criandoimagem.html">
+            
+                <a href="criandoimagem.html">
+            
+                    
+                    Criando sua própria imagem no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="armazenamento.html">
+            
+                <a href="armazenamento.html">
+            
+                    
+                    Entendendo armazenamento no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="rede.html">
+            
+                <a href="rede.html">
+            
+                    
+                    Entendendo a rede no Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="machine.html">
+            
+                <a href="machine.html">
+            
+                    
+                    Utilizando docker em múltiplos ambientes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="compose.html">
+            
+                <a href="compose.html">
+            
+                    
+                    Gerenciando múltiplos containers docker com Docker Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="macos_e_windows.html">
+            
+                <a href="macos_e_windows.html">
+            
+                    
+                    Como usar Docker sem GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dockerizarando_app_todo.html">
+            
+                <a href="dockerizarando_app_todo.html">
+            
+                    
+                    Transformando sua aplicação em container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="basecode.html">
+            
+                <a href="basecode.html">
+            
+                    
+                    Base de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dependencia.html">
+            
+                <a href="dependencia.html">
+            
+                    
+                    Dependência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="configuracoes.html">
+            
+                <a href="configuracoes.html">
+            
+                    
+                    Configurações
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="servicosdeapoio.html">
+            
+                <a href="servicosdeapoio.html">
+            
+                    
+                    Serviços de Apoio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="construa-lance-execute.html">
+            
+                <a href="construa-lance-execute.html">
+            
+                    
+                    Construa, lance, execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="processos.html">
+            
+                <a href="processos.html">
+            
+                    
+                    Processos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="vinculos.html">
+            
+                <a href="vinculos.html">
+            
+                    
+                    Vínculo de portas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="concorrencia.html">
+            
+                <a href="concorrencia.html">
+            
+                    
+                    Concorrência
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="descartabilidade.html">
+            
+                <a href="descartabilidade.html">
+            
+                    
+                    Descartabilidade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="paridade.html">
+            
+                <a href="paridade.html">
+            
+                    
+                    Paridade entre desenvolvimento/produção
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Processos de administração
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="dicas.html">
+            
+                <a href="dicas.html">
+            
+                    
+                    Dicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="apendice.html">
+            
+                <a href="apendice.html">
+            
+                    
+                    Apêndice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="container_vm.html">
+            
+                <a href="container_vm.html">
+            
+                    
+                    Container ou máquina virtual?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Gerenciando múltiplos containers docker com Docker Compose</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gerenciando-m&#xFA;ltiplos-containers-docker-com-docker-compose">Gerenciando m&#xFA;ltiplos containers docker com Docker Compose</h1>
+<p>Esse artigo tem como objetivo explicar de forma detalhada, e com exemplos, como funciona o processo de gerenciamento de m&#xFA;ltiplos containers Docker, pois a medida que sua confian&#xE7;a em utilizar Docker aumenta, sua necessidade de utilizar um maior n&#xFA;mero de containers ao mesmo tempo cresce na mesma propor&#xE7;&#xE3;o, e seguir a boa pr&#xE1;tica de manter apenas um servi&#xE7;o por container comumente resulta em alguma demanda extra.</p>
+<p><img src="images/compose.png" alt=""></p>
+<p>Geralmente com o aumento do n&#xFA;mero de containers em execu&#xE7;&#xE3;o, fica evidente a necessidade de um melhor gerenciamento da sua comunica&#xE7;&#xE3;o, pois &#xE9; ideal que os servi&#xE7;os consigam trocar dados entre os containers quando necess&#xE1;rio, ou seja, voc&#xEA; precisa lidar com a <strong>rede</strong> desse novo ambiente.</p>
+<p>Imagine o trabalho que seria executar algumas dezenas de containers manualmente na linha de comando, um por um e todos seus par&#xE2;metros necess&#xE1;rios, suas configura&#xE7;&#xF5;es de rede entre containers, volumes e afins. Pode parar de imaginar, pois isso n&#xE3;o ser&#xE1; mais necess&#xE1;rio. Para atender essa demanda de gerenciamento de m&#xFA;ltiplos containers a solu&#xE7;&#xE3;o &#xE9; o <a href="https://docs.docker.com/compose/overview/" target="_blank">Docker Compose</a>.</p>
+<p><strong>Docker compose</strong> &#xE9; uma ferramenta para defini&#xE7;&#xE3;o e execu&#xE7;&#xE3;o de m&#xFA;ltiplos containers Docker. Com ela &#xE9; poss&#xED;vel configurar todos os par&#xE2;metros necess&#xE1;rios para executar cada container a partir de um <strong>arquivo de defini&#xE7;&#xE3;o</strong>. Dentro desse arquivo, definimos cada container como <strong>servi&#xE7;o</strong>, ou seja, sempre que esse texto citar <strong>servi&#xE7;o</strong> de agora em diante, imagine que &#xE9; a defini&#xE7;&#xE3;o que ser&#xE1; usada para iniciar um <strong>container</strong>, tal como portas expostas, vari&#xE1;veis de ambiente e afins.</p>
+<p>Com o Docker Compose podemos tamb&#xE9;m especificar quais <strong>volumes</strong> e <strong>rede</strong> ser&#xE3;o criados para serem utilizados nos par&#xE2;metros dos <strong>servi&#xE7;os</strong>, ou seja, isso quer dizer que n&#xE3;o preciso cri&#xE1;-los manualmente para que os <strong>servi&#xE7;os</strong> utilizem recursos adicionais de <strong>rede</strong> e <strong>volume</strong>.</p>
+<p>O <strong>arquivo de defini&#xE7;&#xE3;o</strong> do Docker Compose &#xE9; o local onde &#xE9; especificado todo o ambiente (<strong>rede</strong>, <strong>volume</strong> e <strong>servi&#xE7;os</strong>), ele &#xE9; escrito seguindo o formato <a href="https://en.wikipedia.org/wiki/YAML" target="_blank">YAML</a>. Esse arquivo por padr&#xE3;o tem como nome <a href="https://docs.docker.com/compose/compose-file/" target="_blank">docker-compose.yml</a>.</p>
+<h3 id="anatomia-do-docker-composeyml">Anatomia do docker-compose.yml</h3>
+<p>O padr&#xE3;o YAML utiliza a indenta&#xE7;&#xE3;o como separador dos blocos de c&#xF3;digos das defini&#xE7;&#xF5;es, por conta disso o uso da indenta&#xE7;&#xE3;o &#xE9; um fator muito importante, ou seja, caso n&#xE3;o a utilize corretamente, o docker-compose falhar&#xE1; em sua execu&#xE7;&#xE3;o.</p>
+<p>Cada linha desse arquivo pode ser definida com uma chave valor ou uma lista. Vamos aos exemplos pra ficar mais claro a explica&#xE7;&#xE3;o:</p>
+<pre><code>version: &apos;2&apos;
+services:
+  web:
+    build: .
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+      args:
+        versao: 1
+    ports:
+      - &quot;5000:5000&quot;
+  redis:
+    image: redis
+</code></pre><p>No arquivo acima temos a primeira linha que define a vers&#xE3;o do <strong>docker-compose.yml</strong>, que no nosso caso usaremos a vers&#xE3;o mais atual do momento, caso tenha interesse em saber a diferen&#xE7;a entre as vers&#xF5;es poss&#xED;veis, veja esse <a href="https://docs.docker.com/compose/compose-file/#versioning" target="_blank">link</a>.</p>
+<pre><code>version: &apos;2&apos;
+</code></pre><p>No mesmo n&#xED;vel de indenta&#xE7;&#xE3;o temos <strong>services</strong>, que define o in&#xED;cio do bloco de <strong>servi&#xE7;os</strong> que ser&#xE3;o definidos logo abaixo.</p>
+<pre><code>version: &apos;2&apos;
+services:
+</code></pre><p>No segundo n&#xED;vel de indenta&#xE7;&#xE3;o (aqui feito com dois espa&#xE7;os) temos o nome do primeiro <strong>servi&#xE7;o</strong> desse arquivo, que recebe o nome de <strong>web</strong>. Ele abre o bloco de defini&#xE7;&#xF5;es do <strong>servi&#xE7;o</strong>, ou seja, a partir do pr&#xF3;ximo n&#xED;vel de indenta&#xE7;&#xE3;o, tudo que for definido faz parte desse servi&#xE7;o.</p>
+<pre><code>version: &apos;2&apos;
+services:
+  web:
+</code></pre><p>No pr&#xF3;ximo n&#xED;vel de indenta&#xE7;&#xE3;o (feito novamente com mais dois espa&#xE7;os) temos a primeira defini&#xE7;&#xE3;o do <strong>servi&#xE7;o web</strong>, que nesse caso &#xE9; o <a href="https://docs.docker.com/compose/reference/build/" target="_blank">build</a> que informa que esse servi&#xE7;o ser&#xE1; criado n&#xE3;o a partir de uma imagem pronta, mas que ser&#xE1; necess&#xE1;rio construir sua imagem antes de sua execu&#xE7;&#xE3;o. Seria o equivalente ao comando <a href="https://docs.docker.com/engine/reference/commandline/build/" target="_blank">docker build</a>. Ele tamb&#xE9;m abre um novo bloco de c&#xF3;digo para parametrizar o funcionamento dessa constru&#xE7;&#xE3;o da imagem.</p>
+<pre><code>version: &apos;2&apos;
+services:
+  web:
+    build: .
+</code></pre><p>No pr&#xF3;ximo n&#xED;vel de indenta&#xE7;&#xE3;o (feito novamente com mais dois espa&#xE7;os) temos um par&#xE2;metro do <strong>build</strong>, que nesse caso &#xE9; o <strong>context</strong>. Ele &#xE9; respons&#xE1;vel por informar qual contexto de arquivos ser&#xE1; usado para construir a imagem em quest&#xE3;o, ou seja, apenas arquivos existentes dentro dessa pasta poder&#xE3;o ser usados na constru&#xE7;&#xE3;o da imagem. O contexto escolhido foi o <strong>&#x201C;./dir&#x201D;</strong>, ou seja, isso indica que uma pasta chamada <strong>dir</strong>, que se encontra no mesmo n&#xED;vel de sistema de arquivo do <strong>docker-compose.yml</strong> ou do lugar onde esse comando ser&#xE1; executado, ser&#xE1; usada como contexto da cria&#xE7;&#xE3;o dessa imagem. Quando logo ap&#xF3;s da chave um valor &#xE9; fornecido, isso indica que nenhum bloco de c&#xF3;digo ser&#xE1; aberto.</p>
+<pre><code>    build: .
+      context: ./dir
+</code></pre><p>No mesmo n&#xED;vel de indenta&#xE7;&#xE3;o da defini&#xE7;&#xE3;o <strong>context</strong>, ou seja, ainda dentro do bloco de defini&#xE7;&#xE3;o do <strong>build</strong>, temos o <strong>dockerfile</strong>, ele indica o nome do arquivo que ser&#xE1; usado para constru&#xE7;&#xE3;o da imagem em quest&#xE3;o. Seria o equivalente ao par&#xE2;metro <a href="https://docs.docker.com/engine/reference/commandline/build/#specify-dockerfile-f" target="_blank">&#x201C;-f&#x201D;</a> do comando <strong>docker build</strong>. Caso essa defini&#xE7;&#xE3;o n&#xE3;o existisse, o <strong>docker-compose</strong> procuraria por padr&#xE3;o por um arquivo chamado <strong>Dockerfile</strong> dentro da pasta informada no <strong>context</strong>.</p>
+<pre><code>    build: .
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+</code></pre><p>No mesmo n&#xED;vel de indenta&#xE7;&#xE3;o da defini&#xE7;&#xE3;o <strong>dockerfile</strong>, ou seja, ainda dentro do bloco de defini&#xE7;&#xE3;o do <strong>build</strong>, temos o <strong>args</strong>, ele define os argumentos que ser&#xE3;o usados pelo <strong>Dockerfile</strong>, seria o equivalente ao par&#xE2;metro <a href="https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables-build-arg" target="_blank">&#x201C;&#x2013;build-args&#x201D;</a> do comando <strong>docker build</strong>. Como n&#xE3;o foi informado o seu valor na mesma linha, fica evidente que ela abre um novo bloco de c&#xF3;digo.</p>
+<p>No pr&#xF3;ximo n&#xED;vel de indenta&#xE7;&#xE3;o (feito novamente com mais dois espa&#xE7;os) temos a chave <strong>&#x201C;versao&#x201D;</strong> e o valor <strong>&#x201C;1&#x201D;</strong>, ou seja, como essa defini&#xE7;&#xE3;o faz parte do bloco de c&#xF3;digo <strong>args</strong>, essa chave valor &#xE9; o &#xFA;nico argumento que ser&#xE1; passado para o <strong>Dockerfile</strong>, ou seja, o arquivo <strong>Dockerfile</strong> em quest&#xE3;o dever&#xE1; estar preparado para receber esse argumento ou ele se perder&#xE1; na constru&#xE7;&#xE3;o da imagem.</p>
+<pre><code>    build: .
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+      args:
+        versao: 1
+</code></pre><p>Voltando dois n&#xED;veis de indenta&#xE7;&#xE3;o (quatro espa&#xE7;os a menos em rela&#xE7;&#xE3;o a linha anterior) temos a defini&#xE7;&#xE3;o <strong>ports</strong>, que seria o equivalente ao par&#xE2;metro <a href="https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port-p-expose" target="_blank">&#x201C;-p&#x201D;</a> do comando docker container run. Ele define qual porta do container ser&#xE1; exposta no <strong>Docker host</strong>. Que no nosso caso ser&#xE1; a porta <em>5000 do container, com a 5000 do <em>*Docker host</em></em>.</p>
+<pre><code>  web:
+    build: .
+    ...
+    ports:
+      - &quot;5000:5000&quot;
+</code></pre><p>Voltando um n&#xED;vel de indenta&#xE7;&#xE3;o (dois espa&#xE7;os a menos em rela&#xE7;&#xE3;o a linha anterior) sa&#xED;mos do bloco de c&#xF3;digo do servi&#xE7;o <strong>web</strong>, isso indica que nenhuma defini&#xE7;&#xE3;o informada nessa linha ser&#xE1; aplicada a esse servi&#xE7;o, ou seja, precisamos iniciar um bloco de c&#xF3;digo de um servi&#xE7;o novo, que no nosso caso ser&#xE1; com nome de <strong>redis</strong>.</p>
+<pre><code>  redis:
+    image: redis
+</code></pre><p>No pr&#xF3;ximo n&#xED;vel de indenta&#xE7;&#xE3;o (feito novamente com mais dois espa&#xE7;os) temos a primeira defini&#xE7;&#xE3;o do servi&#xE7;o <strong>redis</strong>, que nesse caso &#xE9; o <strong>image</strong> que &#xE9; respons&#xE1;vel por informar qual imagem ser&#xE1; usada para iniciar esse container. Essa imagem ser&#xE1; obtida do reposit&#xF3;rio configurado no <strong>Docker host</strong>, que por padr&#xE3;o &#xE9; o <a href="https://hub.docker.com/" target="_blank">hub.docker.com</a>.</p>
+<h3 id="executando-o-docker-compose">Executando o docker compose</h3>
+<p>Ap&#xF3;s entender e criar seu pr&#xF3;prio <strong>arquivo de defini&#xE7;&#xE3;o</strong> precisamos saber como gerenci&#xE1;-lo e para isso utilizaremos o bin&#xE1;rio docker-compose, que entre v&#xE1;rias op&#xE7;&#xF5;es de uso temos as seguintes mais comuns:</p>
+<ul>
+<li><strong>build</strong> : Usada para construir todas as imagens dos <strong>servi&#xE7;os</strong> que est&#xE3;o descritos com a defini&#xE7;&#xE3;o <strong>build</strong> em seu bloco de c&#xF3;digo.</li>
+<li><strong>up</strong> : Iniciar todos os <strong>servi&#xE7;os</strong> que est&#xE3;o no arquivo <strong>docker-compose.yml</strong></li>
+<li><strong>stop</strong> : Parar todos os <strong>servi&#xE7;os</strong> que est&#xE3;o no arquivo <strong>docker-compose.yml</strong></li>
+<li><strong>ps</strong> :  Listar todos os <strong>servi&#xE7;os</strong> que foram iniciados a partir do arquivo <strong>docker-compose.yml</strong></li>
+</ul>
+<p>Para outras op&#xE7;&#xF5;es visite sua <a href="https://docs.docker.com/compose/reference/" target="_blank">documenta&#xE7;&#xE3;o</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="machine.html" class="navigation navigation-prev " aria-label="Previous page: Utilizando docker em múltiplos ambientes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="macos_e_windows.html" class="navigation navigation-next " aria-label="Next page: Como usar Docker sem GNU/Linux">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Gerenciando múltiplos containers docker com Docker Compose","level":"1.13","depth":1,"next":{"title":"Como usar Docker sem GNU/Linux","level":"1.14","depth":1,"path":"macos_e_windows.md","ref":"macos_e_windows.md","articles":[]},"previous":{"title":"Utilizando docker em múltiplos ambientes","level":"1.12","depth":1,"path":"machine.md","ref":"machine.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","github"],"root":"./manuscript","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":""},"github":{"url":"https://github.com/gomex/docker-para-desenvolvedores"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rafael Gomes","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"organizacao.md","glossary":"glossario.md","summary":"sumario.md"},"variables":{},"title":"Docker para Desenvolvedores","language":"pt","gitbook":"*"},"file":{"path":"compose.md","mtime":"2017-04-01T17:59:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T18:39:01.621Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
