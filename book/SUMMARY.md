@@ -51,20 +51,17 @@
 - [Usando o MongoDB](usando-mongodb/README.md)
 
   - [Provisionado o MongoDB Localmente](usando-mongodb/provisionado-mongod.md)
-  - [Instalando no Mac](ServerBackend/UsingMongoDB/MacInstallation.md)
-  - [Instalando no Windows](ServerBackend/UsingMongoDB/WindowsInstallation.md)
-  - [Comandos Comuns de Banco de Dados](ServerBackend/UsingMongoDB/CommonDatabaseCommands.md)
-  - [Comandos CRUD](ServerBackend/UsingMongoDB/CRUDCommands.md)
-  - [Ferramentas: Robomongo](ServerBackend/UsingMongoDB/GUITools.md)
-  - [Usando o MongoDB em uma Aplicação NodeJS](ServerBackend/UsingMongoDB/UsingMongoDBInNodeApp.md)
+  - [Comandos Comuns de Banco de Dados](usando-mongodb/comandos.md)
+  - [Comandos CRUD](usando-mongodb/crud.md)
+  - [Usando o MongoDB em uma Aplicação NodeJS](usando-mongodb/usando-com-node.md)
 
-- [Criando uma API RESTful com Node.js](ServerBackend/BuildRESTfulNodeAPI/README.md)
+- [Criando APIs RESTful com Node](criando-api-restful/README.md)
 
-  - [O que é REST?](ServerBackend/BuildRESTfulNodeAPI/WhatIsREST.md)
-  - [Serviços de back-end para nosso front-end em Angular](ServerBackend/BuildRESTfulNodeAPI/BackendForAngular.md)
-  - [Aplicação de Exemplo](ServerBackend/BuildRESTfulNodeAPI/SampleApplication.md)
-  - [Como começar](ServerBackend/BuildRESTfulNodeAPI/GettingStarted.md)
-  - [Inicializando o Servidor e os Testes](ServerBackend/BuildRESTfulNodeAPI/StartingServerAndTesting.md)
+  - [O que é REST?](criando-api-restful/README.md#o-que-é-rest)
+  - [Serviços de _Backend_](criando-api-restful/servicos-backend.md)
+  - [Aplicação de Exemplo](criando-api-restful/servicos-backend.md#aplicação-de-exemplo)
+  - [Como começar](criando-api-restful/como-comecar.md)
+  - [Configurando o Serviço HTTP](criando-api-restful/configurando-servico-http.md)
   - [Banco de Dados e o Modelo de Usuário](ServerBackend/BuildRESTfulNodeAPI/DatabaseUserModel.md)
   - [Express Router e Rotas](ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md)
   - [Middleware de Roteamento](ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md)
@@ -72,4 +69,6 @@
   - [Criando rotas para um item](ServerBackend/BuildRESTfulNodeAPI/RoutesForSingleItem.md)
   - [Conclusão](ServerBackend/BuildRESTfulNodeAPI/Conclusion.md)
 
-## frontend / client-side
+## APÊNDICE
+
+- [Docker para Desenvolvedores](http://stack.desenvolvedor.expert/appendix/docker/)
