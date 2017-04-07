@@ -1,0 +1,1482 @@
+{
+  "version": 1,
+  "width": 101,
+  "height": 33,
+  "duration": 82.2356,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/usr/local/bin/fish"
+  },
+  "stdout": [
+    [
+      1.945336,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code\u0007"
+    ],
+    [
+      0.077223,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code\u0007"
+    ],
+    [
+      0.000202,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.004669,
+      "\u001b[36m[~/c/d/e/code] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "# vamos iniciar uma nova aplicação Node"
+    ],
+    [
+      0.0036,
+      "\u001b[39D\u001b[31m# vamos iniciar uma nova aplicação Node\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000275,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code\u0007\r"
+    ],
+    [
+      0.0318,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code\u0007"
+    ],
+    [
+      8.4e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003141,
+      "\u001b[36m[~/c/d/e/code] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      1.665623,
+      "m"
+    ],
+    [
+      0.006099,
+      "\u001b[38;2;85;85;85mkdir api\b\b\b\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.005724,
+      "\b\u001b[91mm\u001b[38;2;85;85;85mkdir api\b\b\b\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.079721,
+      "\u001b[91mk\u001b[38;2;85;85;85mdir api\b\b\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.061862,
+      "\u001b[91md\u001b[38;2;85;85;85mir api\b\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.17766,
+      "\u001b[91mi\u001b[38;2;85;85;85mr api\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.135912,
+      "\u001b[91mr\u001b[38;2;85;85;85m api\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007296,
+      "\b\b\b\b\b\u001b[1mmkdir\u001b(B\u001b[m\u001b[38;2;85;85;85m api\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.168766,
+      "\u001b[1m \u001b(B\u001b[m\u001b[38;2;85;85;85mapi\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007049,
+      "\b \u001b[38;2;85;85;85mapi\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.176991,
+      "a\u001b[38;2;85;85;85mpi\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007718,
+      "\b\u001b[36m\u001b[4ma\u001b[38;2;85;85;85m\u001b[24mpi\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.048607,
+      "\u001b[36m\u001b[4mp\u001b[38;2;85;85;85m\u001b[24mi\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.220899,
+      "\u001b[36m\u001b[4mi\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      1.082729,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000373,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;mkdir  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code\u0007\r"
+    ],
+    [
+      0.034557,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code\u0007"
+    ],
+    [
+      6.1e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003491,
+      "\u001b[36m[~/c/d/e/code] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      0.578155,
+      "c"
+    ],
+    [
+      0.009391,
+      "\b\u001b[91mc\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.003142,
+      "\u001b[38;2;85;85;85mlear\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.042141,
+      "\u001b[91md\u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      0.007491,
+      "\b\b\u001b[1mcd\u001b(B\u001b[m"
+    ],
+    [
+      0.003008,
+      "\u001b[38;2;85;85;85m api/\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.190205,
+      "\u001b[1m \u001b(B\u001b[m\u001b[38;2;85;85;85mapi/\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007234,
+      "\b \u001b[38;2;85;85;85mapi/\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.160842,
+      "a\u001b[38;2;85;85;85mpi/\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007222,
+      "\b\u001b[36m\u001b[4ma\u001b[38;2;85;85;85m\u001b[24mpi/\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.161172,
+      "\u001b[36m\u001b[4mp\u001b[38;2;85;85;85m\u001b[24mi/\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      1.087029,
+      "\u001b[36m\u001b[4mi/\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001396,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;cd  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code\u0007\r"
+    ],
+    [
+      0.038627,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.000125,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.004524,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      1.243046,
+      "n"
+    ],
+    [
+      0.007582,
+      "\u001b[38;2;85;85;85mpm init --yes\u001b[13D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.003722,
+      "\b\u001b[91mn\u001b[38;2;85;85;85mpm init --yes\u001b[13D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.356702,
+      "\u001b[91mp\u001b[38;2;85;85;85mm init --yes\u001b[12D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.176049,
+      "\u001b[91mm\u001b[38;2;85;85;85m init --yes\u001b[11D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.00739,
+      "\b\b\b\u001b[1mnpm\u001b(B\u001b[m\u001b[38;2;85;85;85m init --yes\u001b[11D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.135404,
+      "\u001b[1m \u001b(B\u001b[m\u001b[38;2;85;85;85minit --yes\u001b[10D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.006646,
+      "\b \u001b[38;2;85;85;85minit --yes\u001b[10D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.120595,
+      "i\u001b[38;2;85;85;85mnit --yes\u001b[9D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007495,
+      "\b\u001b[36mi\u001b[38;2;85;85;85mnit --yes\u001b[9D\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.130212,
+      "\u001b[36mn\u001b[38;2;85;85;85mit --yes\b\b\b\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      1.567344,
+      "\u001b[36mit\u001b[38;2;85;85;85m --yes\b\b\b\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      1.440712,
+      "\u001b[K\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000255,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;npm  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.399731,
+      "This utility will walk you through creating a package.json file.\r\nIt only covers the most common items, and tries to guess sensible defaults.\r\n\r\nSee `npm help json` for definitive documentation on these fields\r\nand exactly what they do.\r\n\r\nUse `npm install <pkg> --save` afterwards to install a package and\r\nsave it as a dependency in the package.json file.\r\n\r\nPress ^C at any time to quit.\r\n"
+    ],
+    [
+      0.04579,
+      "\u001b[1G"
+    ],
+    [
+      0.000207,
+      "\u001b[0J"
+    ],
+    [
+      0.000142,
+      "name: (api) "
+    ],
+    [
+      4.7e-05,
+      "\u001b[13G"
+    ],
+    [
+      1.791803,
+      "\r\r\n"
+    ],
+    [
+      0.003341,
+      "\u001b[1G\u001b[0Jversion: (1.0.0) "
+    ],
+    [
+      4.1e-05,
+      "\u001b[18G"
+    ],
+    [
+      1.722639,
+      "0"
+    ],
+    [
+      0.383606,
+      "."
+    ],
+    [
+      0.67949,
+      "1"
+    ],
+    [
+      0.208028,
+      "."
+    ],
+    [
+      0.24794,
+      "0"
+    ],
+    [
+      0.857014,
+      "\r\r\n"
+    ],
+    [
+      0.001112,
+      "\u001b[1G\u001b[0Jdescription: "
+    ],
+    [
+      6.7e-05,
+      "\u001b[14G"
+    ],
+    [
+      2.0,
+      "A"
+    ],
+    [
+      8.3e-05,
+      "P"
+    ],
+    [
+      0.00016,
+      "I"
+    ],
+    [
+      0.000195,
+      " "
+    ],
+    [
+      0.000158,
+      "R"
+    ],
+    [
+      0.000102,
+      "E"
+    ],
+    [
+      0.000286,
+      "S"
+    ],
+    [
+      0.000208,
+      "T"
+    ],
+    [
+      0.000131,
+      "f"
+    ],
+    [
+      0.00019,
+      "u"
+    ],
+    [
+      0.000136,
+      "l"
+    ],
+    [
+      0.000126,
+      " "
+    ],
+    [
+      0.00014,
+      "c"
+    ],
+    [
+      0.000143,
+      "o"
+    ],
+    [
+      0.000879,
+      "m"
+    ],
+    [
+      0.000308,
+      " "
+    ],
+    [
+      0.000214,
+      "E"
+    ],
+    [
+      0.000138,
+      "x"
+    ],
+    [
+      0.000133,
+      "p"
+    ],
+    [
+      0.000138,
+      "r"
+    ],
+    [
+      0.000128,
+      "e"
+    ],
+    [
+      0.000123,
+      "s"
+    ],
+    [
+      0.000117,
+      "s"
+    ],
+    [
+      1.691001,
+      "\r\r\n"
+    ],
+    [
+      0.001437,
+      "\u001b[1G\u001b[0Jentry point: (index.js) \u001b[25G"
+    ],
+    [
+      1.318357,
+      "\r\r\n"
+    ],
+    [
+      0.002939,
+      "\u001b[1G\u001b[0Jtest command: \u001b[15G"
+    ],
+    [
+      2.0,
+      "\r\r\n"
+    ],
+    [
+      0.001931,
+      "\u001b[1G\u001b[0J"
+    ],
+    [
+      5.1e-05,
+      "git repository: "
+    ],
+    [
+      0.000115,
+      "\u001b[17G"
+    ],
+    [
+      1.510388,
+      "\r\r\n"
+    ],
+    [
+      0.000313,
+      "\u001b[1G"
+    ],
+    [
+      6.1e-05,
+      "\u001b[0Jkeywords: "
+    ],
+    [
+      5.2e-05,
+      "\u001b[11G"
+    ],
+    [
+      2.0,
+      "a"
+    ],
+    [
+      0.088453,
+      "p"
+    ],
+    [
+      0.216144,
+      "i"
+    ],
+    [
+      1.456388,
+      ","
+    ],
+    [
+      0.255584,
+      " "
+    ],
+    [
+      0.104147,
+      "e"
+    ],
+    [
+      0.592145,
+      "\u001b[1G\u001b[0J"
+    ],
+    [
+      5.8e-05,
+      "keywords: api, \u001b[16G"
+    ],
+    [
+      0.279977,
+      "\u001b[1G"
+    ],
+    [
+      0.000726,
+      "\u001b[0Jkeywords: api,\u001b[15G"
+    ],
+    [
+      0.59904,
+      "e"
+    ],
+    [
+      0.216132,
+      "x"
+    ],
+    [
+      0.216115,
+      "p"
+    ],
+    [
+      0.15936,
+      "r"
+    ],
+    [
+      0.184551,
+      "e"
+    ],
+    [
+      0.191891,
+      "s"
+    ],
+    [
+      0.152107,
+      "s"
+    ],
+    [
+      2.0,
+      "\r\r\n"
+    ],
+    [
+      0.00081,
+      "\u001b[1G"
+    ],
+    [
+      6.3e-05,
+      "\u001b[0Jauthor: "
+    ],
+    [
+      5.2e-05,
+      "\u001b[9G"
+    ],
+    [
+      1.703344,
+      "@"
+    ],
+    [
+      0.25519,
+      "m"
+    ],
+    [
+      0.144708,
+      "i"
+    ],
+    [
+      0.159944,
+      "l"
+    ],
+    [
+      0.055304,
+      "e"
+    ],
+    [
+      0.208759,
+      "s"
+    ],
+    [
+      0.111767,
+      "i"
+    ],
+    [
+      0.257083,
+      "b"
+    ],
+    [
+      0.071041,
+      "a"
+    ],
+    [
+      0.167887,
+      "s"
+    ],
+    [
+      0.080488,
+      "t"
+    ],
+    [
+      0.191546,
+      "o"
+    ],
+    [
+      0.184118,
+      "s"
+    ],
+    [
+      0.720046,
+      "\r\r\n"
+    ],
+    [
+      0.000354,
+      "\u001b[1G"
+    ],
+    [
+      5.5e-05,
+      "\u001b[0Jlicense: (ISC) "
+    ],
+    [
+      4.9e-05,
+      "\u001b[16G"
+    ],
+    [
+      1.407631,
+      "M"
+    ],
+    [
+      0.127968,
+      "I"
+    ],
+    [
+      0.27999,
+      "T"
+    ],
+    [
+      0.839944,
+      "\r\r\n"
+    ],
+    [
+      0.020067,
+      "About to write to /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api/package.json:\r\n\r\n{\r\n  \"name\": \"api\",\r\n  \"version\": \"0.1.0\",\r\n  \"description\": \"API RESTful com Express\",\r\n  \"main\": \"index.js\",\r\n  \"scripts\": {\r\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\r\n  },\r\n  \"keywords\": [\r\n    \"api\",\r\n    \"express\"\r\n  ],\r\n  \"author\": \"@milesibastos\",\r\n  \"license\": \"MIT\"\r\n}\r\n\r\n\r\n"
+    ],
+    [
+      8.4e-05,
+      "\u001b[1G\u001b[0J"
+    ],
+    [
+      4.8e-05,
+      "Is this ok? (yes) "
+    ],
+    [
+      3.4e-05,
+      "\u001b[19G"
+    ],
+    [
+      2.0,
+      "y"
+    ],
+    [
+      0.071768,
+      "e"
+    ],
+    [
+      0.208492,
+      "s"
+    ],
+    [
+      2.0,
+      "\r\r\n"
+    ],
+    [
+      0.065491,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      6e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.005245,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "# vamos instalar alguns packages pra começar"
+    ],
+    [
+      0.00413,
+      "\u001b[44D\u001b[31m# vamos instalar alguns packages pra começar\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001351,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.032601,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      5.8e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003806,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "npm install --save express morgan mongoose body-parser bcryptjs"
+    ],
+    [
+      0.003507,
+      "\u001b[63D\u001b[1mnpm\u001b(B\u001b[m \u001b[36minstall\u001b[30m\u001b(B\u001b[m \u001b[36m--save\u001b[30m\u001b(B\u001b[m \u001b[36mexpress\u001b[30m\u001b(B\u001b[m \u001b[36mmorgan\u001b[30m\u001b(B\u001b[m \u001b[36mmongoose\u001b[30m\u001b(B\u001b[m \u001b[36mbody-parser\u001b[30m\u001b(B\u001b[m \u001b[36mbcryptjs\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001185,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;npm  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.853324,
+      "\u001b[?25l"
+    ],
+    [
+      0.00748,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠧ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.04426,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠹ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.790578,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠹ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.2756,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠙ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.062784,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠋ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.049298,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠋ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.049759,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠴ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.067985,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠴ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.056585,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.04918,
+      "⸨\u001b[90m░░░░░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ normalizeTree: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m loadCurrentTree\u001b[K\r"
+    ],
+    [
+      0.083269,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠸ loadRequestedDeps: \u001b[34;40mverb\u001b[0m \u001b[35mcache add\u001b[0m spec morgan\u001b[K\r"
+    ],
+    [
+      0.053962,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠸ loadRequestedDeps: \u001b[34;40mverb\u001b[0m \u001b[35mcache add\u001b[0m spec morgan\u001b[K\r"
+    ],
+    [
+      0.055287,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠋ loadRequestedDeps: \u001b[34;40mverb\u001b[0m \u001b[35mcache add\u001b[0m spec morgan\u001b[K\r"
+    ],
+    [
+      0.050203,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠧ loadRequestedDeps: \u001b[34;40mverb\u001b[0m \u001b[35mcache add\u001b[0m spec morgan\u001b[K\r"
+    ],
+    [
+      0.050295,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠙ loadRequestedDeps: \u001b[34;40mverb\u001b[0m \u001b[35mcache add\u001b[0m spec morgan\u001b[K\r"
+    ],
+    [
+      0.054864,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠸ loadRequestedDeps: \u001b[34;40mverb\u001b[0m \u001b[35mcache add\u001b[0m spec morgan\u001b[K\r"
+    ],
+    [
+      0.061369,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠸ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/raw-body\u001b[K\r"
+    ],
+    [
+      0.054451,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/raw-body\u001b[K\r"
+    ],
+    [
+      0.051566,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/raw-body\u001b[K\r"
+    ],
+    [
+      0.054861,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/raw-body\u001b[K\r"
+    ],
+    [
+      0.051232,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/raw-body\u001b[K\r"
+    ],
+    [
+      0.050429,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/raw-body\u001b[K\r"
+    ],
+    [
+      0.05569,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/raw-body\u001b[K\r"
+    ],
+    [
+      0.047555,
+      "⸨\u001b[7m    \u001b[27m\u001b[90m░░░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/qs/6.4.0/package\u001b[K\r"
+    ],
+    [
+      0.049677,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/setprototype\u001b[K\r"
+    ],
+    [
+      0.049953,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/setprototype\u001b[K\r"
+    ],
+    [
+      0.050249,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/setprototypeof/1\u001b[K\r"
+    ],
+    [
+      0.052436,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/media-typer\u001b[K\r"
+    ],
+    [
+      0.050231,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/mime-types/2.1.1\u001b[K\r"
+    ],
+    [
+      0.067305,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/fresh\u001b[K\r"
+    ],
+    [
+      0.051103,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠏ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/fresh\u001b[K\r"
+    ],
+    [
+      0.054039,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠼ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/fresh\u001b[K\r"
+    ],
+    [
+      0.048711,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/fresh\u001b[K\r"
+    ],
+    [
+      0.059343,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠏ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/fresh\u001b[K\r"
+    ],
+    [
+      0.05283,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/fresh\u001b[K\r"
+    ],
+    [
+      0.055357,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/vary/1.1.1/packa\u001b[K\r"
+    ],
+    [
+      0.075373,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/negotiator/0.6.1\u001b[K\r"
+    ],
+    [
+      0.051923,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/forwarded\u001b[K\r"
+    ],
+    [
+      0.049915,
+      "⸨\u001b[7m     \u001b[27m\u001b[90m░░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/destroy\u001b[K\r"
+    ],
+    [
+      0.050891,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠙ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.052969,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠏ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.050676,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.053574,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.050707,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠸ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.050058,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.050251,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.056216,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.050067,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.054958,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠸ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.05103,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.048312,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/regexp-clone\u001b[K\r"
+    ],
+    [
+      0.05108,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/mongodb/2.2.25/p\u001b[K\r"
+    ],
+    [
+      0.051608,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/mongodb/2.2.25/p\u001b[K\r"
+    ],
+    [
+      0.048771,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/mongodb/2.2.25/p\u001b[K\r"
+    ],
+    [
+      0.053723,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.051181,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠴ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.049045,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.055043,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.051622,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.054035,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.050286,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.051867,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.050364,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.049589,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/mongodb-core\u001b[K\r"
+    ],
+    [
+      0.050608,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠦ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/mongodb-core/2.1\u001b[K\r"
+    ],
+    [
+      0.052822,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠸ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/semver\u001b[K\r"
+    ],
+    [
+      0.051059,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠏ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/semver\u001b[K\r"
+    ],
+    [
+      0.050248,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠼ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/string_decod\u001b[K\r"
+    ],
+    [
+      0.049891,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠧ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/string_decod\u001b[K\r"
+    ],
+    [
+      0.054926,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠼ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/string_decod\u001b[K\r"
+    ],
+    [
+      0.050418,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠹ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mpickManifestFromRegistryMetadata\u001b[0m spec 2.2.0 tag latest ve\u001b[K\r"
+    ],
+    [
+      0.054646,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠇ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mpickManifestFromRegistryMetadata\u001b[0m spec 2.2.0 tag latest ve\u001b[K\r"
+    ],
+    [
+      0.051562,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠹ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mpickManifestFromRegistryMetadata\u001b[0m spec 2.2.0 tag latest ve\u001b[K\r"
+    ],
+    [
+      0.05903,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[34;40mverb\u001b[0m \u001b[35mafterAdd\u001b[0m /Volumes/Data/milesibastos/.npm/bluebird/2.10.2/\u001b[K\r"
+    ],
+    [
+      0.050648,
+      "⸨\u001b[7m      \u001b[27m\u001b[90m░░░░░░░░░░░░\u001b[0m⸩ ⠋ fetchMetadata: \u001b[7msill\u001b[0m \u001b[35mmapToRegistry\u001b[0m uri https://registry.npmjs.org/basic-auth\u001b[K\r"
+    ],
+    [
+      0.106164,
+      "⸨\u001b[7m          \u001b[27m\u001b[90m░░░░░░░░\u001b[0m⸩ ⠼ diffTrees: \u001b[7msill\u001b[0m \u001b[35minstall\u001b[0m generateActionsToTake\u001b[K\r"
+    ],
+    [
+      0.082665,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠸ fetch: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m fetch 80\u001b[K\r"
+    ],
+    [
+      0.057981,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠴ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 80\u001b[K\r"
+    ],
+    [
+      0.05623,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠦ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 80\u001b[K\r"
+    ],
+    [
+      0.050653,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠏ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 80\u001b[K\r"
+    ],
+    [
+      0.051506,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠧ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 80\u001b[K\r"
+    ],
+    [
+      0.053528,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠼ extract:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m extract 80\u001b[K\r"
+    ],
+    [
+      0.051163,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠧ extract:ee-first: \u001b[7msill\u001b[0m \u001b[35mextract\u001b[0m etag@1.8.0\u001b[K\r"
+    ],
+    [
+      0.050716,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠼ extract:core-util-is: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m modified mode [ 'index.js', 438, 420 ]\u001b[K\r"
+    ],
+    [
+      0.049782,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠏ extract:core-util-is: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m modified mode [ 'index.js', 438, 420 ]\u001b[K\r"
+    ],
+    [
+      0.052922,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠇ extract:depd: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Data/m\u001b[K\r"
+    ],
+    [
+      0.051977,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠋ extract:escape-html: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes\u001b[K\r"
+    ],
+    [
+      0.049512,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠴ extract:es6-promise: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry README.md\u001b[K\r"
+    ],
+    [
+      0.04968,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠹ extract:es6-promise: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry README.md\u001b[K\r"
+    ],
+    [
+      0.051198,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠴ extract:media-typer: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes\u001b[K\r"
+    ],
+    [
+      0.048851,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠇ extract:mime: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry package.json\u001b[K\r"
+    ],
+    [
+      0.050665,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠋ extract:bson: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Data/m\u001b[K\r"
+    ],
+    [
+      0.04903,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠦ extract:ms: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry src/index.js\u001b[K\r"
+    ],
+    [
+      0.059442,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠸ extract:sliced: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Data\u001b[K\r"
+    ],
+    [
+      0.049428,
+      "⸨\u001b[7m             \u001b[27m\u001b[90m░░░░░\u001b[0m⸩ ⠙ extract:negotiator: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/\u001b[K\r"
+    ],
+    [
+      0.050244,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠙ extract:range-parser: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry _setToPairs.js\u001b[K\r"
+    ],
+    [
+      0.050121,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠸ extract:regexp-clone: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry _root.js\u001b[K\r"
+    ],
+    [
+      0.051432,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠹ extract:http-errors: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes\u001b[K\r"
+    ],
+    [
+      0.048939,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠇ extract:send: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Data/m\u001b[K\r"
+    ],
+    [
+      0.049883,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠦ extract:accepts: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Dat\u001b[K\r"
+    ],
+    [
+      0.051814,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠸ extract:basic-auth: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/\u001b[K\r"
+    ],
+    [
+      0.049356,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠹ extract:content-type: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m modified mode [ 'doDuring.js', 436, 42\u001b[K\r"
+    ],
+    [
+      0.049589,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠏ extract:finalhandler: \u001b[7msill\u001b[0m \u001b[35mextract\u001b[0m mongodb@2.2.25\u001b[K\r"
+    ],
+    [
+      0.050454,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠙ extract:merge-descriptors: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry lib/read_preference.\u001b[K\r"
+    ],
+    [
+      0.051869,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠴ extract:methods: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Dat\u001b[K\r"
+    ],
+    [
+      0.0497,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠧ extract:bcryptjs: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.048743,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠸ extract:muri: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry invokeMap.js\u001b[K\r"
+    ],
+    [
+      0.056878,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠧ extract:path-to-regexp: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volu\u001b[K\r"
+    ],
+    [
+      0.04899,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠋ extract:proxy-addr: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry test/stringify.js\u001b[K\r"
+    ],
+    [
+      0.049997,
+      "⸨\u001b[7m              \u001b[27m\u001b[90m░░░░\u001b[0m⸩ ⠧ extract:sliced: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m extractEntry .travis.yml\u001b[K\r"
+    ],
+    [
+      0.050976,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠴ extract:vary: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Data/m\u001b[K\r"
+    ],
+    [
+      0.049786,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:express: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Dat\u001b[K\r"
+    ],
+    [
+      0.05085,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠼ extract:express: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Dat\u001b[K\r"
+    ],
+    [
+      0.048658,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠹ extract:async: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m modified mode [ 'lib/types/documentarray.js',\u001b[K\r"
+    ],
+    [
+      0.049854,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠇ extract:async: \u001b[7msill\u001b[0m \u001b[35mgunzTarPerm\u001b[0m modified mode [ 'lib/types/documentarray.js',\u001b[K\r"
+    ],
+    [
+      0.050619,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠏ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050003,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠙ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050243,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.049823,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠏ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050064,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠴ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050036,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.049799,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050006,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050023,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050037,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.049978,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.050042,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠸ extract:mongoose: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Da\u001b[K\r"
+    ],
+    [
+      0.058186,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠦ preinstall:express: \u001b[7msill\u001b[0m \u001b[35mdoParallel\u001b[0m preinstall 80\u001b[K\r"
+    ],
+    [
+      0.077778,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠴ preinstall:es6-promise: \u001b[32minfo\u001b[0m \u001b[35mlifecycle\u001b[0m lodash@4.17.4~preinstall: lodash@4.17.\u001b[K\r"
+    ],
+    [
+      0.053685,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠹ preinstall:accepts: \u001b[32minfo\u001b[0m \u001b[35mlifecycle\u001b[0m finalhandler@1.0.1~preinstall: finalhandle\u001b[K\r"
+    ],
+    [
+      0.055467,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠋ finalize:express: \u001b[7msill\u001b[0m \u001b[35mdoSerial\u001b[0m finalize 80\u001b[K\r"
+    ],
+    [
+      0.053947,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠇ finalize:isarray: \u001b[7msill\u001b[0m \u001b[35mfinalize\u001b[0m /Volumes/Data/milesibastos/code/devexpert/exp\u001b[K\r"
+    ],
+    [
+      0.045313,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠋ finalize:async: \u001b[7msill\u001b[0m \u001b[35mfinalize\u001b[0m /Volumes/Data/milesibastos/code/devexpert/exper\u001b[K\r"
+    ],
+    [
+      0.050889,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠇ build:core-util-is: \u001b[34;40mverb\u001b[0m \u001b[35mlinkMans\u001b[0m core-util-is@1.0.2\u001b[K\r"
+    ],
+    [
+      0.051277,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠼ build:semver: \u001b[34;40mverb\u001b[0m \u001b[35mgentlyRm\u001b[0m don't care about contents; nuking /Volumes/Data/m\u001b[K\r"
+    ],
+    [
+      0.052057,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠙ install:express: \u001b[7msill\u001b[0m \u001b[35mdoSerial\u001b[0m install 80\u001b[K\r"
+    ],
+    [
+      0.049757,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠋ install:mime-types: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m mime-types@2.1.15~install: no script for i\u001b[K\r"
+    ],
+    [
+      0.050281,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠴ install:basic-auth: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m basic-auth@1.1.0~install: no script for in\u001b[K\r"
+    ],
+    [
+      0.049959,
+      "⸨\u001b[7m               \u001b[27m\u001b[90m░░░\u001b[0m⸩ ⠹ postinstall:buffer-shims: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m buffer-shims@1.0.0~postinstall: no s\u001b[K\r"
+    ],
+    [
+      0.050341,
+      "⸨\u001b[7m                \u001b[27m\u001b[90m░░\u001b[0m⸩ ⠇ postinstall:regexp-clone: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m regexp-clone@0.0.1~postinstall: no s\u001b[K\r"
+    ],
+    [
+      0.049886,
+      "⸨\u001b[7m                \u001b[27m\u001b[90m░░\u001b[0m⸩ ⠙ postinstall:type-is: \u001b[7msill\u001b[0m \u001b[35mlifecycle\u001b[0m type-is@1.6.15~postinstall: no script for\u001b[K\r"
+    ],
+    [
+      0.137494,
+      "\r\u001b[K\u001b[?25h"
+    ],
+    [
+      0.000108,
+      "api@0.1.0 /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\r\n├── \u001b[40m\u001b[33mbcryptjs@2.4.3\u001b[39m\u001b[49m \r\n├─┬ \u001b[40m\u001b[33mbody-parser@1.17.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mbytes@2.4.0\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mcontent-type@1.0.2\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mdebug@2.6.1\u001b[39m\u001b[49m \r\n│ │ └── \u001b[40m\u001b[33mms@0.7.2\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33mdepd@1.1.0\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mhttp-errors@1.6.1\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mdepd@1.1.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33minherits@2.0.3\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33msetprototypeof@1.0.3\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ └── \u001b[40m\u001b[33mstatuses@1.3.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33miconv-lite@0.4.15\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mon-finished@2.3.0\u001b[39m\u001b[49m \r\n│ │ └── \u001b[40m\u001b[33mee-first@1.1.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mqs@6.4.0\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mraw-body@2.2.0\u001b[39m\u001b["
+    ],
+    [
+      0.000161,
+      "49m \r\n│ │ ├── \u001b[40m\u001b[33mbytes@2.4.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33miconv-lite@0.4.15\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ └── \u001b[40m\u001b[33munpipe@1.0.0\u001b[39m\u001b[49m \r\n│ └─┬ \u001b[40m\u001b[33mtype-is@1.6.15\u001b[39m\u001b[49m \r\n│   ├── \u001b[40m\u001b[33mmedia-typer@0.3.0\u001b[39m\u001b[49m \r\n│   └─┬ \u001b[40m\u001b[33mmime-types@2.1.15\u001b[39m\u001b[49m \r\n│     └── \u001b[40m\u001b[33mmime-db@1.27.0\u001b[39m\u001b[49m \r\n├─┬ \u001b[40m\u001b[33mexpress@4.15.2\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33maccepts@1.3.3\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mmime-types@2.1.15\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ └── \u001b[40m\u001b[33mnegotiator@0.6.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33marray-flatten@1.1.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mcontent-disposition@0.5.2\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mcontent-type@1.0.2\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33mcookie@0.3.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mcookie-signature@1.0.6\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mdebug@2.6.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ "
+    ],
+    [
+      0.000556,
+      "├── \u001b[40m\u001b[33mdepd@1.1.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33mencodeurl@1.0.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mescape-html@1.0.3\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33metag@1.8.0\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mfinalhandler@1.0.1\u001b[39m\u001b[49m \r\n│ │ ├─┬ \u001b[40m\u001b[33mdebug@2.6.3\u001b[39m\u001b[49m \r\n│ │ │ └── \u001b[40m\u001b[33mms@0.7.2\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mencodeurl@1.0.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mescape-html@1.0.3\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mon-finished@2.3.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mparseurl@1.3.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mstatuses@1.3.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ └── \u001b[40m\u001b[33munpipe@1.0.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33mfresh@0.5.0\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mmerge-descriptors@1.0.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mmethods@1.1.2\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mon-finish"
+    ],
+    [
+      0.000567,
+      "ed@2.3.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33mparseurl@1.3.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mpath-to-regexp@0.1.7\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mproxy-addr@1.1.4\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mforwarded@0.1.0\u001b[39m\u001b[49m \r\n│ │ └── \u001b[40m\u001b[33mipaddr.js@1.3.0\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mqs@6.4.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33mrange-parser@1.2.0\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33msend@0.15.1\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mdebug@2.6.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mdepd@1.1.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mdestroy@1.0.4\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mencodeurl@1.0.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mescape-html@1.0.3\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33metag@1.8.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mfresh@0.5.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mhttp-errors@1.6.1\u001b[39m\u001b[49m  \u001b[90mde"
+    ],
+    [
+      0.00054,
+      "duped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mmime@1.3.4\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mms@0.7.2\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mon-finished@2.3.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mrange-parser@1.2.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ └── \u001b[40m\u001b[33mstatuses@1.3.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├─┬ \u001b[40m\u001b[33mserve-static@1.12.1\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mencodeurl@1.0.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mescape-html@1.0.3\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ ├── \u001b[40m\u001b[33mparseurl@1.3.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ └── \u001b[40m\u001b[33msend@0.15.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33msetprototypeof@1.0.3\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mstatuses@1.3.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mtype-is@1.6.15\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ ├── \u001b[40m\u001b[33mutils-merge@1.0.0\u001b[39m\u001b[49m \r\n│ └── \u001b[40m\u001b[33mvary@1.1.1\u001b[39m\u001b[49m \r\n├─┬ \u001b[40m\u001b[33mmongoose@4.9.3\u001b[39m\u001b["
+    ],
+    [
+      0.000509,
+      "49m \r\n│ ├─┬ \u001b[40m\u001b[33masync@2.1.4\u001b[39m\u001b[49m \r\n│ │ └── \u001b[40m\u001b[33mlodash@4.17.4\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mbson@1.0.4\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mhooks-fixed@2.0.0\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mkareem@1.2.1\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mmongodb@2.2.25\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mes6-promise@3.2.1\u001b[39m\u001b[49m \r\n│ │ ├─┬ \u001b[40m\u001b[33mmongodb-core@2.1.9\u001b[39m\u001b[49m \r\n│ │ │ ├── \u001b[40m\u001b[33mbson@1.0.4\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ │ └─┬ \u001b[40m\u001b[33mrequire_optional@1.0.0\u001b[39m\u001b[49m \r\n│ │ │   ├── \u001b[40m\u001b[33mresolve-from@2.0.0\u001b[39m\u001b[49m \r\n│ │ │   └── \u001b[40m\u001b[33msemver@5.3.0\u001b[39m\u001b[49m \r\n│ │ └─┬ \u001b[40m\u001b[33mreadable-stream@2.1.5\u001b[39m\u001b[49m \r\n│ │   ├── \u001b[40m\u001b[33mbuffer-shims@1.0.0\u001b[39m\u001b[49m \r\n│ │   ├── \u001b[40m\u001b[33mcore-util-is@1.0.2\u001b[39m\u001b[49m \r\n│ │   ├── \u001b[40m\u001b[33minherits@2.0.3\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │   ├── \u001b[40m\u001b[33misarray@1.0.0\u001b[39m\u001b[49m \r\n│ │   ├──"
+    ],
+    [
+      0.00063,
+      " \u001b[40m\u001b[33mprocess-nextick-args@1.0.7\u001b[39m\u001b[49m \r\n│ │   ├── \u001b[40m\u001b[33mstring_decoder@0.10.31\u001b[39m\u001b[49m \r\n│ │   └── \u001b[40m\u001b[33mutil-deprecate@1.0.2\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mmpath@0.2.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mmpromise@0.5.5\u001b[39m\u001b[49m \r\n│ ├─┬ \u001b[40m\u001b[33mmquery@2.3.0\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mbluebird@2.10.2\u001b[39m\u001b[49m \r\n│ │ ├─┬ \u001b[40m\u001b[33mdebug@2.2.0\u001b[39m\u001b[49m \r\n│ │ │ └── \u001b[40m\u001b[33mms@0.7.1\u001b[39m\u001b[49m \r\n│ │ ├── \u001b[40m\u001b[33mregexp-clone@0.0.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n│ │ └── \u001b[40m\u001b[33msliced@0.0.5\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mms@0.7.2\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mmuri@1.2.1\u001b[39m\u001b[49m \r\n│ ├── \u001b[40m\u001b[33mregexp-clone@0.0.1\u001b[39m\u001b[49m \r\n│ └── \u001b[40m\u001b[33msliced@1.0.1\u001b[39m\u001b[49m \r\n└─┬ \u001b[40m\u001b[33mmorgan@1.8.1\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mbasic-auth@1.1.0\u001b[39m\u001b[49m \r\n  ├── \u001b[40m\u001b[33mdebug@2.6.1\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n  ├── \u001b[40m\u001b[33mdepd@1.1.0\u001b[39m\u001b[49m  \u001b[90mde"
+    ],
+    [
+      0.000835,
+      "duped\u001b[39m\r\n  ├── \u001b[40m\u001b[33mon-finished@2.3.0\u001b[39m\u001b[49m  \u001b[90mdeduped\u001b[39m\r\n  └── \u001b[40m\u001b[33mon-headers@1.0.1\u001b[39m\u001b[49m \r\n\r\n"
+    ],
+    [
+      0.005173,
+      "\u001b[37;40mnpm\u001b[0m"
+    ],
+    [
+      0.000863,
+      " \u001b[0m"
+    ],
+    [
+      5.6e-05,
+      "\u001b[30;43mWARN\u001b[0m"
+    ],
+    [
+      3.6e-05,
+      "\u001b[35m\u001b[0m"
+    ],
+    [
+      0.000111,
+      " api@0.1.0 No repository field.\r\n\u001b[0m"
+    ],
+    [
+      0.100963,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      5.8e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003384,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "cat package.json"
+    ],
+    [
+      0.003794,
+      "\u001b[16D\u001b[1mcat\u001b(B\u001b[m \u001b[36m\u001b[4mpackage.json\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.003018,
+      "\u001b[38;2;85;85;85m \b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\u001b[K\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001196,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;cat  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.010945,
+      "{\r\n  \"name\": \"api\",\r\n  \"version\": \"0.1.0\",\r\n  \"description\": \"API RESTful com Express\",\r\n  \"main\": \"index.js\",\r\n  \"scripts\": {\r\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\r\n  },\r\n  \"keywords\": [\r\n    \"api\",\r\n    \"express\"\r\n  ],\r\n  \"author\": \"@milesibastos\",\r\n  \"license\": \"MIT\",\r\n  \"dependencies\": {\r\n    \"bcryptjs\": \"^2.4.3\",\r\n    \"body-parser\": \"^1.17.1\",\r\n    \"express\": \"^4.15.2\",\r\n    \"mongoose\": \"^4.9.3\",\r\n    \"morgan\": \"^1.8.1\"\r\n  }\r\n}\r\n"
+    ],
+    [
+      0.039146,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.000153,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003415,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "l"
+    ],
+    [
+      0.008192,
+      "\u001b[38;2;85;85;85ms\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.003006,
+      "\b\u001b[91ml\u001b[38;2;85;85;85ms\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.092412,
+      "\u001b[91ms\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007966,
+      "\b\b\u001b[1mls\u001b(B\u001b[m"
+    ],
+    [
+      0.687818,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000284,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;ls  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.021558,
+      "\u001b[34mnode_modules\u001b[39;49m\u001b[0m package.json\r\n"
+    ],
+    [
+      0.031205,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      5.8e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003361,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "e"
+    ],
+    [
+      0.006988,
+      "\b\u001b[91me\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.003498,
+      "\u001b[38;2;85;85;85mxit\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.205901,
+      "\u001b[91mx\u001b[38;2;85;85;85mit\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007707,
+      "\b\b\u001b[1mex\u001b(B\u001b[m\u001b[38;2;85;85;85mit\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.143935,
+      "\u001b[1mi\u001b(B\u001b[m\u001b[38;2;85;85;85mt\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007418,
+      "\b\b\b\u001b[91mexi\u001b[38;2;85;85;85mt\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.128746,
+      "\u001b[91mt\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007616,
+      "\b\b\b\b\u001b[1mexit\u001b(B\u001b[m"
+    ],
+    [
+      0.872474,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001187,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;exit  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.000293,
+      "\u001b[30m\u001b(B\u001b[m"
+    ]
+  ]
+}
