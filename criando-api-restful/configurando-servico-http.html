@@ -837,6 +837,67 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="configurando-o-servi&#xE7;o-http">Configurando o Servi&#xE7;o HTTP</h1>
+<p>O vai executar o arquivo <code>index.js</code> quando iniciar o servi&#xE7;o, ent&#xE3;o vamos ver como configurar nossa API.</p>
+<p>Vamos come&#xE7;ar com o b&#xE1;sico para iniciar o nosso servi&#xE7;o. Manterei o c&#xF3;digo simples e comentado para te ajudar a entender o que est&#xE1; acontecendo no caminho.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// CONFIGURA&#xC7;&#xC3;O B&#xC1;SICA</span>
+<span class="hljs-comment">// ======================================</span>
+
+<span class="hljs-comment">// IMPORTANDO OS PACKAGES --------------------</span>
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>) <span class="hljs-comment">// importando o express</span>
+<span class="hljs-keyword">const</span> app = express() <span class="hljs-comment">// definindo nosso app para usar o express</span>
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;body-parser&apos;</span>) <span class="hljs-comment">// importando body-parser</span>
+<span class="hljs-keyword">const</span> morgan = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;morgan&apos;</span>) <span class="hljs-comment">// vamos usar para logar as requests</span>
+<span class="hljs-keyword">const</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongoose&apos;</span>) <span class="hljs-comment">// para trabalhar com nossa database</span>
+<span class="hljs-keyword">const</span> port = process.env.PORT || <span class="hljs-number">8000</span> <span class="hljs-comment">// configurando a porta do servi&#xE7;o</span>
+
+<span class="hljs-comment">// CONFIGURANDO O SERVI&#xC7;O ---------------------</span>
+<span class="hljs-comment">// usando o parser para pegar a informa&#xE7;&#xE3;o do POST</span>
+app.use(bodyParser.urlencoded({ extended: <span class="hljs-literal">true</span> }))
+app.use(bodyParser.json())
+
+<span class="hljs-comment">// configurando as chamadas CORS</span>
+app.use((req, res, next) =&gt; {
+  res.setHeader(<span class="hljs-string">&apos;Access-Control-Allow-Origin&apos;</span>, <span class="hljs-string">&apos;*&apos;</span>)
+  res.setHeader(<span class="hljs-string">&apos;Access-Control-Allow-Methods&apos;</span>, <span class="hljs-string">&apos;GET, POST&apos;</span>)
+  res.setHeader(<span class="hljs-string">&apos;Access-Control-Allow-Headers&apos;</span>, <span class="hljs-string">&apos;X-Requested-With,content-type,Authorization&apos;</span>)
+  next()
+})
+
+<span class="hljs-comment">// logando as requisi&#xE7;&#xF5;es no console</span>
+app.use(morgan(<span class="hljs-string">&apos;dev&apos;</span>))
+
+<span class="hljs-comment">// ROTAS PARA API</span>
+<span class="hljs-comment">// =============================</span>
+
+<span class="hljs-comment">// rota b&#xE1;sica para home page</span>
+app.get(<span class="hljs-string">&apos;/&apos;</span>, (req, res) =&gt; {
+  res.send(<span class="hljs-string">&apos;Bem-vindo &#xE0; home page!&apos;</span>)
+})
+
+<span class="hljs-comment">// pegando uma inst&#xE2;ncia do express router</span>
+<span class="hljs-keyword">var</span> apiRouter = express.Router()
+
+<span class="hljs-comment">// roteamento de teste</span>
+<span class="hljs-comment">// acesse GET http://localhost:8000/api</span>
+apiRouter.get(<span class="hljs-string">&apos;/&apos;</span>, (req, res) =&gt; {
+  res.json({ message: <span class="hljs-string">&apos;essa &#xE9; nossa api!&apos;</span> })
+})
+
+<span class="hljs-comment">// mais rotas devem ser configuradas aqui</span>
+
+<span class="hljs-comment">// REGISTRANDO AS ROTAS -------------------------------</span>
+<span class="hljs-comment">// as rotas ser&#xE3;o prefixadas com /api</span>
+app.use(<span class="hljs-string">&apos;/api&apos;</span>, apiRouter)
+
+<span class="hljs-comment">// INICIANDO O SERVI&#xC7;O</span>
+<span class="hljs-comment">// ===============================</span>
+app.listen(port)
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;A m&#xE1;gica acontece na porta &apos;</span> + port)
+</code></pre>
+<p>UAU! Fizemos bastante coisa aqui! &#xC9; tudo bem simples, ent&#xE3;o vamos dar uma olhada.</p>
+<p><strong>Configura&#xE7;&#xE3;o B&#xE1;sica</strong>: Na configura&#xE7;&#xE3;o b&#xE1;sica, n&#xF3;s importamos os <em>packages</em> que instalamos via <code>npm</code>. Importamos o <code>express</code>, <code>mongose</code>, definimos nossa <code>app</code>, setamos o <code>bodyParser</code> e configuramos nosso servi&#xE7;o para usar ele. Tamb&#xE9;m podemos setar uma porta para nosso servi&#xE7;o e configuramos as permiss&#xF5;es para permitir requisi&#xE7;&#xF5;es de outros dom&#xED;nios e evitar erros CORS.</p>
+<p><strong>Rotas para nossa API</strong>: Nesse ponto configuramos as rotas. O Express Router nos permite acessar uma inst&#xE2;nica do roteador. Podemos ent&#xE3;o, definir novas rotas e aplica-las a rota principal. Definimos tamb&#xE9;m uma rota para a <em>home page</em> que responde com um &quot;Ol&#xE1;&quot;; essa &#xE9; apneas uma rota para garantir que est&#xE1; tudo funcionando corretamente.</p>
+<p><strong>Iniciando o Servi&#xE7;o</strong>: Aqui teremos nosso servi&#xE7;o <code>express</code> escutando na porta que definimos. Ent&#xE3;o nosso servi&#xE7;o est&#xE1; vivo e agora podemos test&#xE1;-lo.</p>
 
                                 
                                 </section>
@@ -870,7 +931,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Configurando o Serviço HTTP","level":"3.5.5","depth":2,"next":{"title":"Banco de Dados e o Modelo de Usuário","level":"3.5.6","depth":2,"path":"ServerBackend/BuildRESTfulNodeAPI/DatabaseUserModel.md","ref":"ServerBackend/BuildRESTfulNodeAPI/DatabaseUserModel.md","articles":[]},"previous":{"title":"Como começar","level":"3.5.4","depth":2,"path":"criando-api-restful/como-comecar.md","ref":"criando-api-restful/como-comecar.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-api-restful/configurando-servico-http.md","mtime":"2017-04-07T14:30:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-07T14:35:36.043Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Configurando o Serviço HTTP","level":"3.5.5","depth":2,"next":{"title":"Banco de Dados e o Modelo de Usuário","level":"3.5.6","depth":2,"path":"ServerBackend/BuildRESTfulNodeAPI/DatabaseUserModel.md","ref":"ServerBackend/BuildRESTfulNodeAPI/DatabaseUserModel.md","articles":[]},"previous":{"title":"Como começar","level":"3.5.4","depth":2,"path":"criando-api-restful/como-comecar.md","ref":"criando-api-restful/como-comecar.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-api-restful/configurando-servico-http.md","mtime":"2017-04-10T19:22:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-10T20:26:26.908Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
