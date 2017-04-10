@@ -1,10 +1,3 @@
-# Configurando o Serviço HTTP
-
-O vai executar o arquivo `index.js` quando iniciar o serviço, então vamos ver como configurar nossa API.
-
-Vamos começar com o básico para iniciar o nosso serviço. Manterei o código simples e comentado para te ajudar a entender o que está acontecendo no caminho.
-
-```javascript
 // CONFIGURAÇÃO BÁSICA
 // ======================================
 
@@ -59,12 +52,3 @@ app.use('/api', apiRouter)
 // ===============================
 app.listen(port)
 console.log('A mágica acontece na porta ' + port)
-```
-
-UAU! Fizemos bastante coisa aqui! É tudo bem simples, então vamos dar uma olhada.
-
-**Configuração Básica**: Na configuração básica, nós importamos os _packages_ que instalamos via ```npm```. Importamos o ```express```, ```mongose```, definimos nossa ```app```, setamos o ```bodyParser``` e configuramos nosso serviço para usar ele. Também podemos setar uma porta para nosso serviço e configuramos as permissões para permitir requisições de outros domínios e evitar erros CORS.
-
-**Rotas para nossa API**: Nesse ponto configuramos as rotas. O Express Router nos permite acessar uma instânica do roteador. Podemos então, definir novas rotas e aplica-las a rota principal. Definimos também uma rota para a _home page_ que responde com um "Olá"; essa é apneas uma rota para garantir que está tudo funcionando corretamente.
-
-**Iniciando o Serviço**: Aqui teremos nosso serviço ```express``` escutando na porta que definimos. Então nosso serviço está vivo e agora podemos testá-lo.
