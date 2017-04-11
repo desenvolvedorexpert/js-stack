@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 })
 
 // pegando uma instância do express router
-var apiRouter = express.Router()
+const apiRouter = express.Router()
 
 // roteamento de teste
 // acesse GET http://localhost:8000/api
