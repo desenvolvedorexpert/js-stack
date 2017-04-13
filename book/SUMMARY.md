@@ -63,7 +63,7 @@
   - [Como começar](criando-api-restful/como-comecar.md)
   - [Configurando o Serviço HTTP](criando-api-restful/configurando-servico-http.md)
   - [Iniciando e Testando o Serviço](criando-api-restful/iniciando-e-testando.md)
-  - [Banco de Dados e o Modelo de Usuário](ServerBackend/BuildRESTfulNodeAPI/DatabaseUserModel.md)
+  - [Acessando Dados](criando-api-restful/acessando-dados.md) 
   - [Express Router e Rotas](ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md)
   - [Middleware de Roteamento](ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md)
   - [Criando as rotas básicas](ServerBackend/BuildRESTfulNodeAPI/CreatingBasicRoutes.md)

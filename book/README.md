@@ -13,7 +13,7 @@ Se você leu alguma parte e achou algum erro, nós queremos nos juntar a você!
 
 ## Desenvolvendo Aplicações Full-Stack JavaScript
 
-Nesse livro, você vai aprender sobre quatro ferramentas ([**Node.js**](https://nodejs.org), [**ExpressJS**](http://expressjs.com/), [**MongoDB**](https://www.mongodb.com/) e [**React**](https://facebook.github.io/react/) ) e como elas combinadas fomam um incrível **Full-Stack JavaScript**.
+Nesse livro, você vai aprender sobre quatro ferramentas ([**Node.js**](https://nodejs.org), [**ExpressJS**](http://expressjs.com/), [**MongoDB**](https://www.mongodb.com/) e [**React**](https://facebook.github.io/react/)) e como elas combinadas formam um incrível **Full-Stack JavaScript**.
 
 Esse é um livro três em um. **Começando com React**, **Começando com Node.js** e **Desenvolvendo aplicativos com Node e React**. Você aprenderá a desenvolver não apenas aplicações **JavaScript**, mas também aplicações **Node** e **React**.
 

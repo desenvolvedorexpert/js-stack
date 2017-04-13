@@ -9,6 +9,9 @@ const morgan = require('morgan') // vamos usar para logar as requests
 const mongoose = require('mongoose') // para trabalhar com nossa database
 const port = process.env.PORT || 8000 // configurando a porta do serviço
 
+// conectando no MongoDB
+mongoose.connect('mongodb://localhost:27017/myDatabase');
+
 // CONFIGURANDO O SERVIÇO ---------------------
 // usando o parser para pegar a informação do POST
 app.use(bodyParser.urlencoded({ extended: true }))
