@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "width": 101,
+  "height": 33,
+  "duration": 32.008348,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/usr/local/bin/fish"
+  },
+  "stdout": [
+    [
+      2.0,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.147926,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.001255,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.004439,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "# criando uma instância do MongoDB e mapeando a porta 27017 para conectar"
+    ],
+    [
+      0.005561,
+      "\u001b[A\u001b[28C\u001b[31m# criando uma instância do MongoDB e mapeando a porta 27017\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000877,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.067623,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.000164,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003948,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "docker run --name mongodb -d -p 27017:27017 mongo"
+    ],
+    [
+      0.007559,
+      "\u001b[49D\u001b[1mdocker\u001b(B\u001b[m \u001b[36mrun\u001b[30m\u001b(B\u001b[m \u001b[36m--name\u001b[30m\u001b(B\u001b[m \u001b[36mmongodb\u001b[30m\u001b(B\u001b[m \u001b[36m-d\u001b[30m\u001b(B\u001b[m \u001b[36m-p\u001b[30m\u001b(B\u001b[m \u001b[36m27017:27017\u001b[30m\u001b(B\u001b[m \u001b[36mmongo\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b"
+    ],
+    [
+      5.2e-05,
+      "(B\u001b[m"
+    ],
+    [
+      0.000922,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;docker  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      1.544782,
+      "4c814981c7b6316f16d0755bb788ef38a96325eb8367df5cc4ba2bcd18df657e\r\n"
+    ],
+    [
+      2.0,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.000188,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.00686,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      1.588062,
+      "# verificar quando instância está pronta"
+    ],
+    [
+      0.003647,
+      "\u001b[40D\u001b[31m# verificar quando instância está pronta\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000239,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.034562,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.000179,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003104,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      0.532101,
+      "# estamos buscando pela mensagem: waiting for connections on port 27017"
+    ],
+    [
+      0.003574,
+      "\u001b[A\u001b[30C\u001b[31m# estamos buscando pela mensagem: waiting for connections\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.001265,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.043901,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      8.7e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003227,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      0.601939,
+      "docker logs --tail 1 mongodb"
+    ],
+    [
+      0.003675,
+      "\u001b[28D\u001b[1mdocker\u001b(B\u001b[m \u001b[36mlogs\u001b[30m\u001b(B\u001b[m \u001b[36m--tail\u001b[30m\u001b(B\u001b[m \u001b[36m1\u001b[30m\u001b(B\u001b[m \u001b[36mmongodb\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      1.147582,
+      "\r\n\u001b["
+    ],
+    [
+      5.1e-05,
+      "30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000289,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;docker  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.000613,
+      "2017-04-13T15:16:24.957+0000 I NETWORK  [thread1] waiting for connections on port 27017\r\n"
+    ],
+    [
+      0.034897,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      5.1e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003525,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "# listando os containers ativos"
+    ],
+    [
+      0.003364,
+      "\u001b[30D\u001b[31m# listando os containers ativos\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.00128,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.061153,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      0.000191,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.004642,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      0.755818,
+      "docker ps"
+    ],
+    [
+      0.003741,
+      "\u001b[9D\u001b[1mdocker\u001b(B\u001b[m \u001b[36mps\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      2.0,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000327,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;docker  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.114844,
+      "CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS                      NAMES\r\n4c814981c7b6        mongo               \"docker-entrypoint...\"   About a minute ago   Up About a minute   0.0.0.0:27017->27017/tcp   mongodb\r\n"
+    ],
+    [
+      0.033709,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;fish  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007"
+    ],
+    [
+      8.8e-05,
+      "\u001b[38;5;237m⏎\u001b(B\u001b[m                                                                                                   \r⏎ \r\u001b[2K"
+    ],
+    [
+      0.003533,
+      "\u001b[36m[~/c/d/e/c/api] \u001b[30m\u001b(B\u001b[m\u001b[34m[⎇ master] \u001b[30m\u001b(B\u001b[m\u001b[33m[±] \u001b[30m\u001b(B\u001b[m\u001b[32m> \u001b[30m\u001b(B\u001b[m\u001b[K"
+    ],
+    [
+      2.0,
+      "e"
+    ],
+    [
+      0.007682,
+      "\u001b[38;2;85;85;85mxit\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007692,
+      "\b\u001b[91me\u001b[38;2;85;85;85mxit\b\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.182776,
+      "\u001b[91mx\u001b[38;2;85;85;85mit\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007313,
+      "\b\b\u001b[1mex\u001b(B\u001b[m\u001b[38;2;85;85;85mit\b\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.128678,
+      "\u001b[1mi\u001b(B\u001b[m\u001b[38;2;85;85;85mt\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.007225,
+      "\b\b\b\u001b[91mexi\u001b[38;2;85;85;85mt\b\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.129202,
+      "\u001b[91mt\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.008095,
+      "\b\b\b\b\u001b[1mexit\u001b(B\u001b[m"
+    ],
+    [
+      0.625395,
+      "\r\n\u001b[30m\u001b(B\u001b[m"
+    ],
+    [
+      0.000341,
+      "\u001b[30m\u001b(B\u001b[m\u001b]0;exit  /Volumes/Data/milesibastos/code/devexpert/expert-js-stack/code/api\u0007\r"
+    ],
+    [
+      0.000437,
+      "\u001b[30m\u001b(B\u001b[m"
+    ]
+  ]
+}
