@@ -4,6 +4,14 @@ Vamos manter essa parte simples e rápida para que possamos ir à parte mais div
 
 Já vimos como criar nossa instância local do MongoDB na parte "[Provisionado o MongoDB Localmente](usando-mongodb/provisionado-mongod.md)" desse livro. Também já vimos como usar em "[Usando o MongoDB em uma Aplicação NodeJS](usando-mongodb/usando-com-node.md)". Agora vamos juntar tudo isso e conectar nosso modelo mongoose com MongoDB.
 
+Você pode criar uma instância do MongoDB e mapear sua porta ```27017``` para conectar nele da seguinte maneira:
+
+```bash
+> docker run --name mongodb -d -p 27017:27017 mongo
+```
+
+<asciinema-player src="/assets/acessando-dados.json" speed="2" poster="npt:0:29"></asciinema-player>
+
 ## Criando a Conexão com o MongoDB
 
 Com a instância do MongoDB criada, nossa URI de conxão será como ```mongodb://user:pass@localhost:27017/myDatabase```. Composta pelo _host_ ```localhost```, porta ```27017```, o nome da base ```myDatabase``` e eventualmente o usuário e senha de conexão.
