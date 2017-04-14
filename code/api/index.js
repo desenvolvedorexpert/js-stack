@@ -10,7 +10,9 @@ const mongoose = require('mongoose') // para trabalhar com nossa database
 const port = process.env.PORT || 8000 // configurando a porta do serviço
 
 // conectando no MongoDB
-mongoose.connect('mongodb://localhost:27017/myDatabase');
+mongoose.connect('mongodb://localhost:27017/CRM')
+
+const User = require('./domain/user')
 
 // CONFIGURANDO O SERVIÇO ---------------------
 // usando o parser para pegar a informação do POST

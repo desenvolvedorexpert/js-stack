@@ -14,10 +14,10 @@ Você pode criar uma instância do MongoDB e mapear sua porta ```27017``` para c
 
 ## Criando a Conexão com o MongoDB
 
-Com a instância do MongoDB criada, nossa URI de conxão será como ```mongodb://user:pass@localhost:27017/myDatabase```. Composta pelo _host_ ```localhost```, porta ```27017```, o nome da base ```myDatabase``` e eventualmente o usuário e senha de conexão.
+Com a instância do MongoDB criada, nossa URI de conxão será algo como ```mongodb://user:pass@localhost:27017/CRM```. Composta pelo _host_ ```localhost```, porta ```27017```, o nome da base ```CRM``` e eventualmente o usuário e senha de conexão.
 
 Já instalamos o ```mongoose``` antes, quando usamos o ```npm install```, agora precisamos conectar em nossa base MongoDB. Vamos adicionar essa URI de conexão em nossa aplicação adicionando essa linha no ```index.js```.
 
 ```js
-mongoose.connect('mongodb://localhost:27017/myDatabase')
+mongoose.connect('mongodb://localhost:27017/CRM')
 ```
