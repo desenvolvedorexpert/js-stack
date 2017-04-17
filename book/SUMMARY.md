@@ -65,7 +65,7 @@
   - [Iniciando e Testando o Serviço](criando-api-restful/iniciando-e-testando.md)
   - [Acessando Dados](criando-api-restful/acessando-dados.md)
   - [Definindo a Entidade Usuário](criando-api-restful/entidade-usuario.md)
-  - [Express Router e Rotas](ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md)
+  - [Express e Rotas](criando-api-restful/express-rotas.md)
   - [Middleware de Roteamento](ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md)
   - [Criando as rotas básicas](ServerBackend/BuildRESTfulNodeAPI/CreatingBasicRoutes.md)
   - [Criando rotas para um item](ServerBackend/BuildRESTfulNodeAPI/RoutesForSingleItem.md)
