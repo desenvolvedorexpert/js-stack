@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -864,13 +864,13 @@
                                 
                                 <h1 id="m&#xE9;todo-1-apenas-node-sem-express">M&#xE9;todo #1: Apenas Node, sem Express</h1>
 <p>Nesse m&#xE9;todo, vamos usar dois m&#xF3;dulos incorporados no pr&#xF3;prio <em>core</em> do Node. O <a href="https://nodejs.org/api/http.html#http_http" target="_blank">m&#xF3;dulo HTTP</a> &#xE9; usado para iniciar um servidor HTTP que vai responder as requisi&#xE7;&#xF5;es HTTP dos usu&#xE1;rios. O <a href="https://nodejs.org/api/fs.html#fs_file_system" target="_blank">m&#xF3;dulo fs</a> &#xE9; usado para acessar o sistema de arquivos. Vamos precisar ler o arquivo <code>index.html</code> do sistema de arquivos e eviar ele para o usu&#xE1;rio usando o servidor HTTP.</p>
-<div class="api-method"><div class="api-method-definition"><p>O nosso <code>server.js</code> nesse ponto fica desse jeito:</p>
+<p>O nosso <code>server.js</code> nesse ponto fica desse jeito:</p>
 <p>Em suma, estamos usando o <strong>m&#xF3;dulo http</strong> para criar o servidor e o <strong>m&#xF3;dulo fs</strong> para pegar o arquivo index e envia-lo na responsta para o usu&#xE1;rio.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js"><span class="hljs-comment">// vamos importar os m&#xF3;dulos http e filesystem</span>
+<pre><code class="lang-js"><span class="hljs-comment">// vamos importar os m&#xF3;dulos http e filesystem</span>
 <span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>), fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>)
 
 <span class="hljs-comment">// ent&#xE3;o, criamos o servidor http</span>
-http.createServer((req, res) =&gt; {
+http.createServer(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
   <span class="hljs-comment">// esse &#xE9; o cabe&#xE7;alho da nossa resposta</span>
   res.writeHead(<span class="hljs-number">200</span>, {
     <span class="hljs-string">&apos;Content-Type&apos;</span>: <span class="hljs-string">&apos;text/html&apos;</span>,
@@ -885,13 +885,9 @@ http.createServer((req, res) =&gt; {
 <span class="hljs-comment">// no fim, informamos o endpoint para o usu&#xE1;rio</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Visite-me em: http://localhost:8000&apos;</span>)
 </code></pre>
-</div></div></div>
-
-<div class="api-method"><div class="api-method-definition"><p>Com o arquivo <code>server.js</code> definido, vamos para linha de comando inicializar o nosso servidor Node HTTP.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code>$ nodemon server.js
-</code></pre></div></div></div>
-
-<p>Veremos o servidor inicializando e a mesnsagem logada no console.</p>
+<p>Com o arquivo <code>server.js</code> definido, vamos para linha de comando inicializar o nosso servidor Node HTTP.</p>
+<pre><code>$ nodemon server.js
+</code></pre><p>Veremos o servidor inicializando e a mesnsagem logada no console.</p>
 <p><asciinema-player src="/assets/node-server.json" speed="2" poster="npt:1:15">&lt;/asciinema-player&gt;</asciinema-player></p>
 <p>Agora podemos ver o site no <em>browser</em> em <code>http://localhost:8000</code>.</p>
 <p><img src="../assets/localhost-8000.png" alt="Falaaa DEV Browser"></p>
@@ -922,14 +918,24 @@ http.createServer((req, res) =&gt; {
             </div>
 
             
-
+                
+                <a href="app-de-exemplo.html" class="navigation navigation-prev " aria-label="Previous page: Aplicação de Exemplo">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="express.html" class="navigation navigation-next " aria-label="Next page: Método #2: Usando Express">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Método #1: Apenas Node, sem Express","level":"3.2.2","depth":2,"next":{"title":"Método #2: Usando Express","level":"3.2.3","depth":2,"path":"criando-um-servico-node/express.md","ref":"criando-um-servico-node/express.md","articles":[]},"previous":{"title":"Aplicação de Exemplo","level":"3.2.1","depth":2,"path":"criando-um-servico-node/app-de-exemplo.md","ref":"criando-um-servico-node/app-de-exemplo.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-um-servico-node/node.md","mtime":"2017-03-30T17:52:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Método #1: Apenas Node, sem Express","level":"3.2.2","depth":2,"next":{"title":"Método #2: Usando Express","level":"3.2.3","depth":2,"path":"criando-um-servico-node/express.md","ref":"criando-um-servico-node/express.md","articles":[]},"previous":{"title":"Aplicação de Exemplo","level":"3.2.1","depth":2,"path":"criando-um-servico-node/app-de-exemplo.md","ref":"criando-um-servico-node/app-de-exemplo.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-um-servico-node/node.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -977,10 +983,6 @@ http.createServer((req, res) =&gt; {
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

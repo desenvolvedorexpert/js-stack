@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="express-rotas.html">
             
-                <span>
+                <a href="express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -878,11 +878,11 @@
 
 <span class="hljs-comment">// CONFIGURANDO O SERVI&#xC7;O ---------------------</span>
 <span class="hljs-comment">// usando o parser para pegar a informa&#xE7;&#xE3;o do POST</span>
-app.use(bodyParser.urlencoded({ extended: <span class="hljs-literal">true</span> }))
+app.use(bodyParser.urlencoded({ <span class="hljs-attr">extended</span>: <span class="hljs-literal">true</span> }))
 app.use(bodyParser.json())
 
 <span class="hljs-comment">// configurando as chamadas CORS</span>
-app.use((req, res, next) =&gt; {
+app.use(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
   res.setHeader(<span class="hljs-string">&apos;Access-Control-Allow-Origin&apos;</span>, <span class="hljs-string">&apos;*&apos;</span>)
   res.setHeader(<span class="hljs-string">&apos;Access-Control-Allow-Methods&apos;</span>, <span class="hljs-string">&apos;GET, POST&apos;</span>)
   res.setHeader(<span class="hljs-string">&apos;Access-Control-Allow-Headers&apos;</span>, <span class="hljs-string">&apos;X-Requested-With,content-type,Authorization&apos;</span>)
@@ -906,7 +906,7 @@ app.get(<span class="hljs-string">&apos;/&apos;</span>, (req, res) =&gt; {
 <span class="hljs-comment">// roteamento de teste</span>
 <span class="hljs-comment">// acesse GET http://localhost:8000/api</span>
 apiRouter.get(<span class="hljs-string">&apos;/&apos;</span>, (req, res) =&gt; {
-  res.json({ message: <span class="hljs-string">&apos;essa &#xE9; nossa api!&apos;</span> })
+  res.json({ <span class="hljs-attr">message</span>: <span class="hljs-string">&apos;essa &#xE9; nossa api!&apos;</span> })
 })
 
 <span class="hljs-comment">// mais rotas devem ser configuradas aqui</span>
@@ -950,14 +950,24 @@ app.listen(port)
             </div>
 
             
-
+                
+                <a href="como-comecar.html" class="navigation navigation-prev " aria-label="Previous page: Como começar">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="iniciando-e-testando.html" class="navigation navigation-next " aria-label="Next page: Iniciando e Testando o Serviço">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Configurando o Serviço HTTP","level":"3.5.5","depth":2,"next":{"title":"Iniciando e Testando o Serviço","level":"3.5.6","depth":2,"path":"criando-api-restful/iniciando-e-testando.md","ref":"criando-api-restful/iniciando-e-testando.md","articles":[]},"previous":{"title":"Como começar","level":"3.5.4","depth":2,"path":"criando-api-restful/como-comecar.md","ref":"criando-api-restful/como-comecar.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-api-restful/configurando-servico-http.md","mtime":"2017-04-11T11:38:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Configurando o Serviço HTTP","level":"3.5.5","depth":2,"next":{"title":"Iniciando e Testando o Serviço","level":"3.5.6","depth":2,"path":"criando-api-restful/iniciando-e-testando.md","ref":"criando-api-restful/iniciando-e-testando.md","articles":[]},"previous":{"title":"Como começar","level":"3.5.4","depth":2,"path":"criando-api-restful/como-comecar.md","ref":"criando-api-restful/como-comecar.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-api-restful/configurando-servico-http.md","mtime":"2017-04-11T11:38:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1005,10 +1015,6 @@ app.listen(port)
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

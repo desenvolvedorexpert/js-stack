@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -863,22 +863,18 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="executando-uma-aplica&#xE7;&#xE3;o-node">Executando uma Aplica&#xE7;&#xE3;o Node</h1>
-<div class="api-method"><div class="api-method-definition"><p>O arquivo <code>index.js</code> &#xE9; o que n&#xF3;s definimos como princial no arquivo <code>package.json</code> e ent&#xE3;o o que usaremos quando iniciar. O servidor ser&#xE1; parado autom&#xE1;ticamente quando terminar de execuar o comando <code>console.log</code>, mas no futuro voc&#xEA; vai precisar usar <code>ctrl c</code> para parar o servidor Node.</p>
+<p>O arquivo <code>index.js</code> &#xE9; o que n&#xF3;s definimos como princial no arquivo <code>package.json</code> e ent&#xE3;o o que usaremos quando iniciar. O servidor ser&#xE1; parado autom&#xE1;ticamente quando terminar de execuar o comando <code>console.log</code>, mas no futuro voc&#xEA; vai precisar usar <code>ctrl c</code> para parar o servidor Node.</p>
 <p>Para iniciar uma Aplica&#xE7;&#xE3;o Node, voc&#xEA; s&#xF3; precisa digitar:</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-sh">$ node index.js
+<pre><code class="lang-sh">$ node index.js
 </code></pre>
-</div></div></div>
-
 <h2 id="reiniciando-uma-aplica&#xE7;&#xE3;o-node-quando-o-arquivo-mudar">Reiniciando uma Aplica&#xE7;&#xE3;o Node Quando o Arquivo Mudar</h2>
 <p>Por padr&#xE3;o, o comando <code>node index.js</code> vai iniciar a sua aplica&#xE7;&#xE3;o, mas n&#xE3;o vai reiniciar quando voc&#xEA; fizer alguma atualiza&#xE7;&#xE3;o no arquivo. Isso pode ser chato quando voc&#xEA; est&#xE1; desenvolvendo e precisa parar e reiniciar a aplica&#xE7;&#xE3;o toda vez que precisa aplicar uma altera&#xE7;&#xE3;o.</p>
-<div class="api-method"><div class="api-method-definition"><p>Felizmente temos um pacote <code>npm</code> que vai monitorar e reiniciar quando mudan&#xE7;as forem identificadas. Esse pacote &#xE9; o <a href="http://nodemon.io/" target="_blank">nodemon</a> e para intalar basta seguir o comando a seguir.</p>
+<p>Felizmente temos um pacote <code>npm</code> que vai monitorar e reiniciar quando mudan&#xE7;as forem identificadas. Esse pacote &#xE9; o <a href="http://nodemon.io/" target="_blank">nodemon</a> e para intalar basta seguir o comando a seguir.</p>
 <p>O <code>-g</code> significa que o pacote vai ser instalado globalmente no seu sistema.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-sh">$ npm install -g nodemon
+<pre><code class="lang-sh">$ npm install -g nodemon
 </code></pre>
-</div></div></div>
-
-<div class="api-method"><div class="api-method-definition"><p>Agora, em vez de usar <code>node index.js</code> vamos usar o seguinte comando.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-sh">$ nodemon index.js
+<p>Agora, em vez de usar <code>node index.js</code> vamos usar o seguinte comando.</p>
+<pre><code class="lang-sh">$ nodemon index.js
 [nodemon] 1.8.1
 [nodemon] to restart at any time, enter `rs`
 [nodemon] watching: *.*
@@ -890,8 +886,6 @@ Falaaa DEV! Essa &#xE9; nossa primeira Aplica&#xE7;&#xE3;o Node...
 Falaaa DEV!
 [nodemon] clean <span class="hljs-built_in">exit</span> - waiting <span class="hljs-keyword">for</span> changes before restart
 </code></pre>
-</div></div></div>
-
 <p>Ent&#xE3;o quando qualquer altera&#xE7;&#xE3;o for identificada o servidor vai reiniciar como na mensagem a cima. Daqui em diante, por uma quest&#xE3;o de praticidade, vamos usar o <code>nodemon</code> quando precisarmos executar a palica&#xE7;&#xE3;o..</p>
 <hr>
 <p>At&#xE9; agora, configuramos uma Simples Aplica&#xE7;&#xE3;o Node e iniciamos via linha comando. Estamos um passo mais perto de construir uma Aplica&#xE7;&#xE3;o Node para mostrar ao mundo. Mas antes, precisamos conhecer o ecosistema de gerenciamentos de pacotes do Node. O <a href="https://www.npmjs.com" target="_blank">NPM</a>!</p>
@@ -921,14 +915,24 @@ Falaaa DEV!
             </div>
 
             
-
+                
+                <a href="criando-um-app-node.html" class="navigation navigation-prev " aria-label="Previous page: Criando um App Node Bem Simples">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gerenciamento-de-pacotes.html" class="navigation navigation-next " aria-label="Next page: Gerenciamento de Pacotes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Executando uma Aplicação Node","level":"3.1.4","depth":2,"next":{"title":"Gerenciamento de Pacotes","level":"3.1.5","depth":2,"path":"comecando-com-node/gerenciamento-de-pacotes.md","ref":"comecando-com-node/gerenciamento-de-pacotes.md","articles":[]},"previous":{"title":"Criando um App Node Bem Simples","level":"3.1.3","depth":2,"path":"comecando-com-node/criando-um-app-node.md","ref":"comecando-com-node/criando-um-app-node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/executando-uma-app-node.md","mtime":"2017-03-28T19:03:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Executando uma Aplicação Node","level":"3.1.4","depth":2,"next":{"title":"Gerenciamento de Pacotes","level":"3.1.5","depth":2,"path":"comecando-com-node/gerenciamento-de-pacotes.md","ref":"comecando-com-node/gerenciamento-de-pacotes.md","articles":[]},"previous":{"title":"Criando um App Node Bem Simples","level":"3.1.3","depth":2,"path":"comecando-com-node/criando-um-app-node.md","ref":"comecando-com-node/criando-um-app-node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/executando-uma-app-node.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -976,10 +980,6 @@ Falaaa DEV!
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -873,8 +873,8 @@
 <li>instalando via linha de comando</li>
 </ul>
 <h3 id="m&#xE9;todo-1-escrevendo-direto-no-arquivo-packagejson">M&#xE9;todo #1: Escrevendo Direto no Arquivo package.json</h3>
-<div class="api-method"><div class="api-method-definition"><p>Esse &#xE9; um arquivo <code>package.json</code> com a depend&#xEA;ncia do Express adicionada.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-json">{
+<p>Esse &#xE9; um arquivo <code>package.json</code> com a depend&#xEA;ncia do Express adicionada.</p>
+<pre><code class="lang-json">{
  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;packages-install&quot;</span>,
  <span class="hljs-string">&quot;main&quot;</span>: <span class="hljs-string">&quot;index.js&quot;</span>,
  <span class="hljs-string">&quot;dependencies&quot;</span>: {
@@ -882,8 +882,6 @@
   }
 }
 </code></pre>
-</div></div></div>
-
 <p>Com isso, agora n&#xF3;s temos o Express configurado como um <em>package</em> da nossa aplica&#xE7;&#xE3;o e duas partes do Full-Stack j&#xE1; encaixadas!</p>
 <h4 id="versionamento-de-pacotes-npm">Versionamento de Pacotes npm</h4>
 <p>Voc&#xEA; pode estar se perguntando o que esse til (~) est&#xE1; fazendo antes do n&#xFA;mero da vers&#xE3;o do Express. O <code>npm</code> usa um padr&#xE3;o de <a href="https://docs.npmjs.com/misc/semver" target="_blank">versionamento sem&#xE2;ntico</a> para declarar a vers&#xE3;o dos <em>packages</em>. Isso significa que o til (~) vai pegar a vers&#xE3;o mais pr&#xF3;xima da que foi especificada. Nesse caso, apenas as vers&#xF5;es do Express que forem maiores que 4.8.6 e menores que 4.9 ser&#xE3;o instaladas.</p>
@@ -892,25 +890,19 @@
 <p>Assim, quando voltarmos a esta aplica&#xE7;&#xE3;o no futuro e usar o <code>nmp install</code> saberemos exatamente qual vers&#xE3;o do Express estaremos usando e que n&#xE3;o ser&#xE1; baixada nenhuma vers&#xE3;o mais recente que possa quebrar nossa aplica&#xE7;&#xE3;o.</p>
 <h3 id="m&#xE9;todo-2-adicionanl-packages-via-linha-de-comando">M&#xE9;todo #2: Adicionanl Packages via Linha de Comando</h3>
 <p>A segunda maneira de adicionar packages a sua aplica&#xE7;&#xE3;o &#xE9; usando o <code>npm</code> via linha de comando. Essa &#xE9; a menra mais pr&#xE1;tica j&#xE1; que o <code>npm</code> pode salvar o package automaticamento no seu arquivo <code>package.json</code>. E a parte mais legal &#xE9; que <strong>ele vai adicionar a vers&#xE3;o correta do package!</strong> Se voc&#xEA; escrever direto no <code>package.json</code> voc&#xEA; vai ter que buscar na internet o n&#xFA;mero correto da vers&#xE3;o. Esse m&#xE9;todo vai tornar nossa vida muito mais f&#xE1;cil.</p>
-<div class="api-method"><div class="api-method-definition"><p>Esse &#xE9; o comando para instalar o Express e salvar a modifica&#xE7;&#xE3;o no <code>package.json</code>:</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-bash">npm install express --save
+<p>Esse &#xE9; o comando para instalar o Express e salvar a modifica&#xE7;&#xE3;o no <code>package.json</code>:</p>
+<pre><code class="lang-bash">npm install express --save
 </code></pre>
-</div></div></div>
-
 <p>Voc&#xEA; vai reparar que esse comando baixa o <em>package</em> e instala ele em uma nova pasta chamada <strong>node_modules</strong>. &#xC9; aqui que s&#xE3;o instalados os <em>packages</em> em projetos Node e esse comando instala apenas o <em>package</em> que foi chamado especificamente (Express nesse caso).</p>
 <h2 id="instalando-todos-packages">Instalando Todos Packages</h2>
-<div class="api-method"><div class="api-method-definition"><p>O <strong>M&#xE9;todo #2</strong> vai instalar os <em>packages</em> para gente e o <strong>#1</strong> vai adicionar eles no <code>package.json</code> mas n&#xE3;o vai instala-los ainda. Ent&#xE3;o para instalar todos os <em>packages</em> definidos como depend&#xEA;ncias no arquivo <code>package.json</code> na pasta <strong>node_modules</strong>, &#xE9; s&#xF3; digitar o comando a seguir.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-sh">npm install
+<p>O <strong>M&#xE9;todo #2</strong> vai instalar os <em>packages</em> para gente e o <strong>#1</strong> vai adicionar eles no <code>package.json</code> mas n&#xE3;o vai instala-los ainda. Ent&#xE3;o para instalar todos os <em>packages</em> definidos como depend&#xEA;ncias no arquivo <code>package.json</code> na pasta <strong>node_modules</strong>, &#xE9; s&#xF3; digitar o comando a seguir.</p>
+<pre><code class="lang-sh">npm install
 </code></pre>
-</div></div></div>
-
 <p>Esse comando vai baixar todas as depend&#xEA;ncias para a pasta <strong>node_modules</strong> da sua aplica&#xE7;&#xE3;o.</p>
 <h2 id="instalando-multiplos-packages">Instalando Multiplos Packages</h2>
-<div class="api-method"><div class="api-method-definition"><p>O <code>npm</code> tem uma boa maneira para instalar multiplos <em>packages</em>. Basta informar todos os <em>packages</em> em um comando <code>npm install</code> e eles ser&#xE3;o instalados no projeto.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-sh">npm install express mongoose passport --save
+<p>O <code>npm</code> tem uma boa maneira para instalar multiplos <em>packages</em>. Basta informar todos os <em>packages</em> em um comando <code>npm install</code> e eles ser&#xE3;o instalados no projeto.</p>
+<pre><code class="lang-sh">npm install express mongoose passport --save
 </code></pre>
-</div></div></div>
-
 <p>Essa &#xE9; uma maneira simples e f&#xE1;cil de instalar todos os <em>packages</em> que precisamos.</p>
 
                                 
@@ -938,14 +930,24 @@
             </div>
 
             
-
+                
+                <a href="executando-uma-app-node.html" class="navigation navigation-prev " aria-label="Previous page: Executando uma Aplicação Node">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="recapitulando.html" class="navigation navigation-next " aria-label="Next page: Recapitulando">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gerenciamento de Pacotes","level":"3.1.5","depth":2,"next":{"title":"Recapitulando","level":"3.1.6","depth":2,"path":"comecando-com-node/recapitulando.md","ref":"comecando-com-node/recapitulando.md","articles":[]},"previous":{"title":"Executando uma Aplicação Node","level":"3.1.4","depth":2,"path":"comecando-com-node/executando-uma-app-node.md","ref":"comecando-com-node/executando-uma-app-node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/gerenciamento-de-pacotes.md","mtime":"2017-03-28T19:20:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gerenciamento de Pacotes","level":"3.1.5","depth":2,"next":{"title":"Recapitulando","level":"3.1.6","depth":2,"path":"comecando-com-node/recapitulando.md","ref":"comecando-com-node/recapitulando.md","articles":[]},"previous":{"title":"Executando uma Aplicação Node","level":"3.1.4","depth":2,"path":"comecando-com-node/executando-uma-app-node.md","ref":"comecando-com-node/executando-uma-app-node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/gerenciamento-de-pacotes.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -993,10 +995,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

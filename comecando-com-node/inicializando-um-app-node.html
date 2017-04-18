@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -863,17 +863,15 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="inicializando-uma-aplica&#xE7;&#xE3;o-node">Inicializando uma Aplica&#xE7;&#xE3;o Node</h1>
-<div class="api-method"><div class="api-method-definition"><p>No arquivo <code>package.json</code> &#xE9; onde come&#xE7;amos cada aplica&#xE7;&#xE3;o. Mas, eu concordo que no in&#xED;cio pode ser dif&#xED;cil lembrar o que colocar nesse arquivo e por isso pessoal do <code>npm</code> criou um comando f&#xE1;cil de lembrar que vai guiar voc&#xEA; nessa tarefa. O comando <code>npm init</code>.</p>
+<p>No arquivo <code>package.json</code> &#xE9; onde come&#xE7;amos cada aplica&#xE7;&#xE3;o. Mas, eu concordo que no in&#xED;cio pode ser dif&#xED;cil lembrar o que colocar nesse arquivo e por isso pessoal do <code>npm</code> criou um comando f&#xE1;cil de lembrar que vai guiar voc&#xEA; nessa tarefa. O comando <code>npm init</code>.</p>
 <p>Vamos criar um projeto para testar o comando <code>npm init</code>.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-sh">$ mkdir expert-js-stack <span class="hljs-comment">#crie uma pasta pro projeto</span>
+<pre><code class="lang-sh">$ mkdir expert-js-stack <span class="hljs-comment">#crie uma pasta pro projeto</span>
 $ <span class="hljs-built_in">cd</span> expert-js-stack <span class="hljs-comment">#entre na pasta</span>
 $ npm init <span class="hljs-comment">#inicialize sua aplica&#xE7;&#xE3;o Node</span>
 </code></pre>
-</div></div></div>
-
-<div class="api-method"><div class="api-method-definition"><p>Esse comando vai te dar algumas op&#xE7;&#xF5;es que voc&#xEA; pode deixar como padr&#xE3;o ou configurar como quiser. Mas por enquanto, vamos deixar os valores padr&#xE3;o e configurar apenas o <code>main (entry point)</code> para apontar para o nosso <code>index.js</code>.</p>
+<p>Esse comando vai te dar algumas op&#xE7;&#xF5;es que voc&#xEA; pode deixar como padr&#xE3;o ou configurar como quiser. Mas por enquanto, vamos deixar os valores padr&#xE3;o e configurar apenas o <code>main (entry point)</code> para apontar para o nosso <code>index.js</code>.</p>
 <p>Voc&#xEA; vai ver que nosso arquivo <code>package.json</code> foi criado. Ele ser&#xE1; parecido com o exemplo e n&#xF3;s teremos o nosso primeiro projeto Node!</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-sh">This utility will walk you through creating a package.json file.
+<pre><code class="lang-sh">This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
 
 See `npm <span class="hljs-built_in">help</span> json` <span class="hljs-keyword">for</span> definitive documentation on these fields
@@ -909,8 +907,6 @@ About to write to ~/devexpert/expert-js-stack/package.json:
 
 Is this ok? (yes)
 </code></pre>
-</div></div></div>
-
 <p>Agora que temos o <code>package.json</code> podemos digitar o comando <code>node index.js</code> para iniciar nossa app Node! Mas isso vai gerar um erro, por que ainda n&#xE3;o criamos o arquivo <code>index.js</code> que vamos usar para inicializar nosso app Node. Ent&#xE3;o agora, vamos resolver isso!</p>
 
                                 
@@ -938,14 +934,24 @@ Is this ok? (yes)
             </div>
 
             
-
+                
+                <a href="./#configuração-packagejson" class="navigation navigation-prev " aria-label="Previous page: Configuração (package.json)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="criando-um-app-node.html" class="navigation navigation-next " aria-label="Next page: Criando um App Node Bem Simples">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Inicializando uma Aplicação Node","level":"3.1.2","depth":2,"next":{"title":"Criando um App Node Bem Simples","level":"3.1.3","depth":2,"path":"comecando-com-node/criando-um-app-node.md","ref":"comecando-com-node/criando-um-app-node.md","articles":[]},"previous":{"title":"Configuração (package.json)","level":"3.1.1","depth":2,"anchor":"#configuração-packagejson","path":"comecando-com-node/README.md","ref":"comecando-com-node/README.md#configuração-packagejson","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/inicializando-um-app-node.md","mtime":"2017-03-30T15:29:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Inicializando uma Aplicação Node","level":"3.1.2","depth":2,"next":{"title":"Criando um App Node Bem Simples","level":"3.1.3","depth":2,"path":"comecando-com-node/criando-um-app-node.md","ref":"comecando-com-node/criando-um-app-node.md","articles":[]},"previous":{"title":"Configuração (package.json)","level":"3.1.1","depth":2,"anchor":"#configuração-packagejson","path":"comecando-com-node/README.md","ref":"comecando-com-node/README.md#configuração-packagejson","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/inicializando-um-app-node.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -993,10 +999,6 @@ Is this ok? (yes)
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -866,10 +866,10 @@
 <p>Vamos iniciar dando uma olhada em como come&#xE7;ar a desenvolver uma aplica&#xE7;&#xE3;o Node.js. Ent&#xE3;o, n&#xF3;s vamos passar por como configurar uma aplica&#xE7;&#xE3;o Node.js, instalando pacotes <code>npm</code> e indo at&#xE9; a cria&#xE7;&#xE3;o de uma aplica&#xE7;&#xE3;o bem simples.</p>
 <h2 id="configura&#xE7;&#xE3;o-packagejson">Configura&#xE7;&#xE3;o (package.json)</h2>
 <p>Aplica&#xE7;&#xF5;es Node s&#xE3;o configuradas em um arquivo <code>package.json</code>. Voc&#xEA; vai ter um arquivo para cada projeto que voc&#xEA; criar.</p>
-<div class="api-method"><div class="api-method-definition"><p>Nesse arquivo &#xE9; onde voc&#xEA; configura o nome do seu projeto, a vers&#xE3;o, o reposit&#xF3;rio, o autor e todas as depend&#xEA;ncias importantes.</p>
+<p>Nesse arquivo &#xE9; onde voc&#xEA; configura o nome do seu projeto, a vers&#xE3;o, o reposit&#xF3;rio, o autor e todas as depend&#xEA;ncias importantes.</p>
 <p>Pode parecer muita informa&#xE7;&#xE3;o num primeiro momento, pode ser que sim para alguns DEVs pode ser que n&#xE3;o para outors. Mas as chances s&#xE3;o que essas informa&#xE7;&#xF5;es v&#xE3;o facilitar e muito a vida de outros desenvolvedores que participarem do seu projeto.</p>
 <p>Veja como fica um exemplo desse arquivo:</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-json">{
+<pre><code class="lang-json">{
   <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;expert-js-stack&quot;</span>,
   <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;1.0.0&quot;</span>,
   <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;EXPERT JS Stack&quot;</span>,
@@ -887,16 +887,12 @@
   <span class="hljs-string">&quot;homepage&quot;</span>: <span class="hljs-string">&quot;http://stack.desenvolvedor.expert/&quot;</span>
 }
 </code></pre>
-</div></div></div>
-
-<div class="api-method"><div class="api-method-definition"><p>N&#xF3;s vamos entender melhor cada uma dessas entradas at&#xE9; o final desse livro. Mas, nesse primeiro momento, vamos focar nesses primeiros dois atributos que s&#xE3;o o m&#xED;nimo requerido.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-json">{
+<p>N&#xF3;s vamos entender melhor cada uma dessas entradas at&#xE9; o final desse livro. Mas, nesse primeiro momento, vamos focar nesses primeiros dois atributos que s&#xE3;o o m&#xED;nimo requerido.</p>
+<pre><code class="lang-json">{
  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;expert-js-stack&quot;</span>,
  <span class="hljs-string">&quot;main&quot;</span>: <span class="hljs-string">&quot;index.js&quot;</span>
 }
 </code></pre>
-</div></div></div>
-
 <p>O atributo <code>main</code> informa para o Node qual arquivo usar para inicializar a sua aplica&#xE7;&#xE3;o. Chamaremos esse arquivo de <code>index.js</code> e &#xE9; aqui que vamos come&#xE7;ar a nossa aplica&#xE7;&#xE3;o.</p>
 <p>Para mais informa&#xE7;&#xF5;es sobre quais atributos podemos usar no <code>package.json</code> de uma olhada em na <a href="https://docs.npmjs.com/files/package.json" target="_blank">documente&#xE7;&#xE3;o do package.json</a>.</p>
 
@@ -925,14 +921,24 @@
             </div>
 
             
-
+                
+                <a href="../comecando/mindset.html" class="navigation navigation-prev " aria-label="Previous page: MINDSET: A Maneira de Pensar">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="./#configuração-packagejson" class="navigation navigation-next " aria-label="Next page: Configuração (package.json)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Começando com Node","level":"3.1","depth":1,"next":{"title":"Configuração (package.json)","level":"3.1.1","depth":2,"anchor":"#configuração-packagejson","path":"comecando-com-node/README.md","ref":"comecando-com-node/README.md#configuração-packagejson","articles":[]},"previous":{"title":"MINDSET: A Maneira de Pensar","level":"2.3","depth":1,"path":"comecando/mindset.md","ref":"comecando/mindset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/README.md","mtime":"2017-03-28T19:29:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Começando com Node","level":"3.1","depth":1,"next":{"title":"Configuração (package.json)","level":"3.1.1","depth":2,"anchor":"#configuração-packagejson","path":"comecando-com-node/README.md","ref":"comecando-com-node/README.md#configuração-packagejson","articles":[]},"previous":{"title":"MINDSET: A Maneira de Pensar","level":"2.3","depth":1,"path":"comecando/mindset.md","ref":"comecando/mindset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"comecando-com-node/README.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -980,10 +986,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

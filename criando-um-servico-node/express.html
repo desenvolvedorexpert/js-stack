@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -864,12 +864,10 @@
                                 
                                 <h1 id="m&#xE9;todo-2-usando-express">M&#xE9;todo #2: Usando Express</h1>
 <p>Agora que j&#xE1; vimos como iniciar um servidor usando o m&#xF3;dulo HTTP, vamos dar uma olhada em como o Express faz isso. Voc&#xEA; vai achar o c&#xF3;digo muito mais simples.</p>
-<div class="api-method"><div class="api-method-definition"><p>Primeiro precisamos adicionar o Express no projeto. Vamos usar a linha de comando para instalar e salvar ele em nosso <code>package.json</code>.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code>$ npm install express --save
-</code></pre></div></div></div>
-
-<div class="api-method"><div class="api-method-definition"><p>Ent&#xE3;o, vamos atualizar o <code>server.js</code> para usar o Express. Come&#xE7;amos instanciando o Express e usando essa inst&#xE2;ncia, definimos uma rota e enviamos o <code>index.html</code>. Ent&#xE3;o ficamos &quot;escutando&quot; uma porta para responder as requisi&#xE7;&#xF5;es do <em>browser</em>.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js"><span class="hljs-comment">// vamos come&#xE7;ar, carregando o express e criando a app</span>
+<p>Primeiro precisamos adicionar o Express no projeto. Vamos usar a linha de comando para instalar e salvar ele em nosso <code>package.json</code>.</p>
+<pre><code>$ npm install express --save
+</code></pre><p>Ent&#xE3;o, vamos atualizar o <code>server.js</code> para usar o Express. Come&#xE7;amos instanciando o Express e usando essa inst&#xE2;ncia, definimos uma rota e enviamos o <code>index.html</code>. Ent&#xE3;o ficamos &quot;escutando&quot; uma porta para responder as requisi&#xE7;&#xF5;es do <em>browser</em>.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// vamos come&#xE7;ar, carregando o express e criando a app</span>
 <span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>)()
 <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>)
 
@@ -883,17 +881,15 @@ app.get(<span class="hljs-string">&apos;/&apos;</span>, (req, res) =&gt; {
 app.listen(<span class="hljs-number">8001</span>)
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;8001 &#xE9; a porta m&#xE1;gica!&apos;</span>)
 </code></pre>
-</div></div></div>
-
 <p>Agora, instanciamos o Express, definimos uma porta e iniciamos o servidor. O Express tornou o trabalho de iniciar o servidor bem simples. Iniciando o servidor com <code>nodemon server.js</code> ele vai retornar novamente o HTML para os usu&#xE1;rios, agora em <code>http://localhost:8001</code>.</p>
 <p><asciinema-player src="/assets/express-server.json" speed="2" poster="npt:1:03">&lt;/asciinema-player&gt;</asciinema-player></p>
 <p>Veremos o mesmo resultado que antes, mas agora o c&#xF3;digo est&#xE1; bem mais simples.</p>
 <p><img src="../assets/localhost-8001.png" alt="Falaaa DEV Browser"></p>
 <hr>
 <h2 id="atalhos-para-defini&#xE7;&#xE3;o-de-packages">Atalhos para Defini&#xE7;&#xE3;o de Packages</h2>
-<div class="api-method"><div class="api-method-definition"><p>Uma boa dica &#xE9; que quando estiver declarando os <em>packages</em>, ao inv&#xE9;s de escrever <code>const</code> para definir cada <em>package</em>, podemos separalos com uma v&#xED;rgula. Como no exemplo:</p>
+<p>Uma boa dica &#xE9; que quando estiver declarando os <em>packages</em>, ao inv&#xE9;s de escrever <code>const</code> para definir cada <em>package</em>, podemos separalos com uma v&#xED;rgula. Como no exemplo:</p>
 <p>Isso vai organizar o c&#xF3;digo melhor e poupar algumas teclas.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-javascript"><span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>)()
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>)()
 <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>)
 
 <span class="hljs-comment">// &#xE9; o mesmo que isso</span>
@@ -901,8 +897,6 @@ app.listen(<span class="hljs-number">8001</span>)
 <span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>)(),
       path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>)
 </code></pre>
-</div></div></div>
-
 <hr>
 <p>At&#xE9; agora, j&#xE1; podemos criar um servidor Node e enviar arquivos HTML para os usu&#xE1;rios. Definimos uma rota <code>get</code> simples para isso. Ent&#xE3;o, vamos dar mais um passo e adicionar mais rotas e p&#xE1;ginas ao nosso site.</p>
 
@@ -931,14 +925,24 @@ app.listen(<span class="hljs-number">8001</span>)
             </div>
 
             
-
+                
+                <a href="node.html" class="navigation navigation-prev " aria-label="Previous page: Método #1: Apenas Node, sem Express">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../roteamento-de-aplicacoes-node/" class="navigation navigation-next " aria-label="Next page: Roteamento de Aplicações">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Método #2: Usando Express","level":"3.2.3","depth":2,"next":{"title":"Roteamento de Aplicações","level":"3.3","depth":1,"path":"roteamento-de-aplicacoes-node/README.md","ref":"roteamento-de-aplicacoes-node/README.md","articles":[{"title":"Express Router","level":"3.3.1","depth":2,"path":"roteamento-de-aplicacoes-node/express-router.md","ref":"roteamento-de-aplicacoes-node/express-router.md","articles":[]},{"title":"Roteamento Básico","level":"3.3.2","depth":2,"path":"roteamento-de-aplicacoes-node/roteamento-basico.md","ref":"roteamento-de-aplicacoes-node/roteamento-basico.md","articles":[]},{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"path":"roteamento-de-aplicacoes-node/middleware.md","ref":"roteamento-de-aplicacoes-node/middleware.md","articles":[]},{"title":"Organizando Rotas","level":"3.3.4","depth":2,"path":"roteamento-de-aplicacoes-node/organizando-rotas.md","ref":"roteamento-de-aplicacoes-node/organizando-rotas.md","articles":[]},{"title":"Recapitulando","level":"3.3.5","depth":2,"path":"roteamento-de-aplicacoes-node/recapitulando.md","ref":"roteamento-de-aplicacoes-node/recapitulando.md","articles":[]}]},"previous":{"title":"Método #1: Apenas Node, sem Express","level":"3.2.2","depth":2,"path":"criando-um-servico-node/node.md","ref":"criando-um-servico-node/node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-um-servico-node/express.md","mtime":"2017-03-30T18:24:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Método #2: Usando Express","level":"3.2.3","depth":2,"next":{"title":"Roteamento de Aplicações","level":"3.3","depth":1,"path":"roteamento-de-aplicacoes-node/README.md","ref":"roteamento-de-aplicacoes-node/README.md","articles":[{"title":"Express Router","level":"3.3.1","depth":2,"path":"roteamento-de-aplicacoes-node/express-router.md","ref":"roteamento-de-aplicacoes-node/express-router.md","articles":[]},{"title":"Roteamento Básico","level":"3.3.2","depth":2,"path":"roteamento-de-aplicacoes-node/roteamento-basico.md","ref":"roteamento-de-aplicacoes-node/roteamento-basico.md","articles":[]},{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"path":"roteamento-de-aplicacoes-node/middleware.md","ref":"roteamento-de-aplicacoes-node/middleware.md","articles":[]},{"title":"Organizando Rotas","level":"3.3.4","depth":2,"path":"roteamento-de-aplicacoes-node/organizando-rotas.md","ref":"roteamento-de-aplicacoes-node/organizando-rotas.md","articles":[]},{"title":"Recapitulando","level":"3.3.5","depth":2,"path":"roteamento-de-aplicacoes-node/recapitulando.md","ref":"roteamento-de-aplicacoes-node/recapitulando.md","articles":[]}]},"previous":{"title":"Método #1: Apenas Node, sem Express","level":"3.2.2","depth":2,"path":"criando-um-servico-node/node.md","ref":"criando-um-servico-node/node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-um-servico-node/express.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -986,10 +990,6 @@ app.listen(<span class="hljs-number">8001</span>)
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

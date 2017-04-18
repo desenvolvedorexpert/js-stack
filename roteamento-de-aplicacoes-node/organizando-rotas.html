@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -864,29 +864,25 @@
                                 
                                 <h1 id="organizando-rotas">Organizando Rotas</h1>
 <p>Usando o <code>Router()</code>, podemos dividir a aplica&#xE7;&#xE3;o em partes. Isso significa que podemos criar um <code>basicRouter</code> para o roteamento b&#xE1;sico do nosso <em>frontend</em>. Podemos, tamb&#xE9;m, ter um <code>adminRouter</code> para rotas de administra&#xE7;&#xE3;o protegidas por uma autentica&#xE7;&#xE3;o.</p>
-<div class="api-method"><div class="api-method-definition"><p>Roteando nossa aplica&#xE7;&#xE3;o dessa maneira podemos separar cada parte. Isso nos da a flexibilidade que precisamos em aplica&#xE7;&#xF5;es e APIs mais complexas. Dessa maneira, mantemos a aplica&#xE7;&#xE3;o limpa e organizada, movendo cada defini&#xE7;&#xE3;o de roteamento para seu respectivo arquivo e apenas o instanciando e passando para o <code>app.use()</code> dessa maneira:</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js">app.use(<span class="hljs-string">&apos;/&apos;</span>, basicRoutes)
+<p>Roteando nossa aplica&#xE7;&#xE3;o dessa maneira podemos separar cada parte. Isso nos da a flexibilidade que precisamos em aplica&#xE7;&#xF5;es e APIs mais complexas. Dessa maneira, mantemos a aplica&#xE7;&#xE3;o limpa e organizada, movendo cada defini&#xE7;&#xE3;o de roteamento para seu respectivo arquivo e apenas o instanciando e passando para o <code>app.use()</code> dessa maneira:</p>
+<pre><code class="lang-js">app.use(<span class="hljs-string">&apos;/&apos;</span>, basicRoutes)
 app.use(<span class="hljs-string">&apos;/admin&apos;</span>, adminRoutes)
 app.use(<span class="hljs-string">&apos;/api&apos;</span>, apiRoutes)
 </code></pre>
-</div></div></div>
-
 <h2 id="rotas-com-par&#xE2;metros-usersname">Rotas com Par&#xE2;metros: <code>/users/:name</code></h2>
-<div class="api-method"><div class="api-method-definition"><p>Para adicionar uma rota com par&#xE2;metros na aplica&#xE7;&#xE3;o, precisamos de uma rota tipo <code>/admin/users/:name</code> onde passamos um nome na URL e a aplica&#xE7;&#xE3;o imprime um &quot;<em>Faalaaa name!</em>&quot;. Veja como essa rota seria:</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js"><span class="hljs-comment">// rota com par&#xE2;metros (http://localhost:8000/admin/users/:name)</span>
+<p>Para adicionar uma rota com par&#xE2;metros na aplica&#xE7;&#xE3;o, precisamos de uma rota tipo <code>/admin/users/:name</code> onde passamos um nome na URL e a aplica&#xE7;&#xE3;o imprime um &quot;<em>Faalaaa name!</em>&quot;. Veja como essa rota seria:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// rota com par&#xE2;metros (http://localhost:8000/admin/users/:name)</span>
 adminRouter.get(<span class="hljs-string">&apos;/users/:name&apos;</span>, (req, res) =&gt; {
   res.send(<span class="hljs-string">&apos;Faalaaa &apos;</span> + req.params.name + <span class="hljs-string">&apos;!&apos;</span>)
 })
 </code></pre>
-</div></div></div>
-
 <p>Agora quando visitarmos <code>http://localhost:8000/admin/users/dev</code> veremos um &quot;<em>Faalaaa dev!</em>&quot;, o <code>req.params</code> armazena todos os par&#xE2;metros passados na requisi&#xE7;&#xE3;o.</p>
 <p>[Express Router Parameters]</p>
 <p>Mais na frente, vamos usar isso para retornar os dados do usu&#xE1;rio informado e construir um painel de controle para o gerenciamento de usu&#xE1;rios.</p>
 <p>Agora, vamos dizer que precisemos validar esse nome de alguma forma. Talvez para ter certeza de que n&#xE3;o &#xE9; um nome impr&#xF3;prio. Ent&#xE3;o, far&#xED;amos isso em um <em>middleware</em> e vamos usar um especial pra isso...</p>
 <h2 id="middleware-para-par&#xE2;metros-param">Middleware para Par&#xE2;metros: <code>.param()</code></h2>
-<div class="api-method"><div class="api-method-definition"><p>Vamos usar o <em>middleware</em> <code>.param()</code> do Express. Isso cria um <em>middleware</em> que ser&#xE1; executado para um par&#xE2;metro espec&#xED;fico. Nesse caso, para o <code>:name</code> nessa rota. Novamente, precisamos ter certeza de coloca-lo antes da defini&#xE7;&#xE3;o da rota e ficar&#xE1; dessa maneira:</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js"><span class="hljs-comment">// middleware de valida&#xE7;&#xE3;o para &apos;name&apos;</span>
+<p>Vamos usar o <em>middleware</em> <code>.param()</code> do Express. Isso cria um <em>middleware</em> que ser&#xE1; executado para um par&#xE2;metro espec&#xED;fico. Nesse caso, para o <code>:name</code> nessa rota. Novamente, precisamos ter certeza de coloca-lo antes da defini&#xE7;&#xE3;o da rota e ficar&#xE1; dessa maneira:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// middleware de valida&#xE7;&#xE3;o para &apos;name&apos;</span>
 adminRouter.param(<span class="hljs-string">&apos;name&apos;</span>, (req, res, next, name) =&gt; {
   <span class="hljs-comment">// fa&#xE7;a a valida&#xE7;&#xE3;o do &apos;name&apos; aqui</span>
   <span class="hljs-comment">// valida&#xE7;&#xE3;o blah blah</span>
@@ -904,8 +900,6 @@ adminRouter.get(<span class="hljs-string">&apos;/users/:name&apos;</span>, (req,
   res.send(<span class="hljs-string">&apos;Faalaaa &apos;</span> + req.name + <span class="hljs-string">&apos;!&apos;</span>)
 })
 </code></pre>
-</div></div></div>
-
 <p>Agora, quando a rota <code>/users/:name</code> for acessada, o <em>middleware</em> ser&#xE1; executado. Dessa forma, podemos executar quaisquer valida&#xE7;&#xF5;es e ent&#xE3;o passar a nova vari&#xE1;vel a rota <code>.get</code> armazenando-a no <code>req</code> (request). Ent&#xE3;o, podemos acess&#xE1;-la trocando o <code>req.params.name</code> pelo <code>req.name</code> j&#xE1; que pegamos ela do <code>req.params.name</code> e colocamos no <code>req.name</code> dentro do <em>middleware</em>.</p>
 <p>Quando visitarmos <code>http://localhost:8000/admin/users/lucas</code> no <em>browser</em> veremos a requisi&#xE7;&#xE3;o logada no console.</p>
 <p>[Express Router Parameter Middleware]</p>
@@ -913,20 +907,18 @@ adminRouter.get(<span class="hljs-string">&apos;/users/:name&apos;</span>, (req,
 <p>A &#xFA;ltima <em>feature</em> do Express que vamos ver &#xE9; como usar o <code>app.route()</code> para definir multiplas rotas.</p>
 <h2 id="rotas-de-autentica&#xE7;&#xE3;o-approute">Rotas de Autentica&#xE7;&#xE3;o: <code>app.route()</code></h2>
 <p>Podemos definir as rotas diretamente no <code>app</code>. Isso &#xE9; parecido com o uso do <code>app.get</code>, mas vamos usar o <code>app.route</code>. Ele &#xE9; b&#xE1;sicamente um atalho para o Express Router. Em vez de chamar <code>express.Router()</code>, usamos o <code>app.route</code> e come&#xE7;amos a definir as rotas.</p>
-<div class="api-method"><div class="api-method-definition"><p>Usando o <code>app.route</code> podemos definir multiplas a&#xE7;&#xF5;es para a mesma rota. E nesse caso, vamos precisar definir uma rota <code>GET</code> para mostrar o formul&#xE1;ruio de login e uma <code>POST</code> para processar a autentica&#xE7;&#xE3;o. Isso fica assim:</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js">app.route(<span class="hljs-string">&apos;/login&apos;</span>)
+<p>Usando o <code>app.route</code> podemos definir multiplas a&#xE7;&#xF5;es para a mesma rota. E nesse caso, vamos precisar definir uma rota <code>GET</code> para mostrar o formul&#xE1;ruio de login e uma <code>POST</code> para processar a autentica&#xE7;&#xE3;o. Isso fica assim:</p>
+<pre><code class="lang-js">app.route(<span class="hljs-string">&apos;/login&apos;</span>)
   <span class="hljs-comment">// exibe o form (GET http://localhost:8000/login)</span>
-  .get((req, res) =&gt; {
+  .get(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
     res.send(<span class="hljs-string">&apos;this is the login form&apos;</span>)
   })
   <span class="hljs-comment">// processa o form (POST http://localhost:8000/login)</span>
-  .post((req, res) =&gt; {
+  .post(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;processing&apos;</span>)
     res.send(<span class="hljs-string">&apos;processing the login form!&apos;</span>)
   })
 </code></pre>
-</div></div></div>
-
 <p>Isso define duas a&#xE7;&#xF5;es diferentes para a rota <code>/login</code> de maneira simples e clara. Isso foi aplicado diretamente em nosso objeto <code>app</code> no <code>server.js</code>, mas poderia ser definido no objeto <code>adminRouter</code> que vimos antes.</p>
 <p>Essa &#xE9; uma boa maneira de configurar rotas, j&#xE1; que mant&#xE9;m o c&#xF3;digo claro e facilida a identifica&#xE7;&#xE3;o de onde as rotas s&#xE3;o aplicadas. Em breve, vamos desenvolver uma API RESTful e uma das principais coisas que vamos fazer &#xE9; usar diferentes verbos HTTP para definir as a&#xE7;&#xF5;es na aplica&#xE7;&#xE3;o. Como o <code>GET /login</code> para prover uma <em>view</em> de autentica&#xE7;&#xE3;o enquanto um <code>POST /login</code> vai processar a autentica&#xE7;&#xE3;o.</p>
 
@@ -955,14 +947,24 @@ adminRouter.get(<span class="hljs-string">&apos;/users/:name&apos;</span>, (req,
             </div>
 
             
-
+                
+                <a href="middleware.html" class="navigation navigation-prev " aria-label="Previous page: Middleware de Roteamento">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="recapitulando.html" class="navigation navigation-next " aria-label="Next page: Recapitulando">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Organizando Rotas","level":"3.3.4","depth":2,"next":{"title":"Recapitulando","level":"3.3.5","depth":2,"path":"roteamento-de-aplicacoes-node/recapitulando.md","ref":"roteamento-de-aplicacoes-node/recapitulando.md","articles":[]},"previous":{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"path":"roteamento-de-aplicacoes-node/middleware.md","ref":"roteamento-de-aplicacoes-node/middleware.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"roteamento-de-aplicacoes-node/organizando-rotas.md","mtime":"2017-03-31T23:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Organizando Rotas","level":"3.3.4","depth":2,"next":{"title":"Recapitulando","level":"3.3.5","depth":2,"path":"roteamento-de-aplicacoes-node/recapitulando.md","ref":"roteamento-de-aplicacoes-node/recapitulando.md","articles":[]},"previous":{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"path":"roteamento-de-aplicacoes-node/middleware.md","ref":"roteamento-de-aplicacoes-node/middleware.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"roteamento-de-aplicacoes-node/organizando-rotas.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1010,10 +1012,6 @@ adminRouter.get(<span class="hljs-string">&apos;/users/:name&apos;</span>, (req,
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -869,13 +869,13 @@
 <h2 id="expressrouter">express.Router()</h2>
 <p>O <a href="http://expressjs.com/api#router" target="_blank">express.Router()</a> age como uma mini aplica&#xE7;&#xE3;o. Podemos chamar uma inst&#xE2;ncia dele (como fazemos com o Express) e ent&#xE3;o definir as rotas nele. Vamos ver um exemplo para entender exatamente o que isso significa.</p>
 <p><asciinema-player src="/assets/roteamento-basico.json" speed="2" poster="npt:0:55">&lt;/asciinema-player&gt;</asciinema-player></p>
-<div class="api-method"><div class="api-method-definition"><p>Ent&#xE3;o, vamos adicionar esse c&#xF3;digo ao <code>server.js</code> logo depois do <code>app.get()</code>. Isso vai:</p>
+<p>Ent&#xE3;o, vamos adicionar esse c&#xF3;digo ao <code>server.js</code> logo depois do <code>app.get()</code>. Isso vai:</p>
 <ol>
 <li><strong>chamar uma inst&#xE2;ncia do router</strong>;</li>
 <li><strong>criar rotas para ele</strong>;</li>
 <li>e ent&#xE3;o <strong>adicionar essas rotas a aplica&#xE7;&#xE3;o principal</strong>.</li>
 </ol>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js"><span class="hljs-comment">// 1. chamar uma inst&#xE2;ncia do router</span>
+<pre><code class="lang-js"><span class="hljs-comment">// 1. chamar uma inst&#xE2;ncia do router</span>
 <span class="hljs-keyword">var</span> adminRouter = express.Router()
 
 <span class="hljs-comment">// 2. criar rotas para ele</span>
@@ -897,8 +897,6 @@ adminRouter.get(<span class="hljs-string">&apos;/posts&apos;</span>, (req, res) 
 <span class="hljs-comment">// 3. adicionar essas rotas a aplica&#xE7;&#xE3;o principal</span>
 app.use(<span class="hljs-string">&apos;/admin&apos;</span>, adminRouter)
 </code></pre>
-</div></div></div>
-
 <p>N&#xF3;s chamamos uma inst&#xE2;ncia do <code>express.Router()</code> e atribuimos a uma vari&#xE1;vel <code>adminRouter</code>, aplicamos algumas rotas nele e informamos nossa app para usa-las.</p>
 <p>Agora podemos acessar o painel administrativo em <a href="http://localhost:8000/admin" target="_blank">http://localhost:8000/admin</a> e as sub-p&#xE1;ginas em <a href="http://localhost:8000/admin/users" target="_blank">http://localhost:8000/admin/users</a> e <a href="http://localhost:8000/admin/posts" target="_blank">http://localhost:8000/admin/posts</a>.</p>
 <p>Perceba como podemos configurar um prefixo para as rotas definidas. Se alterarmos a &#xFA;ltima linha para <code>app.use(&apos;/app&apos;, adminRouter)</code>, ent&#xE3;o as rotas que passam a valer ser&#xE3;o <a href="http://localhost:8000/app/" target="_blank">http://localhost:8000/app/</a> e <a href="http://localhost:8000/app/users" target="_blank">http://localhost:8000/app/users</a>.</p>
@@ -930,14 +928,24 @@ app.use(<span class="hljs-string">&apos;/admin&apos;</span>, adminRouter)
             </div>
 
             
-
+                
+                <a href="express-router.html" class="navigation navigation-prev " aria-label="Previous page: Express Router">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="middleware.html" class="navigation navigation-next " aria-label="Next page: Middleware de Roteamento">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Roteamento Básico","level":"3.3.2","depth":2,"next":{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"path":"roteamento-de-aplicacoes-node/middleware.md","ref":"roteamento-de-aplicacoes-node/middleware.md","articles":[]},"previous":{"title":"Express Router","level":"3.3.1","depth":2,"path":"roteamento-de-aplicacoes-node/express-router.md","ref":"roteamento-de-aplicacoes-node/express-router.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"roteamento-de-aplicacoes-node/roteamento-basico.md","mtime":"2017-03-31T23:25:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Roteamento Básico","level":"3.3.2","depth":2,"next":{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"path":"roteamento-de-aplicacoes-node/middleware.md","ref":"roteamento-de-aplicacoes-node/middleware.md","articles":[]},"previous":{"title":"Express Router","level":"3.3.1","depth":2,"path":"roteamento-de-aplicacoes-node/express-router.md","ref":"roteamento-de-aplicacoes-node/express-router.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"roteamento-de-aplicacoes-node/roteamento-basico.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -985,10 +993,6 @@ app.use(<span class="hljs-string">&apos;/admin&apos;</span>, adminRouter)
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

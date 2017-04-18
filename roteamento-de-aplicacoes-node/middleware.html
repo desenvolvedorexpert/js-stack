@@ -22,7 +22,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlightjs/diff2html.css">
                 
             
                 
@@ -31,10 +35,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -727,12 +727,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.9" data-path="../ServerBackend/BuildRESTfulNodeAPI/ExpressRouterAndRoutes.md">
+        <li class="chapter " data-level="3.5.9" data-path="../criando-api-restful/express-rotas.html">
             
-                <span>
+                <a href="../criando-api-restful/express-rotas.html">
             
                     
-                    Express Router e Rotas
+                    Express e Rotas
             
                 </a>
             
@@ -864,17 +864,15 @@
                                 
                                 <h1 id="middleware-de-roteamento-routeruse">Middleware de Roteamento: <code>router.use()</code></h1>
 <p>Um <em>middleware</em> no Express &#xE9; a maneira de fazer alguma coisa antes da requisi&#xE7;&#xE3;o ser processada. Coisas como verificar se o usu&#xE1;rio est&#xE1; autenticado, logar algum dado para an&#xE1;lise ou qualquer coisa que precise ser feita antes de devolver uma resposta para a requisi&#xE7;&#xE3;o.</p>
-<div class="api-method"><div class="api-method-definition"><p>Esse &#xE9; um <em>middleware</em> para logar uma mensagem no console a cada requisi&#xE7;&#xE3;o. Nele temos uma demonstra&#xE7;&#xE3;o de como &#xE9; criado um <em>middleware</em> usando o Express Router. Apenas adicionaremos ele ao <code>adminRouter</code> que criamos antes. Precisamos ter a certeza de coloca-lo <strong>depois</strong> de declarar o <code>adminRouter</code> e <strong>antes</strong> da defini&#xE7;&#xE3;o das rotas para usu&#xE1;rios e posts. Vamos perceber um argumento <code>next</code> nesse ponto. Essa &#xE9; a &#xFA;nica maneira do Express saber que a fun&#xE7;&#xE3;o terminou e continuar o <em>pipeline</em> para o pr&#xF3;ximo <em>middleware</em> ou rota definida.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code class="lang-js"><span class="hljs-comment">// middleware de roteamento exeutado a cada requisi&#xE7;&#xE3;o</span>
-adminRouter.use((req, res, next) =&gt; {
+<p>Esse &#xE9; um <em>middleware</em> para logar uma mensagem no console a cada requisi&#xE7;&#xE3;o. Nele temos uma demonstra&#xE7;&#xE3;o de como &#xE9; criado um <em>middleware</em> usando o Express Router. Apenas adicionaremos ele ao <code>adminRouter</code> que criamos antes. Precisamos ter a certeza de coloca-lo <strong>depois</strong> de declarar o <code>adminRouter</code> e <strong>antes</strong> da defini&#xE7;&#xE3;o das rotas para usu&#xE1;rios e posts. Vamos perceber um argumento <code>next</code> nesse ponto. Essa &#xE9; a &#xFA;nica maneira do Express saber que a fun&#xE7;&#xE3;o terminou e continuar o <em>pipeline</em> para o pr&#xF3;ximo <em>middleware</em> ou rota definida.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// middleware de roteamento exeutado a cada requisi&#xE7;&#xE3;o</span>
+adminRouter.use(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
   <span class="hljs-comment">// logar cada requisi&#xE7;&#xE3;o no console</span>
   <span class="hljs-built_in">console</span>.log(req.method, req.url)
   <span class="hljs-comment">// continue com o que precisar ser feito e v&#xE1; para a rota</span>
   next()
 })
 </code></pre>
-</div></div></div>
-
 <p>O <code>adminRouter.use()</code> &#xE9; usado para definir o <em>middleware</em>. Ele vai ser aplicado a todas as requisi&#xE7;&#xF5;es que ca&#xED;rem nessa inst&#xE2;ncia do <em>Router</em>. Vamos dar uma olhada em <code>http://localhost:8000/admin</code> e ver o <em>trace</em> da requisi&#xE7;&#xE3;o no console.</p>
 <p><asciinema-player src="/assets/middleware.json" speed="2" poster="npt:0:39">&lt;/asciinema-player&gt;</asciinema-player></p>
 <p><strong>A ordem que definimos os middlewares e as rotas &#xE9; muito importante.</strong> Por conven&#xE7;&#xE3;o, tudo acontece na ordem em que foram definidos. Isso significa que se for definido um <em>middleware</em> depois de uma rota, a rota ser&#xE1; executada e a requisi&#xE7;&#xE3;o encerrada antes da execu&#xE7;&#xE3;o do <em>middleware</em>.</p>
@@ -905,14 +903,24 @@ adminRouter.use((req, res, next) =&gt; {
             </div>
 
             
-
+                
+                <a href="roteamento-basico.html" class="navigation navigation-prev " aria-label="Previous page: Roteamento Básico">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="organizando-rotas.html" class="navigation navigation-next " aria-label="Next page: Organizando Rotas">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"next":{"title":"Organizando Rotas","level":"3.3.4","depth":2,"path":"roteamento-de-aplicacoes-node/organizando-rotas.md","ref":"roteamento-de-aplicacoes-node/organizando-rotas.md","articles":[]},"previous":{"title":"Roteamento Básico","level":"3.3.2","depth":2,"path":"roteamento-de-aplicacoes-node/roteamento-basico.md","ref":"roteamento-de-aplicacoes-node/roteamento-basico.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","disqus","github","ga","asciitree","addcssjs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"roteamento-de-aplicacoes-node/middleware.md","mtime":"2017-03-31T23:25:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T18:45:33.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Middleware de Roteamento","level":"3.3.3","depth":2,"next":{"title":"Organizando Rotas","level":"3.3.4","depth":2,"path":"roteamento-de-aplicacoes-node/organizando-rotas.md","ref":"roteamento-de-aplicacoes-node/organizando-rotas.md","articles":[]},"previous":{"title":"Roteamento Básico","level":"3.3.2","depth":2,"path":"roteamento-de-aplicacoes-node/roteamento-basico.md","ref":"roteamento-de-aplicacoes-node/roteamento-basico.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"roteamento-de-aplicacoes-node/middleware.md","mtime":"2017-04-18T01:00:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -960,10 +968,6 @@ adminRouter.use((req, res, next) =&gt; {
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 
