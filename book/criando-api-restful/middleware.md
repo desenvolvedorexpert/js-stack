@@ -29,3 +29,33 @@ index 571771b..c015de4 100644
 Então, tudo que precisamos fazer para declarar esse _middleware_ é usar o ```router.use(function())```. A onder que definimos o _middleware_ também é muito importante. Porque ele será executado na ordem que é listado, como vimos antes. Também adicionamos o ```next()``` indicando para aplicação continuar para o próximo _middleware_ e não parar nesse ponto.
 
 Vamos ver como fica esse _log_ quando executamos uma requisição para nossa API:
+
+```bash
+ > node index.js
+A mágica acontece na porta 8000
+foi feita uma requisição para nossa API!
+GET /api 200 5.377 ms - 32
+```
+
+Essa é a resposta que vamos receber quando fizermos um requisição para nossa API:
+
+```bash
+ > http GET http://localhost:8000/api
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,content-type,Authorization
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Length: 32
+Content-Type: application/json; charset=utf-8
+Date: Tue, 18 Apr 2017 16:48:58 GMT
+ETag: W/"20-SWNkJQXTrrYDpUn/LvOilY/Ibck"
+X-Powered-By: Express
+{
+    "message": "essa é nossa api!"
+}
+```
+
+---
+
+Usar _middlewares_ dessa maneira é muito poderoso. Podemos validar todas as requisições e garantir que estão seguras e como como esperamos. Podemos disparar um erro caso algo esteja errado, logar informações adicionais e verificar se o usuário possui um token de autenticação válido. Veremos isso mais adiante!
