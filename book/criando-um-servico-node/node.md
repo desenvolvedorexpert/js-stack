@@ -2,12 +2,12 @@
 
 Nesse método, vamos usar dois módulos incorporados no próprio *core* do Node. O [módulo HTTP](https://nodejs.org/api/http.html#http_http) é usado para iniciar um servidor HTTP que vai responder as requisições HTTP dos usuários. O [módulo fs](https://nodejs.org/api/fs.html#fs_file_system) é usado para acessar o sistema de arquivos. Vamos precisar ler o arquivo ```index.html``` do sistema de arquivos e eviar ele para o usuário usando o servidor HTTP.
 
-{% method %}
+
 O nosso ```server.js``` nesse ponto fica desse jeito:
 
 Em suma, estamos usando o **módulo http** para criar o servidor e o **módulo fs** para pegar o arquivo index e envia-lo na responsta para o usuário.
 
-{% common %}
+
 ```js
 // vamos importar os módulos http e filesystem
 const http = require('http'), fs = require('fs')
@@ -28,16 +28,16 @@ http.createServer((req, res) => {
 // no fim, informamos o endpoint para o usuário
 console.log('Visite-me em: http://localhost:8000')
 ```
-{% endmethod %}
 
-{% method %}
+
+
 Com o arquivo ```server.js``` definido, vamos para linha de comando inicializar o nosso servidor Node HTTP.
 
-{% common %}
+
 ```
 $ nodemon server.js
 ```
-{% endmethod %}
+
 
 Veremos o servidor inicializando e a mesnsagem logada no console.
 

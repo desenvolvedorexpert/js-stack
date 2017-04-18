@@ -16,10 +16,10 @@ O **MongoDB**, por outro lado, é classificado como um _**banco-de-dados não re
 
 O **Banco-de-Dados Orientado a Documentos** é um tipo de **Banco NoSQL** que persiste dados em um documento semi-estruturado (ao contrário das tabelas em bancos relacionais).
 
-{% method %}
+
 A modelagem de dados no **MongoDB** é extremamente flexível. Uma maneira de persistir dados é criando documentos separados e adicionando referências para conectar informações. Como você pode ver o documento "Dev Info" tem as informações básicas e é referenciado pelo documento "Dev Address".
 
-{% common %}
+
 Dev Info
 ``` json
 {
@@ -37,12 +37,12 @@ Dev Address Book
   "state": "rj"
 }
 ```
-{% endmethod %}
 
-{% method %}
+
+
 Outra maneira é incluir a informação de endereço dentro do documento "Dev Info" e agora temos apenas um documento para cada Dev, o que exige menos operações de escrita para atualizar informações sobre um Dev o que é mais performático, assumindo que o seu documento não é muito grande.
 
-{% common %}
+
 ``` json
 {
      "id": "1234",
@@ -55,7 +55,7 @@ Outra maneira é incluir a informação de endereço dentro do documento "Dev In
      }
 }
 ```
-{% endmethod %}
+
 
 Quando você começa a persistir informações sobre vários Devs, cada um dos documentos pode ser classificado como um item da Coleção de Devs. Uma coleção é um grupo de elementos relacionados e nesse caso, todos terão os mesmos campos com diferentes valores.
 

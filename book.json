@@ -8,7 +8,7 @@
     "version": "0.1.0"
   },
   "plugins": [
-    "theme-api",
+    "theme-default",
     "disqus",
     "github",
     "ga",

@@ -2,30 +2,30 @@
 
 Usando o ```Router()```, podemos dividir a aplicação em partes. Isso significa que podemos criar um ```basicRouter``` para o roteamento básico do nosso *frontend*. Podemos, também, ter um ```adminRouter``` para rotas de administração protegidas por uma autenticação.
 
-{% method %}
+
 Roteando nossa aplicação dessa maneira podemos separar cada parte. Isso nos da a flexibilidade que precisamos em aplicações e APIs mais complexas. Dessa maneira, mantemos a aplicação limpa e organizada, movendo cada definição de roteamento para seu respectivo arquivo e apenas o instanciando e passando para o ```app.use()``` dessa maneira:
 
-{% common %}
+
 ```js
 app.use('/', basicRoutes)
 app.use('/admin', adminRoutes)
 app.use('/api', apiRoutes)
 ```
-{% endmethod %}
+
 
 ## Rotas com Parâmetros: ```/users/:name```
 
-{% method %}
+
 Para adicionar uma rota com parâmetros na aplicação, precisamos de uma rota tipo ```/admin/users/:name``` onde passamos um nome na URL e a aplicação imprime um "*Faalaaa name!*". Veja como essa rota seria:
 
-{% common %}
+
 ```js
 // rota com parâmetros (http://localhost:8000/admin/users/:name)
 adminRouter.get('/users/:name', (req, res) => {
   res.send('Faalaaa ' + req.params.name + '!')
 })
 ```
-{% endmethod %}
+
 
 Agora quando visitarmos ```http://localhost:8000/admin/users/dev``` veremos um "*Faalaaa dev!*", o ```req.params``` armazena todos os parâmetros passados na requisição.
 
@@ -37,10 +37,10 @@ Agora, vamos dizer que precisemos validar esse nome de alguma forma. Talvez para
 
 ## Middleware para Parâmetros: ```.param()```
 
-{% method %}
+
 Vamos usar o *middleware* ```.param()``` do Express. Isso cria um *middleware* que será executado para um parâmetro específico. Nesse caso, para o ```:name``` nessa rota. Novamente, precisamos ter certeza de coloca-lo antes da definição da rota e ficará dessa maneira:
 
-{% common %}
+
 ```js
 // middleware de validação para 'name'
 adminRouter.param('name', (req, res, next, name) => {
@@ -60,7 +60,7 @@ adminRouter.get('/users/:name', (req, res) => {
   res.send('Faalaaa ' + req.name + '!')
 })
 ```
-{% endmethod %}
+
 
 Agora, quando a rota ```/users/:name``` for acessada, o *middleware* será executado. Dessa forma, podemos executar quaisquer validações e então passar a nova variável a rota ```.get``` armazenando-a no ```req``` (request). Então, podemos acessá-la trocando o ```req.params.name``` pelo ```req.name``` já que pegamos ela do ```req.params.name``` e colocamos no ```req.name``` dentro do *middleware*.
 
@@ -76,10 +76,10 @@ A última *feature* do Express que vamos ver é como usar o ```app.route()``` pa
 
 Podemos definir as rotas diretamente no ```app```. Isso é parecido com o uso do ```app.get```, mas vamos usar o ```app.route```. Ele é básicamente um atalho para o Express Router. Em vez de chamar ```express.Router()```, usamos o ```app.route``` e começamos a definir as rotas.
 
-{% method %}
+
 Usando o ```app.route``` podemos definir multiplas ações para a mesma rota. E nesse caso, vamos precisar definir uma rota ```GET``` para mostrar o formuláruio de login e uma ```POST``` para processar a autenticação. Isso fica assim:
 
-{% common %}
+
 ```js
 app.route('/login')
   // exibe o form (GET http://localhost:8000/login)
@@ -92,7 +92,7 @@ app.route('/login')
     res.send('processing the login form!')
   })
 ```
-{% endmethod %}
+
 
 Isso define duas ações diferentes para a rota ```/login``` de maneira simples e clara. Isso foi aplicado diretamente em nosso objeto ```app``` no ```server.js```, mas poderia ser definido no objeto ```adminRouter``` que vimos antes.
 

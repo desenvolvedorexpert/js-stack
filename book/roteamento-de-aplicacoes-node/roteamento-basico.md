@@ -12,14 +12,14 @@ O [express.Router()](http://expressjs.com/api#router) age como uma mini aplicaç
 
 <asciinema-player src="/assets/roteamento-basico.json" speed="2" poster="npt:0:55"></asciinema-player>
 
-{% method %}
+
 Então, vamos adicionar esse código ao ```server.js``` logo depois do ```app.get()```. Isso vai:
 
 1. **chamar uma instância do router**;
 2. **criar rotas para ele**;
 3. e então **adicionar essas rotas a aplicação principal**.
 
-{% common %}
+
 ```js
 // 1. chamar uma instância do router
 var adminRouter = express.Router()
@@ -43,7 +43,7 @@ adminRouter.get('/posts', (req, res) => {
 // 3. adicionar essas rotas a aplicação principal
 app.use('/admin', adminRouter)
 ```
-{% endmethod %}
+
 
 Nós chamamos uma instância do ```express.Router()``` e atribuimos a uma variável ```adminRouter```, aplicamos algumas rotas nele e informamos nossa app para usa-las.
 

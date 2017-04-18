@@ -15,10 +15,10 @@ Existem, basicamente, duas maneiras de adicionar _packages_ ao nosso projeto:
 
 ### Método #1: Escrevendo Direto no Arquivo package.json
 
-{% method %}
+
 Esse é um arquivo ```package.json``` com a dependência do Express adicionada.
 
-{% common %}
+
 ``` json
 {
  "name": "packages-install",
@@ -28,7 +28,7 @@ Esse é um arquivo ```package.json``` com a dependência do Express adicionada.
   }
 }
 ```
-{% endmethod %}
+
 
 Com isso, agora nós temos o Express configurado como um _package_ da nossa aplicação e duas partes do Full-Stack já encaixadas!
 
@@ -46,39 +46,39 @@ Assim, quando voltarmos a esta aplicação no futuro e usar o ```nmp install``` 
 
 A segunda maneira de adicionar packages a sua aplicação é usando o ```npm``` via linha de comando. Essa é a menra mais prática já que o ```npm``` pode salvar o package automaticamento no seu arquivo ```package.json```. E a parte mais legal é que **ele vai adicionar a versão correta do package!** Se você escrever direto no ```package.json``` você vai ter que buscar na internet o número correto da versão. Esse método vai tornar nossa vida muito mais fácil.
 
-{% method %}
+
 Esse é o comando para instalar o Express e salvar a modificação no ```package.json```:
 
-{% common %}
+
 ```bash
 npm install express --save
 ```
-{% endmethod %}
+
 
 Você vai reparar que esse comando baixa o _package_ e instala ele em uma nova pasta chamada **node_modules**. É aqui que são instalados os _packages_ em projetos Node e esse comando instala apenas o _package_ que foi chamado especificamente (Express nesse caso).
 
 ## Instalando Todos Packages
 
-{% method %}
+
 O **Método #2** vai instalar os _packages_ para gente e o **#1** vai adicionar eles no ```package.json``` mas não vai instala-los ainda. Então para instalar todos os _packages_ definidos como dependências no arquivo ```package.json``` na pasta **node_modules**, é só digitar o comando a seguir.
 
-{% common %}
+
 ```sh
 npm install
 ```
-{% endmethod %}
+
 
 Esse comando vai baixar todas as dependências para a pasta **node_modules** da sua aplicação.
 
 ## Instalando Multiplos Packages
 
-{% method %}
+
 O ```npm``` tem uma boa maneira para instalar multiplos _packages_. Basta informar todos os _packages_ em um comando ```npm install``` e eles serão instalados no projeto.
 
-{% common %}
+
 ```sh
 npm install express mongoose passport --save
 ```
-{% endmethod %}
+
 
 Essa é uma maneira simples e fácil de instalar todos os _packages_ que precisamos.

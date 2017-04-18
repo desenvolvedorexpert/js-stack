@@ -19,24 +19,24 @@ Então vamos criar esses arquivos seguindo os templates aqui a baixo.
 
 ## package.json
 
-{% method %}
+
 Entre outras informações, nosso arquivo ```package.json``` vai parecer com este:
 
-{% common %}
+
 ``` json
 {
   "name": "http-server",
   "main": "index.js"
 }
 ```
-{% endmethod %}
+
 
 ## index.html
 
-{% method %}
+
 Vamos escrever um simples arquivo .html como esse:
 
-{% common %}
+
 ``` html
 <!DOCTYPE html>
 <html lang="pt">
@@ -56,4 +56,4 @@ Vamos escrever um simples arquivo .html como esse:
   </body>
 </html>
 ```
-{% endmethod %}
+
