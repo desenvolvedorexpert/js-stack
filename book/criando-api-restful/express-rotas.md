@@ -14,7 +14,7 @@ Essas são as rotas básicas para uma API e um bom mapeamento dos Verbos HTTP pa
 
 # Middleware
 
-O Roteamento do Express nos da uma flexibilidade na definição de rotas. Já definimos uma rota e vimos ela em funcionando. Também já falamos sobre _middleware_ no capítulo "[Roteamente do Aplicações](roteamento-de-aplicacoes-node/middleware.md)".
+O Roteamento do Express nos da uma flexibilidade na definição de rotas. Já definimos uma rota e vimos ela em funcionando. Também já falamos sobre _middleware_ no capítulo "[Roteamente do Aplicações](/roteamento-de-aplicacoes-node/middleware.md)".
 
 Agora, vamos logar nossas requisições com o ```console.log()``` adicionando esse _middleware_ ao arquivo ```index.js```.
 

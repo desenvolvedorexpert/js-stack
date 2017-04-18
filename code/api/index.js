@@ -41,6 +41,14 @@ app.get('/', (req, res) => {
 // pegando uma instância do express router
 const apiRouter = express.Router()
 
+// middleware usado por todas as requisições
+apiRouter.use(function (req, res, next) {
+  console.log('foi feita uma requisição para nossa API!')
+  // vamos adicionar mais coisas aqui mais tarde
+  // é aqui que vamos varificar a autenticação dos usuários
+  next() // garantir que vamos para a próxima rota
+})
+
 // roteamento de teste
 // acesse GET http://localhost:8000/api
 apiRouter.get('/', (req, res) => {
