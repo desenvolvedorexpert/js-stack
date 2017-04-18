@@ -13,7 +13,9 @@
     "github",
     "ga",
     "asciitree",
-    "addcssjs"
+    "addcssjs",
+    "-highlight",
+    "highlightjs"
   ],
   "pluginsConfig": {
     "theme-api": {
