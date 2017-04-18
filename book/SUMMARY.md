@@ -67,8 +67,8 @@
   - [Definindo a Entidade Usuário](criando-api-restful/entidade-usuario.md)
   - [Express e Rotas](criando-api-restful/express-rotas.md)
   - [Middleware de Roteamento](criando-api-restful/middleware.md)
-  - [Criando as rotas básicas](ServerBackend/BuildRESTfulNodeAPI/CreatingBasicRoutes.md)
-  - [Criando rotas para um item](ServerBackend/BuildRESTfulNodeAPI/RoutesForSingleItem.md)
+  - [Criando Rotas Básicas](criando-api-restful/rotas-basicas.md)
+  - [Criando Rotas para um item](ServerBackend/BuildRESTfulNodeAPI/RoutesForSingleItem.md)
   - [Conclusão](ServerBackend/BuildRESTfulNodeAPI/Conclusion.md)
 
 ## APÊNDICE
