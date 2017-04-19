@@ -70,7 +70,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md" />
+    <link rel="next" href="middleware.html" />
     
     
     <link rel="prev" href="entidade-usuario.html" />
@@ -740,9 +740,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.10" data-path="../ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md">
+        <li class="chapter " data-level="3.5.10" data-path="middleware.html">
             
-                <span>
+                <a href="middleware.html">
             
                     
                     Middleware de Roteamento
@@ -753,12 +753,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.11" data-path="../ServerBackend/BuildRESTfulNodeAPI/CreatingBasicRoutes.md">
+        <li class="chapter " data-level="3.5.11" data-path="rotas-basicas.html">
             
-                <span>
+                <a href="rotas-basicas.html">
             
                     
-                    Criando as rotas básicas
+                    Criando Rotas Básicas
             
                 </a>
             
@@ -766,12 +766,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.12" data-path="../ServerBackend/BuildRESTfulNodeAPI/RoutesForSingleItem.md">
+        <li class="chapter " data-level="3.5.12" data-path="rotas-item.html">
             
-                <span>
+                <a href="rotas-item.html">
             
                     
-                    Criando rotas para um item
+                    Criando Rotas para um item
             
                 </a>
             
@@ -779,9 +779,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.13" data-path="../ServerBackend/BuildRESTfulNodeAPI/Conclusion.md">
+        <li class="chapter " data-level="3.5.13" data-path="conclusao.html">
             
-                <span>
+                <a href="conclusao.html">
             
                     
                     Conclusão
@@ -901,177 +901,6 @@
 </tbody>
 </table>
 <p>Essas s&#xE3;o as rotas b&#xE1;sicas para uma API e um bom mapeamento dos Verbos HTTP para as a&#xE7;&#xF5;es que precisamos executar.</p>
-<h1 id="middleware">Middleware</h1>
-<p>O Roteamento do Express nos da uma flexibilidade na defini&#xE7;&#xE3;o de rotas. J&#xE1; definimos uma rota e vimos ela em funcionando. Tamb&#xE9;m j&#xE1; falamos sobre <em>middleware</em> no cap&#xED;tulo &quot;<a href="../roteamento-de-aplicacoes-node/middleware.html">Roteamente do Aplica&#xE7;&#xF5;es</a>&quot;.</p>
-<p>Agora, vamos logar nossas requisi&#xE7;&#xF5;es com o <code>console.log()</code> adicionando esse <em>middleware</em> ao arquivo <code>index.js</code>.</p>
-<div class="d2h-wrapper">
-    <div id="d2h-826524" class="d2h-file-wrapper" data-lang="js">
-    <div class="d2h-file-header">
-    <span class="d2h-file-name-wrapper">
-    <span class="d2h-icon-wrapper"><svg aria-hidden="true" class="d2h-icon" height="16" version="1.1" viewbox="0 0 12 16" width="12">
-    <path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"/>
-</svg></span>
-    <span class="d2h-file-name">code/api/index.js</span>
-    <span class="d2h-tag d2h-changed d2h-changed-tag">CHANGED</span></span>
-    </div>
-    <div class="d2h-file-diff">
-        <div class="d2h-code-wrapper">
-            <table class="d2h-diff-table">
-                <tbody class="d2h-diff-tbody">
-                <tr>
-    <td class="d2h-code-linenumber d2h-info"></td>
-    <td class="d2h-info">
-        <div class="d2h-code-line d2h-info">@@ -41,6 +41,14 @@ app.get(&apos;/&apos;, (req, res) =&gt; {</div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-cntx">
-      <div class="line-num1">41</div>
-<div class="line-num2">41</div>
-    </td>
-    <td class="d2h-cntx">
-        <div class="d2h-code-line d2h-cntx">
-            <span class="d2h-code-line-prefix"> </span>
-            <span class="d2h-code-line-ctn"><span class="hljs-comment">// pegando uma inst&#xE2;ncia do express router</span></span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-cntx">
-      <div class="line-num1">42</div>
-<div class="line-num2">42</div>
-    </td>
-    <td class="d2h-cntx">
-        <div class="d2h-code-line d2h-cntx">
-            <span class="d2h-code-line-prefix"> </span>
-            <span class="d2h-code-line-ctn"><span class="hljs-keyword">const</span> apiRouter = express.Router()</span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">43</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-            <span class="d2h-code-line-ctn"><span class="hljs-comment">// middleware usado por todas as requisi&#xE7;&#xF5;es</span></span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">44</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-            <span class="d2h-code-line-ctn">apiRouter.use(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{</span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">45</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-            <span class="d2h-code-line-ctn">  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;foi feita uma requisi&#xE7;&#xE3;o para nossa API!&apos;</span>)</span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">46</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-            <span class="d2h-code-line-ctn">  <span class="hljs-comment">// vamos adicionar mais coisas aqui mais tarde</span></span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">47</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-            <span class="d2h-code-line-ctn">  <span class="hljs-comment">// &#xE9; aqui que vamos varificar a autentica&#xE7;&#xE3;o dos usu&#xE1;rios</span></span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">48</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-            <span class="d2h-code-line-ctn">  next() <span class="hljs-comment">// garantir que vamos para a pr&#xF3;xima rota</span></span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">49</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-            <span class="d2h-code-line-ctn">})</span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-ins">
-      <div class="line-num1"></div>
-<div class="line-num2">50</div>
-    </td>
-    <td class="d2h-ins">
-        <div class="d2h-code-line d2h-ins">
-            <span class="d2h-code-line-prefix">+</span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-cntx">
-      <div class="line-num1">43</div>
-<div class="line-num2">51</div>
-    </td>
-    <td class="d2h-cntx">
-        <div class="d2h-code-line d2h-cntx">
-            <span class="d2h-code-line-prefix"> </span>
-            <span class="d2h-code-line-ctn"><span class="hljs-comment">// roteamento de teste</span></span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-cntx">
-      <div class="line-num1">44</div>
-<div class="line-num2">52</div>
-    </td>
-    <td class="d2h-cntx">
-        <div class="d2h-code-line d2h-cntx">
-            <span class="d2h-code-line-prefix"> </span>
-            <span class="d2h-code-line-ctn"><span class="hljs-comment">// acesse GET http://localhost:8000/api</span></span>
-        </div>
-    </td>
-</tr><tr>
-    <td class="d2h-code-linenumber d2h-cntx">
-      <div class="line-num1">45</div>
-<div class="line-num2">53</div>
-    </td>
-    <td class="d2h-cntx">
-        <div class="d2h-code-line d2h-cntx">
-            <span class="d2h-code-line-prefix"> </span>
-            <span class="d2h-code-line-ctn">apiRouter.get(<span class="hljs-string">&apos;/&apos;</span>, (req, res) =&gt; {</span>
-        </div>
-    </td>
-</tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-</div>
 
                                 
                                 </section>
@@ -1104,7 +933,7 @@
                 </a>
                 
                 
-                <a href="../ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md" class="navigation navigation-next " aria-label="Next page: Middleware de Roteamento">
+                <a href="middleware.html" class="navigation navigation-next " aria-label="Next page: Middleware de Roteamento">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1115,7 +944,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Express e Rotas","level":"3.5.9","depth":2,"next":{"title":"Middleware de Roteamento","level":"3.5.10","depth":2,"path":"ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md","ref":"ServerBackend/BuildRESTfulNodeAPI/RouteMiddleware.md","articles":[]},"previous":{"title":"Definindo a Entidade Usuário","level":"3.5.8","depth":2,"path":"criando-api-restful/entidade-usuario.md","ref":"criando-api-restful/entidade-usuario.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-api-restful/express-rotas.md","mtime":"2017-04-18T01:04:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T13:56:38.076Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Express e Rotas","level":"3.5.9","depth":2,"next":{"title":"Middleware de Roteamento","level":"3.5.10","depth":2,"path":"criando-api-restful/middleware.md","ref":"criando-api-restful/middleware.md","articles":[]},"previous":{"title":"Definindo a Entidade Usuário","level":"3.5.8","depth":2,"path":"criando-api-restful/entidade-usuario.md","ref":"criando-api-restful/entidade-usuario.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","disqus","github","ga","asciitree","addcssjs","-highlight","highlightjs"],"root":"./book","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"devexpert"},"github":{"url":"https://github.com/desenvolvedorexpert/js-stack"},"search":{},"addcssjs":{"css":["/assets/asciinema-player.css"],"js":["/assets/asciinema-player.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"asciitree":{"leadingChar":"-","trimRight":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"theme":"dark","split":true},"ga":{"configuration":"auto","token":"UA-51072076-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlightjs":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"@milesibastos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.1.0"},"title":"EXPERT JS Stack","language":"pt","gitbook":"*","description":"Desenvolvendo Aplicações Full-Stack JavaScript"},"file":{"path":"criando-api-restful/express-rotas.md","mtime":"2017-04-18T15:51:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-19T16:25:45.636Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
