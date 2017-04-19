@@ -68,8 +68,8 @@
   - [Express e Rotas](criando-api-restful/express-rotas.md)
   - [Middleware de Roteamento](criando-api-restful/middleware.md)
   - [Criando Rotas Básicas](criando-api-restful/rotas-basicas.md)
-  - [Criando Rotas para um item](ServerBackend/BuildRESTfulNodeAPI/RoutesForSingleItem.md)
-  - [Conclusão](ServerBackend/BuildRESTfulNodeAPI/Conclusion.md)
+  - [Criando Rotas para um item](criando-api-restful/rotas-item.md)
+  - [Conclusão](criando-api-restful/conclusao.md)
 
 ## APÊNDICE
 

@@ -91,6 +91,18 @@ apiRouter.route('/users')
     })
   })
 
+// rotas terminadas em /users/:id
+// ----------------------------------------------------
+apiRouter.route('/users/:id')
+  // returna o usuário com o id (GET http://localhost:8000/api/users/:id)
+  .get(function (req, res) {
+    User.findById(req.params.id, function (err, user) {
+      if (err) res.send(err)
+      // retorna o usuário
+      res.json(user)
+    })
+  })
+
 // REGISTRANDO AS ROTAS -------------------------------
 // as rotas serão prefixadas com /api
 app.use('/api', apiRouter)
