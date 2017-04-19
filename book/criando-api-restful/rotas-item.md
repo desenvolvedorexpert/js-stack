@@ -14,7 +14,7 @@ O ```:id``` vindo na requisição pode ser acessado graças ao pacote ```body-pa
 
 Vamos adicionar essa rota, no ```index.js```, para lidar com requisições com o parâmetro ```:id```.
 
-```javascript
+```js
 // rotas terminadas em /users/:id
 // ----------------------------------------------------
 apiRouter.route('/users/:id')
@@ -42,3 +42,43 @@ HTTP/1.1 200 OK
 ```
 
 Vamos receber o usuário como resposta e no outro terminal que está rodando o serviço ```node index.js``` vamos perceber o _log_ da requisição parecido com esse ```GET /api/users/58f10688a2382ab2f06e5030 200 36.884 ms - 85```.
+
+## Atualizando o usuário: PUT ```api/users/:id```
+
+Agora, vamos adicionar uma nova rota ao ```router.route()``` para lidar com requisições PUT.
+
+```js
+// rotas terminadas em /users/:id
+// ----------------------------------------------------
+apiRouter.route('/users/:id')
+  // returna o usuário com o id (GET http://localhost:8000/api/users/:id)
+  .get(function (req, res) { ... })
+  // atualiza o usuário com o id (PUT http://localhost:8080/api/users/:id)
+  .put(function (req, res) {
+    User.findById(req.params.id, function (err, user) {
+      if (err) res.send(err)
+      // atualiza as informações do usuário
+      if (req.body.name) user.name = req.body.name
+      if (req.body.username) user.username = req.body.username
+      if (req.body.password) user.password = req.body.password
+
+      // salva o usuário
+      user.save(function (err) {
+        if (err) res.send(err)
+        // retorna uma menssagem de sucesso
+        res.json({ message: 'Usuário atalizado!' })
+      })
+    })
+```
+
+Então, com o ```id``` que veio na requisição, pegamos o usuário, atualizamos as informações e salvamos ele devolta no banco MongoDB.
+
+```bash
+ > http --form PUT localhost:8000/api/users/58f10688a2382ab2f06e5030 name='Antonio Milesi Bastos'
+HTTP/1.1 200 OK
+{
+    "message": "Usuário atalizado!"
+}
+```
+
+Vamos receber uma mensagem de confirmação como resposta e no outro terminal que está rodando o serviço ```node index.js``` vamos perceber o _log_ da requisição parecido com esse ```PUT /api/users/58f10688a2382ab2f06e5030 200 70.245 ms - 33```.

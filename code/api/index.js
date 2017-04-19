@@ -102,6 +102,23 @@ apiRouter.route('/users/:id')
       res.json(user)
     })
   })
+  // atualiza o usuário com o id (PUT http://localhost:8080/api/users/:id)
+  .put(function (req, res) {
+    User.findById(req.params.id, function (err, user) {
+      if (err) res.send(err)
+      // atualiza as informações do usuário
+      if (req.body.name) user.name = req.body.name
+      if (req.body.username) user.username = req.body.username
+      if (req.body.password) user.password = req.body.password
+
+      // salva o usuário
+      user.save(function (err) {
+        if (err) res.send(err)
+        // retorna uma menssagem de sucesso
+        res.json({ message: 'Usuário atalizado!' })
+      })
+    })
+  })
 
 // REGISTRANDO AS ROTAS -------------------------------
 // as rotas serão prefixadas com /api
