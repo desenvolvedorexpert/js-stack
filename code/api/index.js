@@ -94,7 +94,7 @@ apiRouter.route('/users')
 // rotas terminadas em /users/:id
 // ----------------------------------------------------
 apiRouter.route('/users/:id')
-  // returna o usuário com o id (GET http://localhost:8000/api/users/:id)
+  // retorna o usuário com o id (GET http://localhost:8000/api/users/:id)
   .get(function (req, res) {
     User.findById(req.params.id, function (err, user) {
       if (err) res.send(err)
@@ -117,6 +117,13 @@ apiRouter.route('/users/:id')
         // retorna uma menssagem de sucesso
         res.json({ message: 'Usuário atalizado!' })
       })
+    })
+  })
+  // apaga o usuário com o id (DELETE http://localhost:8080/api/users/:id)
+  .delete(function (req, res) {
+    User.remove({ _id: req.params.id }, function (err, user) {
+      if (err) return res.send(err)
+      res.json({ message: 'Apagado com sucesso!' })
     })
   })
 
