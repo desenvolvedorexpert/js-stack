@@ -58,7 +58,7 @@ apiRouter.get('/', (req, res) => {
 // rotas terminadas em /users
 // ----------------------------------------------------
 apiRouter.route('/users')
-// criar usuário (POST http://localhost:8000/api/users)
+  // criar usuário (POST http://localhost:8000/api/users)
   .post(function (req, res) {
     // criar uma nova instância do Usuário
     var user = new User()
@@ -80,6 +80,14 @@ apiRouter.route('/users')
         }
       }
       res.json({ message: 'Usuário criado!' })
+    })
+  })
+  // returna todos os usuários (GET http://localhost:8000/api/users)
+  .get(function (req, res) {
+    User.find(function (err, users) {
+      if (err) res.send(err)
+      // retorna os usuários
+      res.json(users)
     })
   })
 
