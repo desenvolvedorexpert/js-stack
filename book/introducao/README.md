@@ -6,6 +6,6 @@ O padrão para JavaScript é o [ECMAScript](https://developer.mozilla.org/pt-BR/
 
 Esse livro assume que você tenha um conhecimento básico de JavaScript. Se você não estiver muito confiante, recomendo que você [refresque sua memória](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript) para ficar mais confiante e seguir em frente.
 
-Nesse livro vou guiar você no desenvolvimento da sua primeira aplicação JavaScript desde uma pasta vazia até a produção. Vou tentar manter as coisas o mais simples possível e com o mínimo de dependências. Colocar uma aplicação Full-Stack JavaScript em produção não está nos guias mais poplares da internet e esse é o objetivo desse livro.
+Nesse livro vou guiar você no desenvolvimento da sua primeira aplicação JavaScript desde uma pasta vazia até a produção. Vou tentar manter as coisas o mais simples possível e com o mínimo de dependências. Colocar uma aplicação Full-Stack JavaScript em produção não está nos guias mais populares da internet e esse é o objetivo desse livro.
 
 Espero que goste de aprender. Você sempre poderá entrar em contato comigo, [@milesibastos](https://twitter.com/milesibastos), com dúvidas e comentários que você tenha ao longo do caminho.
