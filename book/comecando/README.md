@@ -9,7 +9,7 @@ Uma vez que todos os _**PRIMERS**_ (os componentes da pilha) usam **JavaScript**
  - Persistir seus objetos JSON (JavaScript Object Notation) no **MongoDB**
  - Usar objetos JSON para enviar dados do banco para o servidor e então renderizar no browser.
 
-Se algum desses nomes for novo para vc, pode ficar tranquilo. Nos próximos 20 minutos vc vai aprender tudo sobre eles. O mais importante agora é saber que:
+Se algum desses nomes for novo para você, pode ficar tranquilo. Nos próximos 20 minutos você vai aprender tudo sobre eles. O mais importante agora é saber que:
 
 > Uma única linguagem em todas as camadas vai potencializar a sua produtividade. Porque quando você estiver trabalhando com React no _client-side_ você vai facilmente entender o código, também, no _server-side_. Por que está tudo em JavaScript. Isso não é incrível?
 
